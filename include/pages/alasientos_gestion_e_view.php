@@ -1,8 +1,6 @@
 <?php
 			$optionsArray = array( 'pdf' => array( 'pdfView' => false ),
-'details' => array( 'gedocumentos_egresos' => array( 'displayPreview' => 2,
-'previewPageId' => '' ),
-'gedocumentos_egresos_consumo' => array( 'displayPreview' => 2,
+'details' => array( 'gedocumentos_egresos_consumo' => array( 'displayPreview' => 2,
 'previewPageId' => '' ) ),
 'fields' => array( 'gridFields' => array( 'as_estadoasien',
 'as_fechaasiento',

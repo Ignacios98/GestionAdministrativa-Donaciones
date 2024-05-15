@@ -1889,13 +1889,13 @@ $tdatagedocumentos_egresos_consumo[".hideMobileList"] = array();
 	
 
 // Begin Lookup settings
-				$edata["LookupType"] = 1;
-	$edata["LookupTable"] = "";
-	$edata["LookupConnId"] = "";
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "contractor_master";
 		$edata["listPageId"] = "list";
 		$edata["autoCompleteFieldsOnEdit"] = 1;
 	$edata["autoCompleteFields"] = array();
-		$edata["LCType"] = 2;
+		$edata["autoCompleteFields"][] = array('masterF'=>"docnomproveedor", 'lookupF'=>"contractor_nombresfull");
+	$edata["LCType"] = 2;
 
 	
 		
@@ -1911,8 +1911,7 @@ $tdatagedocumentos_egresos_consumo[".hideMobileList"] = array();
 	
 	
 	
-		$edata["SimpleAdd"] = true;
-
+	
 
 	
 	

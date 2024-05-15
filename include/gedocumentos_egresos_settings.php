@@ -183,7 +183,7 @@ $tdatagedocumentos_egresos[".isUseAjaxSuggest"] = true;
 
 
 
-																								
+												
 
 $tdatagedocumentos_egresos[".ajaxCodeSnippetAdded"] = false;
 
@@ -3405,26 +3405,6 @@ $masterTablesData["gedocumentos_egresos"] = array();
 
 
 
-	
-	//if !@t.bReportCrossTab
-			$strOriginalDetailsTable="alasientos";
-	$masterParams = array();
-	$masterParams["mDataSourceTable"]="alasientos_gestion_e";
-	$masterParams["mOriginalTable"]= $strOriginalDetailsTable;
-	$masterParams["mShortTable"]= "alasientos_gestion_e";
-	$masterParams["masterKeys"]= array();
-	$masterParams["detailKeys"]= array();
-
-	$masterParams["type"] = PAGE_LIST;
-					$masterTablesData["gedocumentos_egresos"][0] = $masterParams;
-				$masterTablesData["gedocumentos_egresos"][0]["masterKeys"] = array();
-	$masterTablesData["gedocumentos_egresos"][0]["masterKeys"][]="as_nroasiento";
-				$masterTablesData["gedocumentos_egresos"][0]["masterKeys"][]="ascodalmacen";
-				$masterTablesData["gedocumentos_egresos"][0]["detailKeys"] = array();
-	$masterTablesData["gedocumentos_egresos"][0]["detailKeys"][]="as_nroasiento_fk";
-				$masterTablesData["gedocumentos_egresos"][0]["detailKeys"][]="docodregion";
-		
-	//endif
 // -----------------end  prepare master-details data arrays ------------------------------//
 
 

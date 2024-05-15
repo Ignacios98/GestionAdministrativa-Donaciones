@@ -1,8 +1,6 @@
 <?php
 			$optionsArray = array( 'pdf' => array( 'pdfView' => false ),
-'details' => array( 'gedocumentos_ingresos' => array( 'displayPreview' => 2,
-'previewPageId' => '' ),
-'gedocumentos_ingresos_consumo' => array( 'displayPreview' => 2,
+'details' => array( 'gedocumentos_ingresos_consumo' => array( 'displayPreview' => 2,
 'previewPageId' => '' ) ),
 'totals' => array( 'as_id' => array( 'totalsType' => '' ),
 'as_estadoasien' => array( 'totalsType' => '' ),

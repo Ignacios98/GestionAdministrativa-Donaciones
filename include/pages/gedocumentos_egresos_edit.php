@@ -1,7 +1,6 @@
 <?php
 			$optionsArray = array( 'details' => array( 'aldevindiv_egresos' => array( 'displayPreview' => 2,
 'previewPageId' => '' ) ),
-'master' => array( 'alasientos_gestion_e' => array( 'preview' => false ) ),
 'captcha' => array( 'captcha' => false ),
 'fields' => array( 'gridFields' => array( 'as_nroasiento_fk',
 'do_detalle',

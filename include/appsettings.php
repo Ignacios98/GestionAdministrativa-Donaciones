@@ -725,7 +725,7 @@ $cLoginTable = "global_users";
 $cDisplayNameField = "usr_nombresfull";
 $cUserNameField	= "Username";
 $cPasswordField	= "Password";
-$cUserGroupField = "";
+$cUserGroupField = "Username";
 $cEmailField = "usr_email";
 $cUserpicField = "userpic";
 $loginKeyFields= array();
@@ -760,9 +760,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "976_1715219455";
+$projectBuildKey = "978_1715219455";
 $wizardBuildKey = "41974";
-$projectBuildNumber = "976";
+$projectBuildNumber = "978";
 
 $mlang_messages = array();
 $mlang_charsets = array();

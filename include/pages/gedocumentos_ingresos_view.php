@@ -2,7 +2,6 @@
 			$optionsArray = array( 'pdf' => array( 'pdfView' => false ),
 'details' => array( 'almovdevdia_ingresos_d' => array( 'displayPreview' => 2,
 'previewPageId' => '' ) ),
-'master' => array( 'alasientos_gestion' => array( 'preview' => false ) ),
 'fields' => array( 'gridFields' => array( 'as_nroasiento_fk',
 'do_detalle',
 'do_fechadoc',

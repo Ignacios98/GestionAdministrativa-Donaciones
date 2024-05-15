@@ -1,7 +1,5 @@
 <?php
-			$optionsArray = array( 'details' => array( 'gedocumentos_egresos' => array( 'displayPreview' => 2,
-'previewPageId' => '' ),
-'gedocumentos_egresos_consumo' => array( 'displayPreview' => 2,
+			$optionsArray = array( 'details' => array( 'gedocumentos_egresos_consumo' => array( 'displayPreview' => 2,
 'previewPageId' => '' ) ),
 'captcha' => array( 'captcha' => false ),
 'fields' => array( 'gridFields' => array( 'as_estadoasien',

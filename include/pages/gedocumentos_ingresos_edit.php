@@ -1,7 +1,6 @@
 <?php
 			$optionsArray = array( 'details' => array( 'almovdevdia_ingresos_d' => array( 'displayPreview' => 2,
 'previewPageId' => '' ) ),
-'master' => array( 'alasientos_gestion' => array( 'preview' => false ) ),
 'captcha' => array( 'captcha' => false ),
 'fields' => array( 'gridFields' => array( 'as_nroasiento_fk',
 'do_detalle',
