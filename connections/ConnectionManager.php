@@ -136,7 +136,7 @@ class ConnectionManager extends ConnectionManager_Base
 		$data["DBPath"] = "db"; //currently unused
 		$data["useServerMapPath"] = 1; //currently unused
 
-$host="127.0.0.1";
+$host="33.0.1.22";
 $user="root";
 $pwd="M4r10n3t45";
 $port="3306";
@@ -172,7 +172,7 @@ $data["connInfo"][4] = $sys_dbname;
 		$data["DBPath"] = "db"; //currently unused
 		$data["useServerMapPath"] = 1; //currently unused
 
-$host="127.0.0.1";
+$host="33.0.1.22";
 $user="root";
 $pwd="M4r10n3t45";
 $port="3306";
@@ -208,7 +208,7 @@ $data["connInfo"][4] = $sys_dbname;
 		$data["DBPath"] = "db"; //currently unused
 		$data["useServerMapPath"] = 1; //currently unused
 
-$host="127.0.0.1";
+$host="33.0.1.22";
 $user="root";
 $pwd="M4r10n3t45";
 $port="3306";
@@ -244,7 +244,7 @@ $data["connInfo"][4] = $sys_dbname;
 		$data["DBPath"] = "db"; //currently unused
 		$data["useServerMapPath"] = 1; //currently unused
 
-$host="127.0.0.1";
+$host="33.0.1.22";
 $user="root";
 $pwd="M4r10n3t45";
 $port="3306";
