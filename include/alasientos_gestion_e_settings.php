@@ -1174,46 +1174,11 @@ changeTextControlsToDate( "alasientos_gestion_e" );
 //if !@TABLE.bReportCrossTab
 
 $detailsTablesData["alasientos_gestion_e"] = array();
-//	gedocumentos_egresos
-	
-	
-
-		$dIndex = 0;
-	$detailsParam = array();
-	$detailsParam["dDataSourceTable"]="gedocumentos_egresos";
-		$detailsParam["dOriginalTable"] = "gedocumentos";
-
-
-
-		
-		$detailsParam["dType"]=PAGE_LIST;
-	$detailsParam["dShortTable"] = "gedocumentos_egresos";
-	$detailsParam["dCaptionTable"] = GetTableCaption("gedocumentos_egresos");
-	$detailsParam["masterKeys"] =array();
-	$detailsParam["detailKeys"] =array();
-
-
-		
-	$detailsTablesData["alasientos_gestion_e"][$dIndex] = $detailsParam;
-
-	
-		$detailsTablesData["alasientos_gestion_e"][$dIndex]["masterKeys"] = array();
-
-	$detailsTablesData["alasientos_gestion_e"][$dIndex]["masterKeys"][]="as_nroasiento";
-
-	$detailsTablesData["alasientos_gestion_e"][$dIndex]["masterKeys"][]="ascodalmacen";
-
-				$detailsTablesData["alasientos_gestion_e"][$dIndex]["detailKeys"] = array();
-
-	$detailsTablesData["alasientos_gestion_e"][$dIndex]["detailKeys"][]="as_nroasiento_fk";
-
-		
-	$detailsTablesData["alasientos_gestion_e"][$dIndex]["detailKeys"][]="docodregion";
 //	gedocumentos_egresos_consumo
 	
 	
 
-		$dIndex = 1;
+		$dIndex = 0;
 	$detailsParam = array();
 	$detailsParam["dDataSourceTable"]="gedocumentos_egresos_consumo";
 		$detailsParam["dOriginalTable"] = "gedocumentos";

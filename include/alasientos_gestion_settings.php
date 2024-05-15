@@ -1176,46 +1176,11 @@ changeTextControlsToDate( "alasientos_gestion" );
 //if !@TABLE.bReportCrossTab
 
 $detailsTablesData["alasientos_gestion"] = array();
-//	gedocumentos_ingresos
-	
-	
-
-		$dIndex = 0;
-	$detailsParam = array();
-	$detailsParam["dDataSourceTable"]="gedocumentos_ingresos";
-		$detailsParam["dOriginalTable"] = "gedocumentos";
-
-
-
-		
-		$detailsParam["dType"]=PAGE_LIST;
-	$detailsParam["dShortTable"] = "gedocumentos_ingresos";
-	$detailsParam["dCaptionTable"] = GetTableCaption("gedocumentos_ingresos");
-	$detailsParam["masterKeys"] =array();
-	$detailsParam["detailKeys"] =array();
-
-
-		
-	$detailsTablesData["alasientos_gestion"][$dIndex] = $detailsParam;
-
-	
-		$detailsTablesData["alasientos_gestion"][$dIndex]["masterKeys"] = array();
-
-	$detailsTablesData["alasientos_gestion"][$dIndex]["masterKeys"][]="as_nroasiento";
-
-	$detailsTablesData["alasientos_gestion"][$dIndex]["masterKeys"][]="ascodalmacen";
-
-				$detailsTablesData["alasientos_gestion"][$dIndex]["detailKeys"] = array();
-
-	$detailsTablesData["alasientos_gestion"][$dIndex]["detailKeys"][]="as_nroasiento_fk";
-
-		
-	$detailsTablesData["alasientos_gestion"][$dIndex]["detailKeys"][]="docodregion";
 //	gedocumentos_ingresos_consumo
 	
 	
 
-		$dIndex = 1;
+		$dIndex = 0;
 	$detailsParam = array();
 	$detailsParam["dDataSourceTable"]="gedocumentos_ingresos_consumo";
 		$detailsParam["dOriginalTable"] = "gedocumentos";
