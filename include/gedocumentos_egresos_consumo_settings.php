@@ -28,10 +28,10 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsgedocumentos_egresos_consumo["Spanish"]["as_nroasiento_fk"] = "Asiento";
 	$fieldToolTipsgedocumentos_egresos_consumo["Spanish"]["as_nroasiento_fk"] = "";
 	$placeHoldersgedocumentos_egresos_consumo["Spanish"]["as_nroasiento_fk"] = "";
-	$fieldLabelsgedocumentos_egresos_consumo["Spanish"]["do_detalle"] = "Descripción del ingreso";
+	$fieldLabelsgedocumentos_egresos_consumo["Spanish"]["do_detalle"] = "Descripción del egreso";
 	$fieldToolTipsgedocumentos_egresos_consumo["Spanish"]["do_detalle"] = "";
 	$placeHoldersgedocumentos_egresos_consumo["Spanish"]["do_detalle"] = "";
-	$fieldLabelsgedocumentos_egresos_consumo["Spanish"]["do_fechadoc"] = "Fecha del ingreso";
+	$fieldLabelsgedocumentos_egresos_consumo["Spanish"]["do_fechadoc"] = "Fecha del egreso";
 	$fieldToolTipsgedocumentos_egresos_consumo["Spanish"]["do_fechadoc"] = "";
 	$placeHoldersgedocumentos_egresos_consumo["Spanish"]["do_fechadoc"] = "";
 	$fieldLabelsgedocumentos_egresos_consumo["Spanish"]["do_file"] = "Anexo";
@@ -70,7 +70,7 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsgedocumentos_egresos_consumo["Spanish"]["sys_fecha"] = "Fecha sistema";
 	$fieldToolTipsgedocumentos_egresos_consumo["Spanish"]["sys_fecha"] = "";
 	$placeHoldersgedocumentos_egresos_consumo["Spanish"]["sys_fecha"] = "";
-	$fieldLabelsgedocumentos_egresos_consumo["Spanish"]["sys_user"] = "Usuario";
+	$fieldLabelsgedocumentos_egresos_consumo["Spanish"]["sys_user"] = "Gestionado por:";
 	$fieldToolTipsgedocumentos_egresos_consumo["Spanish"]["sys_user"] = "";
 	$placeHoldersgedocumentos_egresos_consumo["Spanish"]["sys_user"] = "";
 	$fieldLabelsgedocumentos_egresos_consumo["Spanish"]["do_concepto"] = "Concepto";
@@ -82,6 +82,12 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsgedocumentos_egresos_consumo["Spanish"]["do_depsup"] = "Despacho | Dirección";
 	$fieldToolTipsgedocumentos_egresos_consumo["Spanish"]["do_depsup"] = "";
 	$placeHoldersgedocumentos_egresos_consumo["Spanish"]["do_depsup"] = "";
+	$fieldLabelsgedocumentos_egresos_consumo["Spanish"]["resolfecha"] = "Fecha de resolución";
+	$fieldToolTipsgedocumentos_egresos_consumo["Spanish"]["resolfecha"] = "";
+	$placeHoldersgedocumentos_egresos_consumo["Spanish"]["resolfecha"] = "";
+	$fieldLabelsgedocumentos_egresos_consumo["Spanish"]["resolnum"] = "Número de resolución";
+	$fieldToolTipsgedocumentos_egresos_consumo["Spanish"]["resolnum"] = "";
+	$placeHoldersgedocumentos_egresos_consumo["Spanish"]["resolnum"] = "";
 	if (count($fieldToolTipsgedocumentos_egresos_consumo["Spanish"]))
 		$tdatagedocumentos_egresos_consumo[".isUseToolTips"] = true;
 }
@@ -218,6 +224,8 @@ $tdatagedocumentos_egresos_consumo[".googleLikeFields"][] = "sys_user";
 $tdatagedocumentos_egresos_consumo[".googleLikeFields"][] = "do_concepto";
 $tdatagedocumentos_egresos_consumo[".googleLikeFields"][] = "do_dep";
 $tdatagedocumentos_egresos_consumo[".googleLikeFields"][] = "do_depsup";
+$tdatagedocumentos_egresos_consumo[".googleLikeFields"][] = "resolfecha";
+$tdatagedocumentos_egresos_consumo[".googleLikeFields"][] = "resolnum";
 
 
 
@@ -252,7 +260,7 @@ $tdatagedocumentos_egresos_consumo[".orderindexes"] = array();
 			$tdatagedocumentos_egresos_consumo[".orderindexes"][] = array(1, (0 ? "ASC" : "DESC"), "doclasedoc_id");
 
 
-$tdatagedocumentos_egresos_consumo[".sqlHead"] = "SELECT doclasedoc_id,  as_nroasiento_fk,  docodregion,  do_detalle,  do_fechadoc,  do_file,  do_legaliza,  do_nrodoc,  do_tipodoc,  do_tipomov,  doccnit,  doclasedoc,  docnomproveedor,  egreso,  sys_fecha,  sys_user,  do_concepto,  do_dep,  do_depsup";
+$tdatagedocumentos_egresos_consumo[".sqlHead"] = "SELECT doclasedoc_id,  as_nroasiento_fk,  docodregion,  do_detalle,  do_fechadoc,  do_file,  do_legaliza,  do_nrodoc,  do_tipodoc,  do_tipomov,  doccnit,  doclasedoc,  docnomproveedor,  egreso,  sys_fecha,  sys_user,  do_concepto,  do_dep,  do_depsup,  resolfecha,  resolnum";
 $tdatagedocumentos_egresos_consumo[".sqlFrom"] = "FROM gedocumentos";
 $tdatagedocumentos_egresos_consumo[".sqlWhereExpr"] = "(doclasedoc = 310)";
 $tdatagedocumentos_egresos_consumo[".sqlTail"] = "";
@@ -1580,8 +1588,7 @@ $tdatagedocumentos_egresos_consumo[".hideMobileList"] = array();
 // End Lookup Settings
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -1601,8 +1608,7 @@ $tdatagedocumentos_egresos_consumo[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+	
 	
 //	End validation
 
@@ -1919,8 +1925,7 @@ $tdatagedocumentos_egresos_consumo[".hideMobileList"] = array();
 // End Lookup Settings
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -1940,8 +1945,7 @@ $tdatagedocumentos_egresos_consumo[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+	
 	
 //	End validation
 
@@ -2977,8 +2981,7 @@ $tdatagedocumentos_egresos_consumo[".hideMobileList"] = array();
 // End Lookup Settings
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -2998,8 +3001,7 @@ $tdatagedocumentos_egresos_consumo[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+							
 	
 //	End validation
 
@@ -3146,8 +3148,7 @@ $tdatagedocumentos_egresos_consumo[".hideMobileList"] = array();
 // End Lookup Settings
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -3167,8 +3168,7 @@ $tdatagedocumentos_egresos_consumo[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+							
 	
 //	End validation
 
@@ -3214,6 +3214,288 @@ $tdatagedocumentos_egresos_consumo[".hideMobileList"] = array();
 
 	$tdatagedocumentos_egresos_consumo["do_depsup"] = $fdata;
 		$tdatagedocumentos_egresos_consumo[".searchableFields"][] = "do_depsup";
+//	resolfecha
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 20;
+	$fdata["strName"] = "resolfecha";
+	$fdata["GoodName"] = "resolfecha";
+	$fdata["ownerTable"] = "gedocumentos";
+	$fdata["Label"] = GetFieldLabel("gedocumentos_egresos_consumo","resolfecha");
+	$fdata["FieldType"] = 7;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "resolfecha";
+
+		$fdata["sourceSingle"] = "resolfecha";
+
+	
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "resolfecha";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Short Date");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Date");
+
+	
+		$edata["weekdayMessage"] = array("message" => "Invalid week day", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+	
+			$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+		$edata["DateEditType"] = 2;
+	$edata["InitialYearFactor"] = 0;
+	$edata["LastYearFactor"] = 10;
+
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+	
+//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatagedocumentos_egresos_consumo["resolfecha"] = $fdata;
+		$tdatagedocumentos_egresos_consumo[".searchableFields"][] = "resolfecha";
+//	resolnum
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 21;
+	$fdata["strName"] = "resolnum";
+	$fdata["GoodName"] = "resolnum";
+	$fdata["ownerTable"] = "gedocumentos";
+	$fdata["Label"] = GetFieldLabel("gedocumentos_egresos_consumo","resolnum");
+	$fdata["FieldType"] = 200;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "resolnum";
+
+		$fdata["sourceSingle"] = "resolnum";
+
+	
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "resolnum";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+	
+			$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=10";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+	
+//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatagedocumentos_egresos_consumo["resolnum"] = $fdata;
+		$tdatagedocumentos_egresos_consumo[".searchableFields"][] = "resolnum";
 
 
 $tables_data["gedocumentos_egresos_consumo"]=&$tdatagedocumentos_egresos_consumo;
@@ -3313,7 +3595,7 @@ function createSqlQuery_gedocumentos_egresos_consumo()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "doclasedoc_id,  as_nroasiento_fk,  docodregion,  do_detalle,  do_fechadoc,  do_file,  do_legaliza,  do_nrodoc,  do_tipodoc,  do_tipomov,  doccnit,  doclasedoc,  docnomproveedor,  egreso,  sys_fecha,  sys_user,  do_concepto,  do_dep,  do_depsup";
+$proto0["m_strFieldList"] = "doclasedoc_id,  as_nroasiento_fk,  docodregion,  do_detalle,  do_fechadoc,  do_file,  do_legaliza,  do_nrodoc,  do_tipodoc,  do_tipomov,  doccnit,  doclasedoc,  docnomproveedor,  egreso,  sys_fecha,  sys_user,  do_concepto,  do_dep,  do_depsup,  resolfecha,  resolnum";
 $proto0["m_strFrom"] = "FROM gedocumentos";
 $proto0["m_strWhere"] = "(doclasedoc = 310)";
 $proto0["m_strOrderBy"] = "ORDER BY doclasedoc_id DESC";
@@ -3621,71 +3903,101 @@ $proto42["m_alias"] = "";
 $obj = new SQLFieldListItem($proto42);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto44=array();
-$proto44["m_link"] = "SQLL_MAIN";
-			$proto45=array();
-$proto45["m_strName"] = "gedocumentos";
-$proto45["m_srcTableName"] = "gedocumentos_egresos_consumo";
-$proto45["m_columns"] = array();
-$proto45["m_columns"][] = "as_nroasiento_fk";
-$proto45["m_columns"][] = "do_concepto";
-$proto45["m_columns"][] = "do_dep";
-$proto45["m_columns"][] = "do_depsup";
-$proto45["m_columns"][] = "do_detalle";
-$proto45["m_columns"][] = "do_email";
-$proto45["m_columns"][] = "do_fechadoc";
-$proto45["m_columns"][] = "do_file";
-$proto45["m_columns"][] = "do_legaliza";
-$proto45["m_columns"][] = "do_nrodoc";
-$proto45["m_columns"][] = "do_tipodoc";
-$proto45["m_columns"][] = "do_tipomov";
-$proto45["m_columns"][] = "doccnit";
-$proto45["m_columns"][] = "doclasedoc";
-$proto45["m_columns"][] = "doclasedoc_id";
-$proto45["m_columns"][] = "docnomproveedor";
-$proto45["m_columns"][] = "docodregion";
-$proto45["m_columns"][] = "egreso";
-$proto45["m_columns"][] = "sys_fecha";
-$proto45["m_columns"][] = "sys_user";
-$obj = new SQLTable($proto45);
+						$proto44=array();
+			$obj = new SQLField(array(
+	"m_strName" => "resolfecha",
+	"m_strTable" => "gedocumentos",
+	"m_srcTableName" => "gedocumentos_egresos_consumo"
+));
 
-$proto44["m_table"] = $obj;
-$proto44["m_sql"] = "gedocumentos";
-$proto44["m_alias"] = "";
+$proto44["m_sql"] = "resolfecha";
 $proto44["m_srcTableName"] = "gedocumentos_egresos_consumo";
-$proto46=array();
-$proto46["m_sql"] = "";
-$proto46["m_uniontype"] = "SQLL_UNKNOWN";
+$proto44["m_expr"]=$obj;
+$proto44["m_alias"] = "";
+$obj = new SQLFieldListItem($proto44);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto46=array();
+			$obj = new SQLField(array(
+	"m_strName" => "resolnum",
+	"m_strTable" => "gedocumentos",
+	"m_srcTableName" => "gedocumentos_egresos_consumo"
+));
+
+$proto46["m_sql"] = "resolnum";
+$proto46["m_srcTableName"] = "gedocumentos_egresos_consumo";
+$proto46["m_expr"]=$obj;
+$proto46["m_alias"] = "";
+$obj = new SQLFieldListItem($proto46);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto48=array();
+$proto48["m_link"] = "SQLL_MAIN";
+			$proto49=array();
+$proto49["m_strName"] = "gedocumentos";
+$proto49["m_srcTableName"] = "gedocumentos_egresos_consumo";
+$proto49["m_columns"] = array();
+$proto49["m_columns"][] = "as_nroasiento_fk";
+$proto49["m_columns"][] = "do_concepto";
+$proto49["m_columns"][] = "do_dep";
+$proto49["m_columns"][] = "do_depsup";
+$proto49["m_columns"][] = "do_detalle";
+$proto49["m_columns"][] = "do_email";
+$proto49["m_columns"][] = "do_fechadoc";
+$proto49["m_columns"][] = "do_file";
+$proto49["m_columns"][] = "do_legaliza";
+$proto49["m_columns"][] = "do_nrodoc";
+$proto49["m_columns"][] = "do_tipodoc";
+$proto49["m_columns"][] = "do_tipomov";
+$proto49["m_columns"][] = "doccnit";
+$proto49["m_columns"][] = "doclasedoc";
+$proto49["m_columns"][] = "doclasedoc_id";
+$proto49["m_columns"][] = "docnomproveedor";
+$proto49["m_columns"][] = "docodregion";
+$proto49["m_columns"][] = "egreso";
+$proto49["m_columns"][] = "resolfecha";
+$proto49["m_columns"][] = "resolnum";
+$proto49["m_columns"][] = "sys_fecha";
+$proto49["m_columns"][] = "sys_user";
+$obj = new SQLTable($proto49);
+
+$proto48["m_table"] = $obj;
+$proto48["m_sql"] = "gedocumentos";
+$proto48["m_alias"] = "";
+$proto48["m_srcTableName"] = "gedocumentos_egresos_consumo";
+$proto50=array();
+$proto50["m_sql"] = "";
+$proto50["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto46["m_column"]=$obj;
-$proto46["m_contained"] = array();
-$proto46["m_strCase"] = "";
-$proto46["m_havingmode"] = false;
-$proto46["m_inBrackets"] = false;
-$proto46["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto46);
+$proto50["m_column"]=$obj;
+$proto50["m_contained"] = array();
+$proto50["m_strCase"] = "";
+$proto50["m_havingmode"] = false;
+$proto50["m_inBrackets"] = false;
+$proto50["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto50);
 
-$proto44["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto44);
+$proto48["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto48);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
-												$proto48=array();
+												$proto52=array();
 						$obj = new SQLField(array(
 	"m_strName" => "doclasedoc_id",
 	"m_strTable" => "gedocumentos",
 	"m_srcTableName" => "gedocumentos_egresos_consumo"
 ));
 
-$proto48["m_column"]=$obj;
-$proto48["m_bAsc"] = 0;
-$proto48["m_nColumn"] = 0;
-$obj = new SQLOrderByItem($proto48);
+$proto52["m_column"]=$obj;
+$proto52["m_bAsc"] = 0;
+$proto52["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto52);
 
 $proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="gedocumentos_egresos_consumo";		
@@ -3699,7 +4011,7 @@ $queryData_gedocumentos_egresos_consumo = createSqlQuery_gedocumentos_egresos_co
 	
 								;
 
-																			
+																					
 
 $tdatagedocumentos_egresos_consumo[".sqlquery"] = $queryData_gedocumentos_egresos_consumo;
 

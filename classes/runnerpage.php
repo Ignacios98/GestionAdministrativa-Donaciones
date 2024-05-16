@@ -3629,7 +3629,7 @@ class RunnerPage
 			Runner.applyPagesData( ".my_json_encode( $pagesData )." );
 			</script>\r\n";
 
-		echo "<script language=\"JavaScript\" src=\"".GetRootPathForResources("include/runnerJS/RunnerAll.js?41974")."\"></script>\r\n";
+		echo "<script language=\"JavaScript\" src=\"".GetRootPathForResources("include/runnerJS/RunnerAll.js?41619")."\"></script>\r\n";
 		echo "<script>".$this->PrepareJS()."</script>";
 	}
 

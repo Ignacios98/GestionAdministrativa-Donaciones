@@ -258,6 +258,32 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_as_nroasiento_fk}</span>
 						</div>
 		{END searchCtrlBlock_as_nroasiento_fk}
+																{BEGIN searchCtrlBlock_resolnum}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_resolnum}" {$filterRow_attrs_resolnum}>
+			<label>{$label gedocumentos_ingresos_consumo resolnum }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_resolnum}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_resolnum}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_resolnum}</span>
+						</div>
+		{END searchCtrlBlock_resolnum}
+																{BEGIN searchCtrlBlock_resolfecha}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_resolfecha}" {$filterRow_attrs_resolfecha}>
+			<label>{$label gedocumentos_ingresos_consumo resolfecha }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_resolfecha}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_resolfecha}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_resolfecha}</span>
+						</div>
+		{END searchCtrlBlock_resolfecha}
 																{BEGIN searchCtrlBlock_do_depsup}
 
 
@@ -877,6 +903,12 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="do_depsup"]:before {
 		content: "{$label gedocumentos_ingresos_consumo do_depsup}";
 	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="resolfecha"]:before {
+		content: "{$label gedocumentos_ingresos_consumo resolfecha}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="resolnum"]:before {
+		content: "{$label gedocumentos_ingresos_consumo resolnum}";
+	}
 	}
 </style>
 <table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table table-hover table-bordered r-horizontal-grid  r-flexgrid rnr-b-grid rnr-gridtable"
@@ -1284,6 +1316,74 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field9}
+									{BEGIN cellblock_grid_headcell_field10}
+	<th
+	
+	{$cell_grid_headcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$resolfecha_class}	"
+
+			data-field="resolfecha"
+	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN resolfecha_fieldheadercolumn}
+	{BEGIN resolfecha_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label" {$item_grid_field_label} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="resolfecha" data-fieldname="resolfecha" 
+
+			{$resolfecha_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label gedocumentos_ingresos_consumo resolfecha }</span>
+					{$arrow_icon_resolfecha}
+			</span>
+	</span>
+	{END resolfecha_fieldheader}
+{END resolfecha_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field10}
+									{BEGIN cellblock_grid_headcell_field11}
+	<th
+	
+	{$cell_grid_headcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$resolnum_class}	"
+
+			data-field="resolnum"
+	
+	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN resolnum_fieldheadercolumn}
+	{BEGIN resolnum_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label1" {$item_grid_field_label1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="resolnum" data-fieldname="resolnum" 
+
+			{$resolnum_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label gedocumentos_ingresos_consumo resolnum }</span>
+					{$arrow_icon_resolnum}
+			</span>
+	</span>
+	{END resolnum_fieldheader}
+{END resolnum_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field11}
 							</tr>
 															
 					{END grid_header}
@@ -1629,6 +1729,48 @@
 {END do_depsup_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field9}
+									{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$resolfecha_class}	"
+
+			data-field="resolfecha"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN resolfecha_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field" {$item_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="resolfecha" data-fieldname="resolfecha" data-default-width >
+{$resolfecha_value}
+</span>
+{END resolfecha_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field10}
+									{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$resolnum_class}	"
+
+			data-field="resolnum"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN resolnum_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field1" {$item_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="resolnum" data-fieldname="resolnum" data-default-width >
+{$resolnum_value}
+</span>
+{END resolnum_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
 							</tr>
 										
 											{END grid_row}
@@ -1835,6 +1977,36 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field9}
+									{BEGIN cellblock_grid_footcell_field10}
+	<td
+	
+	{$cell_grid_footcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$resolfecha_class}	"
+
+	
+	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="gedocumentos_ingresos_consumo_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field10}
+									{BEGIN cellblock_grid_footcell_field11}
+	<td
+	
+	{$cell_grid_footcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$resolnum_class}	"
+
+	
+	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="gedocumentos_ingresos_consumo_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field11}
 							</tr>
 					
 					</tfoot>

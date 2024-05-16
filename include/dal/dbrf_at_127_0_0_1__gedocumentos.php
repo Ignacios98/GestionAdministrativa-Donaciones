@@ -18,6 +18,8 @@ $dalTablegedocumentos["doclasedoc_id"] = array("type"=>3,"varname"=>"doclasedoc_
 $dalTablegedocumentos["docnomproveedor"] = array("type"=>200,"varname"=>"docnomproveedor", "name" => "docnomproveedor", "autoInc" => "0");
 $dalTablegedocumentos["docodregion"] = array("type"=>3,"varname"=>"docodregion", "name" => "docodregion", "autoInc" => "0");
 $dalTablegedocumentos["egreso"] = array("type"=>200,"varname"=>"egreso", "name" => "egreso", "autoInc" => "0");
+$dalTablegedocumentos["resolfecha"] = array("type"=>7,"varname"=>"resolfecha", "name" => "resolfecha", "autoInc" => "0");
+$dalTablegedocumentos["resolnum"] = array("type"=>200,"varname"=>"resolnum", "name" => "resolnum", "autoInc" => "0");
 $dalTablegedocumentos["sys_fecha"] = array("type"=>135,"varname"=>"sys_fecha", "name" => "sys_fecha", "autoInc" => "0");
 $dalTablegedocumentos["sys_user"] = array("type"=>200,"varname"=>"sys_user", "name" => "sys_user", "autoInc" => "0");
 $dalTablegedocumentos["doclasedoc_id"]["key"]=true;

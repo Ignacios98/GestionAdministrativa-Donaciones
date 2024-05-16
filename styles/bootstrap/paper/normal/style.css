@@ -13094,46 +13094,46 @@ However there might have been the case where dropdown showed up where it shouldn
   border-top-style: solid;
 }
 @media print, (min-width: 768px) {
-  .r-grid > .panel:not(.form-section) {
+  .r-grid > .panel {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.13), 0 1px 3px rgba(0, 0, 0, 0.2);
     display: table;
     width: 100%;
     border-width: 1px;
     border-style: solid;
   }
-  .r-grid > .panel:not(.form-section) > .panel-heading {
+  .r-grid > .panel > .panel-heading {
     background-color: #fff;
     color: inherit;
     border-bottom-width: 1px;
     border-bottom-style: solid;
   }
-  .r-grid > .panel:not(.form-section) > .panel-heading:before {
+  .r-grid > .panel > .panel-heading:before {
     content: #fff;
   }
-  .r-grid > .panel:not(.form-section) > .panel-footer {
+  .r-grid > .panel > .panel-footer {
     background-color: #fff;
     border-top-width: 1px;
     border-top-style: solid;
   }
 }
 @media screen and (max-width: 767px) {
-  .r-grid:not([data-responsive]) > .panel.panel:not(.form-section) {
+  .r-grid:not([data-responsive]) > .panel {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.13), 0 1px 3px rgba(0, 0, 0, 0.2);
     display: table;
     width: 100%;
     border-width: 1px;
     border-style: solid;
   }
-  .r-grid:not([data-responsive]) > .panel.panel:not(.form-section) > .panel-heading {
+  .r-grid:not([data-responsive]) > .panel > .panel-heading {
     background-color: #fff;
     color: inherit;
     border-bottom-width: 1px;
     border-bottom-style: solid;
   }
-  .r-grid:not([data-responsive]) > .panel.panel:not(.form-section) > .panel-heading:before {
+  .r-grid:not([data-responsive]) > .panel > .panel-heading:before {
     content: #fff;
   }
-  .r-grid:not([data-responsive]) > .panel.panel:not(.form-section) > .panel-footer {
+  .r-grid:not([data-responsive]) > .panel > .panel-footer {
     background-color: #fff;
     border-top-width: 1px;
     border-top-style: solid;

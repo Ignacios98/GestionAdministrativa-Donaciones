@@ -100,6 +100,12 @@ pdfDocument = {
 										{BEGIN col_grid_11}
 					"%",
 					{END col_grid_11}
+										{BEGIN col_grid_12}
+					"%",
+					{END col_grid_12}
+										{BEGIN col_grid_13}
+					"%",
+					{END col_grid_13}
 															],
 											heights: [ // first height for header part
 					"%",
@@ -270,7 +276,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_ingresos_consumo doclasedoc_id }","hidden":"{$item_hide_simple_grid_field1}","bold":true},
+			{"text":"{$jslabel gedocumentos_ingresos_consumo doclasedoc_id }","hidden":"{$item_hide_simple_grid_field6}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -328,7 +334,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_ingresos_consumo do_fechadoc }","hidden":"{$item_hide_simple_grid_field5}","bold":true},
+			{"text":"{$jslabel gedocumentos_ingresos_consumo do_fechadoc }","hidden":"{$item_hide_simple_grid_field10}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -357,7 +363,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_ingresos_consumo docodregion }","hidden":"{$item_hide_simple_grid_field6}","bold":true},
+			{"text":"{$jslabel gedocumentos_ingresos_consumo docodregion }","hidden":"{$item_hide_simple_grid_field13}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -386,7 +392,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_ingresos_consumo do_detalle }","hidden":"{$item_hide_simple_grid_field10}","bold":true},
+			{"text":"{$jslabel gedocumentos_ingresos_consumo do_detalle }","hidden":"{$item_hide_simple_grid_field14}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -415,7 +421,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_ingresos_consumo do_tipomov }","hidden":"{$item_hide_simple_grid_field13}","bold":true},
+			{"text":"{$jslabel gedocumentos_ingresos_consumo do_tipomov }","hidden":"{$item_hide_simple_grid_field15}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -444,7 +450,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_ingresos_consumo doclasedoc }","hidden":"{$item_hide_simple_grid_field14}","bold":true},
+			{"text":"{$jslabel gedocumentos_ingresos_consumo doclasedoc }","hidden":"{$item_hide_simple_grid_field19}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -473,7 +479,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_ingresos_consumo docnomproveedor }","hidden":"{$item_hide_simple_grid_field15}","bold":true},
+			{"text":"{$jslabel gedocumentos_ingresos_consumo docnomproveedor }","hidden":"{$item_hide_simple_grid_field20}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -502,7 +508,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_ingresos_consumo do_depsup }","hidden":"{$item_hide_simple_grid_field19}","bold":true},
+			{"text":"{$jslabel gedocumentos_ingresos_consumo do_depsup }","hidden":"{$item_hide_simple_grid_field21}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -531,7 +537,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_ingresos_consumo do_concepto }","hidden":"{$item_hide_simple_grid_field20}","bold":true},
+			{"text":"{$jslabel gedocumentos_ingresos_consumo do_concepto }","hidden":"{$item_hide_simple_grid_field22}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -560,7 +566,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_ingresos_consumo do_dep }","hidden":"{$item_hide_simple_grid_field21}","bold":true},
+			{"text":"{$jslabel gedocumentos_ingresos_consumo do_dep }","hidden":"{$item_hide_simple_grid_field23}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -570,6 +576,64 @@ pdfDocument = {
       },
 
 {END cellblock_grid_headcell_field10}
+																							{BEGIN cellblock_grid_headcell_field11}
+{
+	cellId: 'headcell_field11',
+	col:0,
+	row:0,
+			fieldName: 'resolfecha',
+				style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel gedocumentos_ingresos_consumo resolfecha }","hidden":"{$item_hide_simple_grid_field24}","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$resolfecha_align}',
+     
+      
+      },
+
+{END cellblock_grid_headcell_field11}
+																							{BEGIN cellblock_grid_headcell_field12}
+{
+	cellId: 'headcell_field12',
+	col:0,
+	row:0,
+			fieldName: 'resolnum',
+				style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel gedocumentos_ingresos_consumo resolnum }","hidden":"{$item_hide_simple_grid_field25}","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$resolnum_align}',
+     
+      
+      },
+
+{END cellblock_grid_headcell_field12}
 											],
 				{END row_grid_0}
 		
@@ -926,6 +990,64 @@ pdfDocument = {
       },
 
 {END cellblock_grid_cell_field10}
+																							{BEGIN cellblock_grid_cell_field11}
+{
+	cellId: 'cell_field11',
+	col:0,
+	row:0,
+			fieldName: 'resolfecha',
+				style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$resolfecha_pdfvalue},"hidden":"{$item_hide_simple_grid_field1}"},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$resolfecha_align}',
+     
+      
+      },
+
+{END cellblock_grid_cell_field11}
+																							{BEGIN cellblock_grid_cell_field12}
+{
+	cellId: 'cell_field12',
+	col:0,
+	row:0,
+			fieldName: 'resolnum',
+				style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$resolnum_pdfvalue},"hidden":"{$item_hide_simple_grid_field5}"},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$resolnum_align}',
+     
+      
+      },
+
+{END cellblock_grid_cell_field12}
 											],
 				{END row_grid_1}
 		
@@ -1247,6 +1369,58 @@ pdfDocument = {
       },
 
 {END cellblock_grid_footcell_field10}
+																							{BEGIN cellblock_grid_footcell_field11}
+{
+	cellId: 'footcell_field11',
+	col:0,
+	row:0,
+				style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_footcell_field11}
+																							{BEGIN cellblock_grid_footcell_field12}
+{
+	cellId: 'footcell_field12',
+	col:0,
+	row:0,
+				style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_footcell_field12}
 											],
 				{END row_grid_2}
 		

@@ -1246,14 +1246,6 @@ function GetDefaultValue($field, $ptype, $table="")
 	{
 		return $_SESSION["UserID"];
 	}
-				if($table=="gedocumentos_ingresos_consumo" && $field=="do_dep")
-	{
-		return 318;
-	}
-				if($table=="gedocumentos_ingresos_consumo" && $field=="do_depsup")
-	{
-		return 204;
-	}
 				if($table=="almovconsdia_ingresos" && $field=="geusuario")
 	{
 		return $_SESSION["UserID"];
@@ -1472,14 +1464,6 @@ function GetAutoUpdateValue($field, $ptype, $table="")
 				if($table=="gedocumentos_ingresos_consumo" && $field=="sys_user")
 	{
 		return $_SESSION["UserID"];
-	}
-				if($table=="gedocumentos_ingresos_consumo" && $field=="do_dep")
-	{
-		return 318;
-	}
-				if($table=="gedocumentos_ingresos_consumo" && $field=="do_depsup")
-	{
-		return 204;
 	}
 				if($table=="almovconsdia_ingresos" && $field=="geusuario")
 	{

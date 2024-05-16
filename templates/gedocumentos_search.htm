@@ -533,6 +533,50 @@
 </div>
 
 {END do_email_fieldblock}
+											
+{BEGIN resolnum_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_resolnum}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="resolnum{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field20" {$item_integrated_search_field20} data-pageid="{$pageid}" data-field="resolnum" data-fieldname="resolnum" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_resolnum}">
+		{$label gedocumentos resolnum }	</label>
+	<div class="r-search-option">
+		{$searchtype_resolnum}
+	</div>
+	<div class="r-search-field">
+		{$resolnum_editcontrol}	</div>
+	<div class="r-search-field">
+		{$resolnum_editcontrol1}
+	</div>
+	
+</div>
+
+{END resolnum_fieldblock}
+											
+{BEGIN resolfecha_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_resolfecha}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="resolfecha{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field21" {$item_integrated_search_field21} data-pageid="{$pageid}" data-field="resolfecha" data-fieldname="resolfecha" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_resolfecha}">
+		{$label gedocumentos resolfecha }	</label>
+	<div class="r-search-option">
+		{$searchtype_resolfecha}
+	</div>
+	<div class="r-search-field">
+		{$resolfecha_editcontrol}	</div>
+	<div class="r-search-field">
+		{$resolfecha_editcontrol1}
+	</div>
+	
+</div>
+
+{END resolfecha_fieldblock}
 	
 								</td>
 			{END cellblock_grid_c3}

@@ -203,7 +203,13 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"hidden":"{$item_hide_integrated_edit_field}","stack":[{"text":"{$jslabel gedocumentos_ingresos_consumo as_nroasiento_fk }","bold":true},{"text":{$as_nroasiento_fk_pdfvalue}}],"margin":[0,0,0,15]},
+			{"text":"{$jslabel gedocumentos_ingresos_consumo as_nroasiento_fk }","hidden":"{$item_hide_edit_field_label}","bold":true},
+				
+				
+			{"text":{$as_nroasiento_fk_pdfvalue},"hidden":"{$item_hide_integrated_edit_field}","bold":true,"font":"Roboto"},
+				
+				
+			{"text":{$as_nroasiento_fk_pdfvalue},"hidden":"{$item_hide_edit_field_tooltip}"},
 				
 		  ],
   "border": [ false, false, false, false ],
@@ -257,7 +263,13 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"hidden":"{$item_hide_integrated_edit_field5}","stack":[{"text":"{$jslabel gedocumentos_ingresos_consumo do_nrodoc }","bold":true},{"text":{$do_nrodoc_pdfvalue}}],"margin":[0,0,0,15]},
+			{"text":"{$jslabel gedocumentos_ingresos_consumo do_nrodoc }","hidden":"{$item_hide_edit_field_label1}","bold":true},
+				
+				
+			{"text":{$do_nrodoc_pdfvalue},"hidden":"{$item_hide_integrated_edit_field5}","bold":true,"font":"Roboto"},
+				
+				
+			{"text":{$do_nrodoc_pdfvalue},"hidden":"{$item_hide_edit_field_tooltip1}"},
 				
 		  ],
   "border": [ false, false, false, false ],
@@ -356,6 +368,91 @@ pdfDocument = {
 				{END row_grid_1}
 						{BEGIN row_grid_2}
 				[
+																{BEGIN cellblock_grid_c17}
+{
+	cellId: 'c17',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field16}","stack":[{"text":"{$jslabel gedocumentos_ingresos_consumo resolnum }","bold":true},{"text":{$resolnum_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c17}
+																							{BEGIN cellblock_grid_c18}
+{
+	cellId: 'c18',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field15}","stack":[{"text":"{$jslabel gedocumentos_ingresos_consumo resolfecha }","bold":true},{"text":{$resolfecha_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c18}
+																							{BEGIN cellblock_grid_c19}
+{
+	cellId: 'c19',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field14}","stack":[{"text":"{$jslabel gedocumentos_ingresos_consumo sys_user }","bold":true},{"text":{$sys_user_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c19}
+											],
+				{END row_grid_2}
+						{BEGIN row_grid_3}
+				[
 																{BEGIN cellblock_grid_c9}
 {
 	cellId: 'c9',
@@ -401,8 +498,8 @@ pdfDocument = {
 				compensateColspan: true
 			},
 							],
-				{END row_grid_2}
-						{BEGIN row_grid_3}
+				{END row_grid_3}
+						{BEGIN row_grid_4}
 				[
 																{BEGIN cellblock_grid_c10}
 {
@@ -486,8 +583,8 @@ pdfDocument = {
 
 {END cellblock_grid_c12}
 											],
-				{END row_grid_3}
-						{BEGIN row_grid_4}
+				{END row_grid_4}
+						{BEGIN row_grid_5}
 				[
 																{BEGIN cellblock_grid_c14}
 {
@@ -571,8 +668,8 @@ pdfDocument = {
 
 {END cellblock_grid_c16}
 											],
-				{END row_grid_4}
-						{BEGIN row_grid_5}
+				{END row_grid_5}
+						{BEGIN row_grid_6}
 				[
 																{BEGIN cellblock_grid_c13}
 {
@@ -619,87 +716,6 @@ pdfDocument = {
 				compensateColspan: true
 			},
 							],
-				{END row_grid_5}
-						{BEGIN row_grid_6}
-				[
-																{BEGIN cellblock_grid_c3}
-{
-	cellId: 'c3',
-	col:0,
-	row:0,
-			
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			
-	
-			"stack": [
-		
-				
-			{"hidden":"{$item_hide_integrated_edit_field14}","stack":[{"text":"{$jslabel gedocumentos_ingresos_consumo sys_user }","bold":true},{"text":{$sys_user_pdfvalue}}],"margin":[0,0,0,15]},
-				
-		  ],
-  "border": [ false, false, false, false ],
-              "alignment": 'left',
-     
-      
-      },
-
-{END cellblock_grid_c3}
-																							{BEGIN cellblock_grid_c4}
-{
-	cellId: 'c4',
-	col:0,
-	row:0,
-			
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			
-	
-			"stack": [
-		
-				'',
-	  ],
-  "border": [ false, false, false, false ],
-              "alignment": 'left',
-     
-      
-      },
-
-{END cellblock_grid_c4}
-																							{BEGIN cellblock_grid_c}
-{
-	cellId: 'c',
-	col:0,
-	row:0,
-			
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			
-	
-			"stack": [
-		
-				'',
-	  ],
-  "border": [ false, false, false, false ],
-              "alignment": 'left',
-     
-      
-      },
-
-{END cellblock_grid_c}
-											],
 				{END row_grid_6}
 		
 		]

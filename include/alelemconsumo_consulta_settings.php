@@ -393,7 +393,7 @@ $tdataalelemconsumo_consulta[".hideMobileList"] = array();
 	$fdata["GoodName"] = "eccuenta";
 	$fdata["ownerTable"] = "alelemconsumo";
 	$fdata["Label"] = GetFieldLabel("alelemconsumo_consulta","eccuenta");
-	$fdata["FieldType"] = 3;
+	$fdata["FieldType"] = 20;
 
 
 	

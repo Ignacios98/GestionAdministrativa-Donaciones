@@ -270,7 +270,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_egresos_consumo doclasedoc_id }","hidden":"{$item_hide_simple_grid_field1}","bold":true},
+			{"text":"{$jslabel gedocumentos_egresos_consumo doclasedoc_id }","hidden":"{$item_hide_simple_grid_field6}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -328,7 +328,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_egresos_consumo do_fechadoc }","hidden":"{$item_hide_simple_grid_field5}","bold":true},
+			{"text":"{$jslabel gedocumentos_egresos_consumo do_fechadoc }","hidden":"{$item_hide_simple_grid_field10}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -357,7 +357,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_egresos_consumo docodregion }","hidden":"{$item_hide_simple_grid_field6}","bold":true},
+			{"text":"{$jslabel gedocumentos_egresos_consumo docodregion }","hidden":"{$item_hide_simple_grid_field13}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -386,7 +386,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_egresos_consumo do_detalle }","hidden":"{$item_hide_simple_grid_field10}","bold":true},
+			{"text":"{$jslabel gedocumentos_egresos_consumo do_detalle }","hidden":"{$item_hide_simple_grid_field14}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -415,7 +415,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_egresos_consumo do_tipomov }","hidden":"{$item_hide_simple_grid_field13}","bold":true},
+			{"text":"{$jslabel gedocumentos_egresos_consumo do_tipomov }","hidden":"{$item_hide_simple_grid_field15}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -444,7 +444,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_egresos_consumo doclasedoc }","hidden":"{$item_hide_simple_grid_field14}","bold":true},
+			{"text":"{$jslabel gedocumentos_egresos_consumo doclasedoc }","hidden":"{$item_hide_simple_grid_field17}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -473,7 +473,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_egresos_consumo docnomproveedor }","hidden":"{$item_hide_simple_grid_field15}","bold":true},
+			{"text":"{$jslabel gedocumentos_egresos_consumo docnomproveedor }","hidden":"{$item_hide_simple_grid_field18}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -486,35 +486,6 @@ pdfDocument = {
 																							{BEGIN cellblock_grid_headcell_field8}
 {
 	cellId: 'headcell_field8',
-	col:0,
-	row:0,
-			fieldName: 'do_depsup',
-				style: 'headcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			
-	
-			"text": [
-		
-				
-			{"text":"{$jslabel gedocumentos_egresos_consumo do_depsup }","hidden":"{$item_hide_simple_grid_field19}","bold":true},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": '{$do_depsup_align}',
-     
-      
-      },
-
-{END cellblock_grid_headcell_field8}
-																							{BEGIN cellblock_grid_headcell_field9}
-{
-	cellId: 'headcell_field9',
 	col:0,
 	row:0,
 			fieldName: 'do_concepto',
@@ -531,7 +502,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_egresos_consumo do_concepto }","hidden":"{$item_hide_simple_grid_field20}","bold":true},
+			{"text":"{$jslabel gedocumentos_egresos_consumo do_concepto }","hidden":"{$item_hide_simple_grid_field19}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -540,13 +511,13 @@ pdfDocument = {
       
       },
 
-{END cellblock_grid_headcell_field9}
-																							{BEGIN cellblock_grid_headcell_field10}
+{END cellblock_grid_headcell_field8}
+																							{BEGIN cellblock_grid_headcell_field9}
 {
-	cellId: 'headcell_field10',
+	cellId: 'headcell_field9',
 	col:0,
 	row:0,
-			fieldName: 'do_dep',
+			fieldName: 'resolfecha',
 				style: 'headcell',
 		
 		
@@ -560,11 +531,40 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_egresos_consumo do_dep }","hidden":"{$item_hide_simple_grid_field21}","bold":true},
+			{"text":"{$jslabel gedocumentos_egresos_consumo resolfecha }","hidden":"{$item_hide_simple_grid_field20}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$do_dep_align}',
+              "alignment": '{$resolfecha_align}',
+     
+      
+      },
+
+{END cellblock_grid_headcell_field9}
+																							{BEGIN cellblock_grid_headcell_field10}
+{
+	cellId: 'headcell_field10',
+	col:0,
+	row:0,
+			fieldName: 'resolnum',
+				style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel gedocumentos_egresos_consumo resolnum }","hidden":"{$item_hide_simple_grid_field21}","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$resolnum_align}',
      
       
       },
@@ -844,35 +844,6 @@ pdfDocument = {
 	cellId: 'cell_field8',
 	col:0,
 	row:0,
-			fieldName: 'do_depsup',
-				style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			
-	
-			"text": [
-		
-				
-			{"text":{$do_depsup_pdfvalue},"hidden":"{$item_hide_simple_grid_field18}"},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": '{$do_depsup_align}',
-     
-      
-      },
-
-{END cellblock_grid_cell_field8}
-																							{BEGIN cellblock_grid_cell_field9}
-{
-	cellId: 'cell_field9',
-	col:0,
-	row:0,
 			fieldName: 'do_concepto',
 				style: 'bodycell',
 		
@@ -896,13 +867,13 @@ pdfDocument = {
       
       },
 
-{END cellblock_grid_cell_field9}
-																							{BEGIN cellblock_grid_cell_field10}
+{END cellblock_grid_cell_field8}
+																							{BEGIN cellblock_grid_cell_field9}
 {
-	cellId: 'cell_field10',
+	cellId: 'cell_field9',
 	col:0,
 	row:0,
-			fieldName: 'do_dep',
+			fieldName: 'resolfecha',
 				style: 'bodycell',
 		
 		
@@ -916,11 +887,40 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":{$do_dep_pdfvalue},"hidden":"{$item_hide_simple_grid_field17}"},
+			{"text":{$resolfecha_pdfvalue},"hidden":"{$item_hide_simple_grid_field1}"},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$do_dep_align}',
+              "alignment": '{$resolfecha_align}',
+     
+      
+      },
+
+{END cellblock_grid_cell_field9}
+																							{BEGIN cellblock_grid_cell_field10}
+{
+	cellId: 'cell_field10',
+	col:0,
+	row:0,
+			fieldName: 'resolnum',
+				style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$resolnum_pdfvalue},"hidden":"{$item_hide_simple_grid_field5}"},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$resolnum_align}',
      
       
       },
