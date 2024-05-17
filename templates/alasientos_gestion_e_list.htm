@@ -974,10 +974,10 @@
 		{BEGIN edit_column}
 {BEGIN edit_link}
 <span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
-	<a type="button" title="Editar" class="btn-link   
-	 glyphicon glyphicon-pencil" href="alasientos_gestion_e_edit.php?{$editlink}" {$editlink_attrs} title="Editar" >		
-				
-								</a>
+	<a type="button" title="Editar" class="btn btn-success   
+	" href="alasientos_gestion_e_edit.php?{$editlink}" {$editlink_attrs} title="Editar" >
+					<span class="glyphicon glyphicon-pencil"></span>
+										</a>
 </span>
 {END edit_link}
 {END edit_column}
@@ -1056,7 +1056,8 @@
 	<a  {$gedocumentos_egresos_consumo_link_attrs} data-short-details="gedocumentos_egresos_consumo"
 		class="{$gedocumentos_egresos_consumo_dlink_class}" 
 					>
-						Consumo		
+							<span class="glyphicon glyphicon-open-file"></span>
+						Documentos de salida		
 									{BEGIN gedocumentos_egresos_consumo_childcount}
 				<span class="details-badge badge gedocumentos_egresos_consumo_badge" {$gedocumentos_egresos_consumo_childnumber_attr}>
 					{$gedocumentos_egresos_consumo_childnumber}				

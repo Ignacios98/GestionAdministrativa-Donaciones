@@ -170,6 +170,11 @@ pdfDocument = {
 			"%",
 						{END row_grid_4}
 			 
+								{BEGIN row_grid_5}
+						
+			"%",
+						{END row_grid_5}
+			 
 				],
 	
 		body: [
@@ -550,7 +555,7 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"hidden":"{$item_hide_integrated_edit_field2}","stack":[{"text":"{$jslabel almovconsdia_egresos sys_user }","bold":true},{"text":{$sys_user_pdfvalue}}],"margin":[0,0,0,15]},
+			{"hidden":"{$item_hide_integrated_edit_field4}","stack":[{"text":"{$jslabel almovconsdia_egresos mcd_valunitant }","bold":true},{"text":{$mcd_valunitant_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
   "border": [ false, false, false, false ],
@@ -562,6 +567,87 @@ pdfDocument = {
 {END cellblock_grid_c23}
 											],
 				{END row_grid_4}
+						{BEGIN row_grid_5}
+				[
+																{BEGIN cellblock_grid_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field2}","stack":[{"text":"{$jslabel almovconsdia_egresos sys_user }","bold":true},{"text":{$sys_user_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c}
+																							{BEGIN cellblock_grid_c24}
+{
+	cellId: 'c24',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c24}
+																							{BEGIN cellblock_grid_c25}
+{
+	cellId: 'c25',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c25}
+											],
+				{END row_grid_5}
 		
 		]
 	}

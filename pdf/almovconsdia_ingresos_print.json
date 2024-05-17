@@ -116,6 +116,7 @@ pdfDocument = {
 		
 		widths: [
 								"*", 
+											"*", 
 					 ],	
 		
 	
@@ -136,11 +137,34 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"text":{$pdf_image images/logo_960x100.png undefined 0},"hidden":"{$item_hide_image}"},
+			{"text":{$pdf_image images/Logo-Colombia-Potencia-de-la-vida.png undefined 0},"hidden":"{$item_hide_image}"},
 				
 		  ],
   "border": [ false, false, false, false ],
               "alignment": 'left',
+     
+      
+      },
+
+																							{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"stack": [
+		
+				
+			{"text":{$pdf_image images/Logo_Unidad_Logo_Colombia_potencia2-1.png undefined 0},"hidden":"{$item_hide_image1}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
      
       
       },
@@ -154,6 +178,7 @@ pdfDocument = {
 			
 		
 	//	static colspan/rowspan
+					colSpan: 2,
 		
 			
 			
@@ -161,7 +186,7 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"text":"<h3><strong style=\"color: rgb(0, 102, 204);\">Ingreso de consumo</strong></h3>","hidden":"{$item_hide_text}","isHtml":true},
+			{"text":"<h3><strong style=\"color: rgb(0, 102, 204);\">Ingreso</strong></h3>","hidden":"{$item_hide_text}","isHtml":true},
 				
 				
 			{"text":"{$printtabheader_text}","hidden":"{$item_hide_print_subheader}"},
@@ -173,7 +198,14 @@ pdfDocument = {
       
       },
 
-											],
+																		{ 
+				cellId: 'c2',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
 						[
 																{
 	cellId: 'c4',
@@ -182,6 +214,7 @@ pdfDocument = {
 			
 		
 	//	static colspan/rowspan
+					colSpan: 2,
 		
 			
 			
@@ -200,7 +233,14 @@ pdfDocument = {
       
       },
 
-											],
+																		{ 
+				cellId: 'c4',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
 		
 		]
 	}

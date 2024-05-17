@@ -725,7 +725,7 @@ $cLoginTable = "global_users";
 $cDisplayNameField = "usr_nombresfull";
 $cUserNameField	= "Username";
 $cPasswordField	= "Password";
-$cUserGroupField = "Username";
+$cUserGroupField = "";
 $cEmailField = "usr_email";
 $cUserpicField = "userpic";
 $loginKeyFields= array();
@@ -760,9 +760,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "983_1715877701";
-$wizardBuildKey = "41619";
-$projectBuildNumber = "983";
+$projectBuildKey = "1016_1715915986";
+$wizardBuildKey = "41974";
+$projectBuildNumber = "1016";
 
 $mlang_messages = array();
 $mlang_charsets = array();
@@ -855,6 +855,7 @@ $tableCaptions["Spanish"]["Dashboard"] = "Dashboard";
 $tableCaptions["Spanish"]["cbs"] = "Cbs";
 $tableCaptions["Spanish"]["contractor_master"] = "Contractor Master";
 $tableCaptions["Spanish"]["contractor_type"] = "Contractor Type";
+$tableCaptions["Spanish"]["q_ctrl_saldo_consumo_consulta"] = "Q Ctrl Saldo Consumo Consulta";
 
 
 $globalEvents = new class_GlobalEvents;

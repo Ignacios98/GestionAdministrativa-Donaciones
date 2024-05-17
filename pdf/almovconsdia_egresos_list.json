@@ -88,6 +88,9 @@ pdfDocument = {
 										{BEGIN col_grid_7}
 					"%",
 					{END col_grid_7}
+										{BEGIN col_grid_8}
+					"%",
+					{END col_grid_8}
 															],
 											heights: [ // first height for header part
 					"%",
@@ -351,35 +354,6 @@ pdfDocument = {
       },
 
 {END cellblock_grid_headcell_checkbox}
-																							{BEGIN cellblock_grid_headcell_field}
-{
-	cellId: 'headcell_field',
-	col:0,
-	row:0,
-			fieldName: 'almovconsdia_id_fk',
-				style: 'headcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			
-	
-			"text": [
-		
-				
-			{"text":"{$jslabel almovconsdia_egresos almovconsdia_id_fk }","hidden":"{$item_hide_simple_grid_field}","bold":true},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": '{$almovconsdia_id_fk_align}',
-     
-      
-      },
-
-{END cellblock_grid_headcell_field}
 																							{BEGIN cellblock_grid_headcell_field1}
 {
 	cellId: 'headcell_field1',
@@ -525,6 +499,64 @@ pdfDocument = {
       },
 
 {END cellblock_grid_headcell_field5}
+																							{BEGIN cellblock_grid_headcell_field6}
+{
+	cellId: 'headcell_field6',
+	col:0,
+	row:0,
+			fieldName: 'mcd_valunitant',
+				style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel almovconsdia_egresos mcd_valunitant }","hidden":"{$item_hide_grid_field_label}","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$mcd_valunitant_align}',
+     
+      
+      },
+
+{END cellblock_grid_headcell_field6}
+																							{BEGIN cellblock_grid_headcell_field7}
+{
+	cellId: 'headcell_field7',
+	col:0,
+	row:0,
+			fieldName: 'mcd_valmovto',
+				style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel almovconsdia_egresos mcd_valmovto }","hidden":"{$item_hide_grid_field_label1}","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$mcd_valmovto_align}',
+     
+      
+      },
+
+{END cellblock_grid_headcell_field7}
 											],
 				{END row_grid_0}
 		
@@ -596,35 +628,6 @@ pdfDocument = {
       },
 
 {END cellblock_grid_cell_checkbox}
-																							{BEGIN cellblock_grid_cell_field}
-{
-	cellId: 'cell_field',
-	col:0,
-	row:0,
-			fieldName: 'almovconsdia_id_fk',
-				style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			
-	
-			"text": [
-		
-				
-			{"text":{$almovconsdia_id_fk_pdfvalue},"hidden":"{$item_hide_simple_grid_field1}"},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": '{$almovconsdia_id_fk_align}',
-     
-      
-      },
-
-{END cellblock_grid_cell_field}
 																							{BEGIN cellblock_grid_cell_field1}
 {
 	cellId: 'cell_field1',
@@ -770,6 +773,64 @@ pdfDocument = {
       },
 
 {END cellblock_grid_cell_field5}
+																							{BEGIN cellblock_grid_cell_field6}
+{
+	cellId: 'cell_field6',
+	col:0,
+	row:0,
+			fieldName: 'mcd_valunitant',
+				style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$mcd_valunitant_pdfvalue},"hidden":"{$item_hide_grid_field}"},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$mcd_valunitant_align}',
+     
+      
+      },
+
+{END cellblock_grid_cell_field6}
+																							{BEGIN cellblock_grid_cell_field7}
+{
+	cellId: 'cell_field7',
+	col:0,
+	row:0,
+			fieldName: 'mcd_valmovto',
+				style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$mcd_valmovto_pdfvalue},"hidden":"{$item_hide_grid_field1}"},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$mcd_valmovto_align}',
+     
+      
+      },
+
+{END cellblock_grid_cell_field7}
 											],
 				{END row_grid_1}
 		
@@ -831,32 +892,6 @@ pdfDocument = {
       },
 
 {END cellblock_grid_footcell_checkbox}
-																							{BEGIN cellblock_grid_footcell_field}
-{
-	cellId: 'footcell_field',
-	col:0,
-	row:0,
-				style: 'footcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			
-	
-			"text": [
-		
-				'',
-	  ],
-  "border": [ true, true, true, true ],
-              "alignment": 'left',
-     
-      
-      },
-
-{END cellblock_grid_footcell_field}
 																							{BEGIN cellblock_grid_footcell_field1}
 {
 	cellId: 'footcell_field1',
@@ -995,6 +1030,66 @@ pdfDocument = {
       },
 
 {END cellblock_grid_footcell_field5}
+																							{BEGIN cellblock_grid_footcell_field6}
+{
+	cellId: 'footcell_field6',
+	col:0,
+	row:0,
+				style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_footcell_field6}
+																							{BEGIN cellblock_grid_footcell_field7}
+{
+	cellId: 'footcell_field7',
+	col:0,
+	row:0,
+			fieldName: 'mcd_valmovto',
+				style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{BEGIN mcd_valmovto_fieldfootercolumn}
+			{BEGIN mcd_valmovto_showtotal}
+				{ text: 'Total $  ' },
+				{"text":{$mcd_valmovto_total},"hidden":"{$item_hide_grid_field_totals1}"}
+			{END mcd_valmovto_showtotal}
+		{END mcd_valmovto_fieldfootercolumn},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$mcd_valmovto_align}',
+     
+      
+      },
+
+{END cellblock_grid_footcell_field7}
 											],
 				{END row_grid_2}
 		

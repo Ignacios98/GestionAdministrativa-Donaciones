@@ -337,6 +337,8 @@ function checkTableName($shortTName )
 		return true;
 	if ("contractor_type" == $shortTName )
 		return true;
+	if ("q_ctrl_saldo_consumo_consulta" == $shortTName )
+		return true;
 	return false;
 }
 
@@ -990,6 +992,15 @@ function GetTablesList($pdfMode = false)
 	if( $tableAvailable ) {
 		$arr[]="contractor_type";
 	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("q_ctrl_saldo_consumo_consulta");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="q_ctrl_saldo_consumo_consulta";
+	}
 	return $arr;
 }
 
@@ -1066,6 +1077,7 @@ function GetTablesListWithoutSecurity()
 	$arr[]="cbs";
 	$arr[]="contractor_master";
 	$arr[]="contractor_type";
+	$arr[]="q_ctrl_saldo_consumo_consulta";
 	return $arr;
 }
 
@@ -2018,6 +2030,11 @@ function GetUserPermissionsStatic( $table )
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="contractor_type" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="q_ctrl_saldo_consumo_consulta" )
 	{
 //	default permissions
 		return "ADESPI".$extraPerm;
@@ -4042,11 +4059,11 @@ function GetBaseScriptsForPage($isDisplayLoading, $additionalScripts = "", $cust
 {
 	global $projectBuildKey;
 	$result = "";
-	$result .= "<script type=\"text/javascript\" src=\"".GetRootPathForResources("include/loadfirst.js?41619")."\"></script>";
+	$result .= "<script type=\"text/javascript\" src=\"".GetRootPathForResources("include/loadfirst.js?41974")."\"></script>";
 
 
 	$result .= $additionalScripts;
-	$result .= "<script type=\"text/javascript\" src=\"".GetRootPathForResources("include/lang/".getLangFileName(mlang_getcurrentlang()).".js?41619")."\"></script>";
+	$result .= "<script type=\"text/javascript\" src=\"".GetRootPathForResources("include/lang/".getLangFileName(mlang_getcurrentlang()).".js?41974")."\"></script>";
 
 
 

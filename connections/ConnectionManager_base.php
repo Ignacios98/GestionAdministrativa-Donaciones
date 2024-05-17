@@ -309,6 +309,7 @@ class ConnectionManager_Base
 		$connectionsIds["cbs"] = "dbrf_at_127_0_0_1";
 		$connectionsIds["contractor_master"] = "dbct_at_127_0_0_1";
 		$connectionsIds["contractor_type"] = "dbct_at_127_0_0_1";
+		$connectionsIds["q_ctrl_saldo_consumo_consulta"] = "dbrf_at_127_0_0_1";
 
 		$this->_tablesConnectionIds = &$connectionsIds;
 	}

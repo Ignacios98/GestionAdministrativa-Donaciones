@@ -130,16 +130,16 @@ $pages = $tdatagedocumentos_egresos_consumo[".defaultPages"];
 
 if( $pages[PAGE_EDIT] ) {
 	$tdatagedocumentos_egresos_consumo[".edit"] = true;
-	$tdatagedocumentos_egresos_consumo[".afterEditAction"] = 1;
+	$tdatagedocumentos_egresos_consumo[".afterEditAction"] = 0;
 	$tdatagedocumentos_egresos_consumo[".closePopupAfterEdit"] = 1;
-	$tdatagedocumentos_egresos_consumo[".afterEditActionDetTable"] = "";
+	$tdatagedocumentos_egresos_consumo[".afterEditActionDetTable"] = "almovconsdia_egresos";
 }
 
 if( $pages[PAGE_ADD] ) {
 $tdatagedocumentos_egresos_consumo[".add"] = true;
 $tdatagedocumentos_egresos_consumo[".afterAddAction"] = 0;
 $tdatagedocumentos_egresos_consumo[".closePopupAfterAdd"] = 1;
-$tdatagedocumentos_egresos_consumo[".afterAddActionDetTable"] = "Detail tables not found!";
+$tdatagedocumentos_egresos_consumo[".afterAddActionDetTable"] = "almovconsdia_egresos";
 }
 
 if( $pages[PAGE_LIST] ) {
@@ -197,7 +197,7 @@ $tdatagedocumentos_egresos_consumo[".addPageEvents"] = false;
 $tdatagedocumentos_egresos_consumo[".isUseTimeForSearch"] = false;
 
 
-$tdatagedocumentos_egresos_consumo[".badgeColor"] = "b22222";
+$tdatagedocumentos_egresos_consumo[".badgeColor"] = "ffc107";
 
 
 $tdatagedocumentos_egresos_consumo[".allSearchFields"] = array();
@@ -2981,7 +2981,8 @@ $tdatagedocumentos_egresos_consumo[".hideMobileList"] = array();
 // End Lookup Settings
 
 
-	
+		$edata["IsRequired"] = true;
+
 	
 	
 	
@@ -3001,7 +3002,8 @@ $tdatagedocumentos_egresos_consumo[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-							
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
 	
 //	End validation
 
@@ -3148,7 +3150,8 @@ $tdatagedocumentos_egresos_consumo[".hideMobileList"] = array();
 // End Lookup Settings
 
 
-	
+		$edata["IsRequired"] = true;
+
 	
 	
 	
@@ -3168,7 +3171,8 @@ $tdatagedocumentos_egresos_consumo[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-							
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
 	
 //	End validation
 
@@ -3296,7 +3300,7 @@ $tdatagedocumentos_egresos_consumo[".hideMobileList"] = array();
 	
 	
 		$edata["DateEditType"] = 2;
-	$edata["InitialYearFactor"] = 0;
+	$edata["InitialYearFactor"] = 10;
 	$edata["LastYearFactor"] = 10;
 
 	
@@ -3425,8 +3429,7 @@ $tdatagedocumentos_egresos_consumo[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -3449,8 +3452,7 @@ $tdatagedocumentos_egresos_consumo[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+	
 	
 //	End validation
 

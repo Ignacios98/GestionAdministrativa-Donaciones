@@ -1056,7 +1056,8 @@
 	<a  {$gedocumentos_ingresos_consumo_link_attrs} data-short-details="gedocumentos_ingresos_consumo"
 		class="{$gedocumentos_ingresos_consumo_dlink_class}" 
 					>
-						Consumo		
+							<span class="fa fa-files-o"></span>
+						Documentos		
 									{BEGIN gedocumentos_ingresos_consumo_childcount}
 				<span class="details-badge badge gedocumentos_ingresos_consumo_badge" {$gedocumentos_ingresos_consumo_childnumber_attr}>
 					{$gedocumentos_ingresos_consumo_childnumber}				
@@ -1127,7 +1128,7 @@
 
 	 
 		{BEGIN ascodalmacen_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ascodalmacen" data-fieldname="ascodalmacen" data-default-width >
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-page="alasientos_gestion_list" data-record-id="{$recId}" data-field="ascodalmacen" data-fieldname="ascodalmacen" data-default-width >
 {$ascodalmacen_value}
 </span>
 {END ascodalmacen_fieldcolumn}	

@@ -30,6 +30,7 @@ $dalTablecontractor_master["contractor_phone"] = array("type"=>200,"varname"=>"c
 $dalTablecontractor_master["contractor_picmonetaria_file"] = array("type"=>200,"varname"=>"contractor_picmonetaria_file", "name" => "contractor_picmonetaria_file", "autoInc" => "0");
 $dalTablecontractor_master["contractor_pwd"] = array("type"=>200,"varname"=>"contractor_pwd", "name" => "contractor_pwd", "autoInc" => "0");
 $dalTablecontractor_master["contractor_sup_jerarquico"] = array("type"=>3,"varname"=>"contractor_sup_jerarquico", "name" => "contractor_sup_jerarquico", "autoInc" => "0");
+$dalTablecontractor_master["contractor_tiposangre"] = array("type"=>200,"varname"=>"contractor_tiposangre", "name" => "contractor_tiposangre", "autoInc" => "0");
 $dalTablecontractor_master["contractor_type"] = array("type"=>200,"varname"=>"contractor_type", "name" => "contractor_type", "autoInc" => "0");
 $dalTablecontractor_master["ct_fecha_nacimiento"] = array("type"=>7,"varname"=>"ct_fecha_nacimiento", "name" => "ct_fecha_nacimiento", "autoInc" => "0");
 $dalTablecontractor_master["ct_fecha_nacimiento_mun"] = array("type"=>200,"varname"=>"ct_fecha_nacimiento_mun", "name" => "ct_fecha_nacimiento_mun", "autoInc" => "0");
@@ -43,6 +44,9 @@ $dalTablecontractor_master["dem_profesion"] = array("type"=>200,"varname"=>"dem_
 $dalTablecontractor_master["emergencia"] = array("type"=>200,"varname"=>"emergencia", "name" => "emergencia", "autoInc" => "0");
 $dalTablecontractor_master["enlace_sigep"] = array("type"=>200,"varname"=>"enlace_sigep", "name" => "enlace_sigep", "autoInc" => "0");
 $dalTablecontractor_master["factura"] = array("type"=>16,"varname"=>"factura", "name" => "factura", "autoInc" => "0");
+$dalTablecontractor_master["fp_code"] = array("type"=>200,"varname"=>"fp_code", "name" => "fp_code", "autoInc" => "0");
+$dalTablecontractor_master["fp_fecha"] = array("type"=>7,"varname"=>"fp_fecha", "name" => "fp_fecha", "autoInc" => "0");
+$dalTablecontractor_master["fp_file"] = array("type"=>200,"varname"=>"fp_file", "name" => "fp_file", "autoInc" => "0");
 $dalTablecontractor_master["groupid"] = array("type"=>200,"varname"=>"groupid", "name" => "groupid", "autoInc" => "0");
 $dalTablecontractor_master["iva_regimen"] = array("type"=>16,"varname"=>"iva_regimen", "name" => "iva_regimen", "autoInc" => "0");
 $dalTablecontractor_master["pin"] = array("type"=>200,"varname"=>"pin", "name" => "pin", "autoInc" => "0");

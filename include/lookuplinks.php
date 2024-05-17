@@ -1076,13 +1076,20 @@ function InitLookupLinks()
 			$lookupTableLinks["geclasedocto"]["almovdevdia.mddclasedoc"] = array();
 		}
 		$lookupTableLinks["geclasedocto"]["almovdevdia.mddclasedoc"]["edit"] = array("table" => "almovdevdia", "field" => "mddclasedoc", "page" => "edit");
-		if( !isset( $lookupTableLinks["almovconsdia_consulta"] ) ) {
-			$lookupTableLinks["almovconsdia_consulta"] = array();
+		if( !isset( $lookupTableLinks["q_ctrl_saldo_consumo_consulta"] ) ) {
+			$lookupTableLinks["q_ctrl_saldo_consumo_consulta"] = array();
 		}
-		if( !isset( $lookupTableLinks["almovconsdia_consulta"]["almovconsdia_egresos.almovconsdia_id_fk"] )) {
-			$lookupTableLinks["almovconsdia_consulta"]["almovconsdia_egresos.almovconsdia_id_fk"] = array();
+		if( !isset( $lookupTableLinks["q_ctrl_saldo_consumo_consulta"]["almovconsdia_egresos.almovconsdia_id_fk"] )) {
+			$lookupTableLinks["q_ctrl_saldo_consumo_consulta"]["almovconsdia_egresos.almovconsdia_id_fk"] = array();
 		}
-		$lookupTableLinks["almovconsdia_consulta"]["almovconsdia_egresos.almovconsdia_id_fk"]["edit"] = array("table" => "almovconsdia_egresos", "field" => "almovconsdia_id_fk", "page" => "edit");
+		$lookupTableLinks["q_ctrl_saldo_consumo_consulta"]["almovconsdia_egresos.almovconsdia_id_fk"]["edit"] = array("table" => "almovconsdia_egresos", "field" => "almovconsdia_id_fk", "page" => "edit");
+		if( !isset( $lookupTableLinks["inv_almacen"] ) ) {
+			$lookupTableLinks["inv_almacen"] = array();
+		}
+		if( !isset( $lookupTableLinks["inv_almacen"]["almovconsdia_egresos.mcdalmacen"] )) {
+			$lookupTableLinks["inv_almacen"]["almovconsdia_egresos.mcdalmacen"] = array();
+		}
+		$lookupTableLinks["inv_almacen"]["almovconsdia_egresos.mcdalmacen"]["edit"] = array("table" => "almovconsdia_egresos", "field" => "mcdalmacen", "page" => "edit");
 		if( !isset( $lookupTableLinks["alelemconsumo_consulta"] ) ) {
 			$lookupTableLinks["alelemconsumo_consulta"] = array();
 		}
@@ -1118,6 +1125,13 @@ function InitLookupLinks()
 			$lookupTableLinks["contractor_type"]["contractor_master.contractor_type"] = array();
 		}
 		$lookupTableLinks["contractor_type"]["contractor_master.contractor_type"]["edit"] = array("table" => "contractor_master", "field" => "contractor_type", "page" => "edit");
+		if( !isset( $lookupTableLinks["inv_almacen"] ) ) {
+			$lookupTableLinks["inv_almacen"] = array();
+		}
+		if( !isset( $lookupTableLinks["inv_almacen"]["q_ctrl_saldo_consumo_consulta.mcdalmacen"] )) {
+			$lookupTableLinks["inv_almacen"]["q_ctrl_saldo_consumo_consulta.mcdalmacen"] = array();
+		}
+		$lookupTableLinks["inv_almacen"]["q_ctrl_saldo_consumo_consulta.mcdalmacen"]["edit"] = array("table" => "q_ctrl_saldo_consumo_consulta", "field" => "mcdalmacen", "page" => "edit");
 }
 
 ?>

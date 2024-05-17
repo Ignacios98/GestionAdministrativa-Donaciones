@@ -757,7 +757,16 @@
 <div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
 {END message_block}	<style>
 @media screen and (max-width: 767px) {
-								[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="mcdnomelem"]:before {
+					[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="mcdalmacen"]:before {
+		content: "{$label almovconsdia_consulta mcdalmacen}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="mcdcuenta"]:before {
+		content: "{$label almovconsdia_consulta mcdcuenta}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="mcdcodelem"]:before {
+		content: "{$label almovconsdia_consulta mcdcodelem}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="mcdnomelem"]:before {
 		content: "{$label almovconsdia_consulta mcdnomelem}";
 	}
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="mcd_cantmovto"]:before {
@@ -833,11 +842,79 @@
 	{$cell_grid_headcell_field}
 	{$recordattrs}
 	class="
+		 r-ori-vert		 {$mcdcuenta_class}	"
+
+			data-field="mcdcuenta"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN mcdcuenta_fieldheadercolumn}
+	{BEGIN mcdcuenta_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mcdcuenta" data-fieldname="mcdcuenta" 
+
+			{$mcdcuenta_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label almovconsdia_consulta mcdcuenta }</span>
+					{$arrow_icon_mcdcuenta}
+			</span>
+	</span>
+	{END mcdcuenta_fieldheader}
+{END mcdcuenta_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+									{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$mcdcodelem_class}	"
+
+			data-field="mcdcodelem"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN mcdcodelem_fieldheadercolumn}
+	{BEGIN mcdcodelem_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mcdcodelem" data-fieldname="mcdcodelem" 
+
+			{$mcdcodelem_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label almovconsdia_consulta mcdcodelem }</span>
+					{$arrow_icon_mcdcodelem}
+			</span>
+	</span>
+	{END mcdcodelem_fieldheader}
+{END mcdcodelem_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+									{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
 		 r-ori-vert		 {$mcdnomelem_class}	"
 
 			data-field="mcdnomelem"
 	
-	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -860,25 +937,25 @@
 
 	
 	</th>
-	{END cellblock_grid_headcell_field}
-									{BEGIN cellblock_grid_headcell_field1}
+	{END cellblock_grid_headcell_field2}
+									{BEGIN cellblock_grid_headcell_field3}
 	<th
 	
-	{$cell_grid_headcell_field1}
+	{$cell_grid_headcell_field3}
 	{$recordattrs}
 	class="
 		 r-ori-vert		 {$mcd_cantmovto_class}	"
 
 			data-field="mcd_cantmovto"
 	
-	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
 		{BEGIN mcd_cantmovto_fieldheadercolumn}
 	{BEGIN mcd_cantmovto_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mcd_cantmovto" data-fieldname="mcd_cantmovto" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mcd_cantmovto" data-fieldname="mcd_cantmovto" 
 
 			{$mcd_cantmovto_orderlinkattrs}
 	
@@ -894,18 +971,18 @@
 
 	
 	</th>
-	{END cellblock_grid_headcell_field1}
-									{BEGIN cellblock_grid_headcell_field2}
+	{END cellblock_grid_headcell_field3}
+									{BEGIN cellblock_grid_headcell_field4}
 	<th
 	
-	{$cell_grid_headcell_field2}
+	{$cell_grid_headcell_field4}
 	{$recordattrs}
 	class="
 		 r-ori-vert		 {$mcd_saldant_class}	"
 
 			data-field="mcd_saldant"
 	
-	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -928,25 +1005,25 @@
 
 	
 	</th>
-	{END cellblock_grid_headcell_field2}
-									{BEGIN cellblock_grid_headcell_field3}
+	{END cellblock_grid_headcell_field4}
+									{BEGIN cellblock_grid_headcell_field5}
 	<th
 	
-	{$cell_grid_headcell_field3}
+	{$cell_grid_headcell_field5}
 	{$recordattrs}
 	class="
 		 r-ori-vert		 {$mcd_valunitant_class}	"
 
 			data-field="mcd_valunitant"
 	
-	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
 		{BEGIN mcd_valunitant_fieldheadercolumn}
 	{BEGIN mcd_valunitant_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mcd_valunitant" data-fieldname="mcd_valunitant" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mcd_valunitant" data-fieldname="mcd_valunitant" 
 
 			{$mcd_valunitant_orderlinkattrs}
 	
@@ -962,25 +1039,25 @@
 
 	
 	</th>
-	{END cellblock_grid_headcell_field3}
-									{BEGIN cellblock_grid_headcell_field4}
+	{END cellblock_grid_headcell_field5}
+									{BEGIN cellblock_grid_headcell_field6}
 	<th
 	
-	{$cell_grid_headcell_field4}
+	{$cell_grid_headcell_field6}
 	{$recordattrs}
 	class="
 		 r-ori-vert		 {$mcd_valmovto_class}	"
 
 			data-field="mcd_valmovto"
 	
-	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
 		{BEGIN mcd_valmovto_fieldheadercolumn}
 	{BEGIN mcd_valmovto_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mcd_valmovto" data-fieldname="mcd_valmovto" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mcd_valmovto" data-fieldname="mcd_valmovto" 
 
 			{$mcd_valmovto_orderlinkattrs}
 	
@@ -996,25 +1073,25 @@
 
 	
 	</th>
-	{END cellblock_grid_headcell_field4}
-									{BEGIN cellblock_grid_headcell_field5}
+	{END cellblock_grid_headcell_field6}
+									{BEGIN cellblock_grid_headcell_field7}
 	<th
 	
-	{$cell_grid_headcell_field5}
+	{$cell_grid_headcell_field7}
 	{$recordattrs}
 	class="
 		 r-ori-vert		 {$mcd_salddisponible_class}	"
 
 			data-field="mcd_salddisponible"
 	
-	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
 		{BEGIN mcd_salddisponible_fieldheadercolumn}
 	{BEGIN mcd_salddisponible_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mcd_salddisponible" data-fieldname="mcd_salddisponible" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mcd_salddisponible" data-fieldname="mcd_salddisponible" 
 
 			{$mcd_salddisponible_orderlinkattrs}
 	
@@ -1030,7 +1107,41 @@
 
 	
 	</th>
-	{END cellblock_grid_headcell_field5}
+	{END cellblock_grid_headcell_field7}
+									{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$mcdalmacen_class}	"
+
+			data-field="mcdalmacen"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN mcdalmacen_fieldheadercolumn}
+	{BEGIN mcdalmacen_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mcdalmacen" data-fieldname="mcdalmacen" 
+
+			{$mcdalmacen_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label almovconsdia_consulta mcdalmacen }</span>
+					{$arrow_icon_mcdalmacen}
+			</span>
+	</span>
+	{END mcdalmacen_fieldheader}
+{END mcdalmacen_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
 							</tr>
 															
 					{END grid_header}
@@ -1110,11 +1221,53 @@
 	{$cell_grid_cell_field}
 	{$recordattrs}
 	class="
+		 r-ori-vert		 {$mcdcuenta_class}	"
+
+			data-field="mcdcuenta"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN mcdcuenta_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mcdcuenta" data-fieldname="mcdcuenta" data-default-width >
+{$mcdcuenta_value}
+</span>
+{END mcdcuenta_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+									{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$mcdcodelem_class}	"
+
+			data-field="mcdcodelem"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN mcdcodelem_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mcdcodelem" data-fieldname="mcdcodelem" data-default-width >
+{$mcdcodelem_value}
+</span>
+{END mcdcodelem_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+									{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
 		 r-ori-vert		 {$mcdnomelem_class}	"
 
 			data-field="mcdnomelem"
 	
-	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1124,18 +1277,18 @@
 </span>
 {END mcdnomelem_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field}
-									{BEGIN cellblock_grid_cell_field1}
+	{END cellblock_grid_cell_field2}
+									{BEGIN cellblock_grid_cell_field3}
 	<td
 	
-	{$cell_grid_cell_field1}
+	{$cell_grid_cell_field3}
 	{$recordattrs}
 	class="
 		 r-ori-vert		 {$mcd_cantmovto_class}	"
 
 			data-field="mcd_cantmovto"
 	
-	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1145,18 +1298,18 @@
 </span>
 {END mcd_cantmovto_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field1}
-									{BEGIN cellblock_grid_cell_field2}
+	{END cellblock_grid_cell_field3}
+									{BEGIN cellblock_grid_cell_field4}
 	<td
 	
-	{$cell_grid_cell_field2}
+	{$cell_grid_cell_field4}
 	{$recordattrs}
 	class="
 		 r-ori-vert		 {$mcd_saldant_class}	"
 
 			data-field="mcd_saldant"
 	
-	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1166,18 +1319,18 @@
 </span>
 {END mcd_saldant_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field2}
-									{BEGIN cellblock_grid_cell_field3}
+	{END cellblock_grid_cell_field4}
+									{BEGIN cellblock_grid_cell_field5}
 	<td
 	
-	{$cell_grid_cell_field3}
+	{$cell_grid_cell_field5}
 	{$recordattrs}
 	class="
 		 r-ori-vert		 {$mcd_valunitant_class}	"
 
 			data-field="mcd_valunitant"
 	
-	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1187,18 +1340,18 @@
 </span>
 {END mcd_valunitant_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field3}
-									{BEGIN cellblock_grid_cell_field4}
+	{END cellblock_grid_cell_field5}
+									{BEGIN cellblock_grid_cell_field6}
 	<td
 	
-	{$cell_grid_cell_field4}
+	{$cell_grid_cell_field6}
 	{$recordattrs}
 	class="
 		 r-ori-vert		 {$mcd_valmovto_class}	"
 
 			data-field="mcd_valmovto"
 	
-	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1208,18 +1361,18 @@
 </span>
 {END mcd_valmovto_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field4}
-									{BEGIN cellblock_grid_cell_field5}
+	{END cellblock_grid_cell_field6}
+									{BEGIN cellblock_grid_cell_field7}
 	<td
 	
-	{$cell_grid_cell_field5}
+	{$cell_grid_cell_field7}
 	{$recordattrs}
 	class="
 		 r-ori-vert		 {$mcd_salddisponible_class}	"
 
 			data-field="mcd_salddisponible"
 	
-	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1229,7 +1382,28 @@
 </span>
 {END mcd_salddisponible_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field5}
+	{END cellblock_grid_cell_field7}
+									{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$mcdalmacen_class}	"
+
+			data-field="mcdalmacen"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN mcdalmacen_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mcdalmacen" data-fieldname="mcdalmacen" data-default-width >
+{$mcdalmacen_value}
+</span>
+{END mcdalmacen_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
 							</tr>
 										
 											{END grid_row}
@@ -1279,7 +1453,7 @@
 	{$cell_grid_footcell_field}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$mcdnomelem_class}	"
+		 r-ori-vert		 {$mcdcuenta_class}	"
 
 	
 	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="almovconsdia_consulta_list"		data-control-cell
@@ -1295,21 +1469,12 @@
 	{$cell_grid_footcell_field1}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$mcd_cantmovto_class}	"
+		 r-ori-vert		 {$mcdcodelem_class}	"
 
-			data-field="mcd_cantmovto"
 	
-	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="almovconsdia_consulta_list"	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="almovconsdia_consulta_list"		data-control-cell
+	
 	>
-
-	 
-		{BEGIN mcd_cantmovto_fieldfootercolumn}
-{BEGIN mcd_cantmovto_showtotal}
-<span data-itemtype="grid_field_totals" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mcd_cantmovto" data-fieldname="mcd_cantmovto">
-	Total	{$mcd_cantmovto_total}
-</span>
-{END mcd_cantmovto_showtotal}
-{END mcd_cantmovto_fieldfootercolumn}
 
 	
 	</td>
@@ -1320,10 +1485,11 @@
 	{$cell_grid_footcell_field2}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$mcd_saldant_class}	"
+		 r-ori-vert		 {$mcdnomelem_class}	"
 
 	
-	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="almovconsdia_consulta_list"	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="almovconsdia_consulta_list"		data-control-cell
+	
 	>
 
 	
@@ -1335,21 +1501,21 @@
 	{$cell_grid_footcell_field3}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$mcd_valunitant_class}	"
+		 r-ori-vert		 {$mcd_cantmovto_class}	"
 
-			data-field="mcd_valunitant"
+			data-field="mcd_cantmovto"
 	
 	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="almovconsdia_consulta_list"	
 	>
 
 	 
-		{BEGIN mcd_valunitant_fieldfootercolumn}
-{BEGIN mcd_valunitant_showtotal}
-<span data-itemtype="grid_field_totals" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mcd_valunitant" data-fieldname="mcd_valunitant">
-	Total	{$mcd_valunitant_total}
+		{BEGIN mcd_cantmovto_fieldfootercolumn}
+{BEGIN mcd_cantmovto_showtotal}
+<span data-itemtype="grid_field_totals" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mcd_cantmovto" data-fieldname="mcd_cantmovto">
+	Total	{$mcd_cantmovto_total}
 </span>
-{END mcd_valunitant_showtotal}
-{END mcd_valunitant_fieldfootercolumn}
+{END mcd_cantmovto_showtotal}
+{END mcd_cantmovto_fieldfootercolumn}
 
 	
 	</td>
@@ -1360,21 +1526,11 @@
 	{$cell_grid_footcell_field4}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$mcd_valmovto_class}	"
+		 r-ori-vert		 {$mcd_saldant_class}	"
 
-			data-field="mcd_valmovto"
 	
 	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="almovconsdia_consulta_list"	
 	>
-
-	 
-		{BEGIN mcd_valmovto_fieldfootercolumn}
-{BEGIN mcd_valmovto_showtotal}
-<span data-itemtype="grid_field_totals" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mcd_valmovto" data-fieldname="mcd_valmovto">
-	Total	{$mcd_valmovto_total}
-</span>
-{END mcd_valmovto_showtotal}
-{END mcd_valmovto_fieldfootercolumn}
 
 	
 	</td>
@@ -1385,15 +1541,80 @@
 	{$cell_grid_footcell_field5}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$mcd_salddisponible_class}	"
+		 r-ori-vert		 {$mcd_valunitant_class}	"
 
+			data-field="mcd_valunitant"
 	
 	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="almovconsdia_consulta_list"	
 	>
 
+	 
+		{BEGIN mcd_valunitant_fieldfootercolumn}
+{BEGIN mcd_valunitant_showtotal}
+<span data-itemtype="grid_field_totals" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mcd_valunitant" data-fieldname="mcd_valunitant">
+	Total	{$mcd_valunitant_total}
+</span>
+{END mcd_valunitant_showtotal}
+{END mcd_valunitant_fieldfootercolumn}
+
 	
 	</td>
 	{END cellblock_grid_footcell_field5}
+									{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$mcd_valmovto_class}	"
+
+			data-field="mcd_valmovto"
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="almovconsdia_consulta_list"	
+	>
+
+	 
+		{BEGIN mcd_valmovto_fieldfootercolumn}
+{BEGIN mcd_valmovto_showtotal}
+<span data-itemtype="grid_field_totals" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mcd_valmovto" data-fieldname="mcd_valmovto">
+	Total	{$mcd_valmovto_total}
+</span>
+{END mcd_valmovto_showtotal}
+{END mcd_valmovto_fieldfootercolumn}
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+									{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$mcd_salddisponible_class}	"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="almovconsdia_consulta_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
+									{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$mcdalmacen_class}	"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="almovconsdia_consulta_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
 							</tr>
 					
 					</tfoot>

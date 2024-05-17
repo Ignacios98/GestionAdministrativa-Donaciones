@@ -515,6 +515,9 @@ class DataSourceTable extends DataSource {
 	 * always returns string
 	 */
 	protected function prepareSQLValue( $type, $value ) {
+		if( $type === 11 && $this->connection->dbType === nDATABASE_PostgreSQL ) {
+			return $value ? 'true' : 'false';
+		}
 		if( !DataSourceTable::validateSQLValue( $type, $value ) ) {
 			return 'NULL';
 		}

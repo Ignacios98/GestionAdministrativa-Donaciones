@@ -624,6 +624,10 @@ class AuditTrailTable
 		{
 			return false;
 		}
+		if($table=="q_ctrl_saldo_consumo_consulta")
+		{
+			return false;
+		}
 	}
 
 	protected function insert($datetime, $ip, $user, $table, $action, $description)
@@ -1197,6 +1201,10 @@ class AuditTrailFile
 			return false;
 		}
 		if($table=="contractor_type")
+		{
+			return false;
+		}
+		if($table=="q_ctrl_saldo_consumo_consulta")
 		{
 			return false;
 		}

@@ -756,7 +756,7 @@ pdfDocument = {
 			{"text":"","hidden":"{$item_hide_grid_details_link1}","fontSize":16,"font":"Roboto"},
 				
 				
-			{"text":"","hidden":"{$item_hide_grid_details_link2}"},
+			{"text":"","hidden":"{$item_hide_grid_details_link2}","fontSize":16,"bold":true,"font":"Roboto"},
 				
 		  ],
   "border": [ true, true, true, true ],

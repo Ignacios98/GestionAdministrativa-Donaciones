@@ -512,6 +512,8 @@ class Chart
 			return true;
 		if("contractor_type" == $this->chrt_array['tables'][0])
 			return true;
+		if("q_ctrl_saldo_consumo_consulta" == $this->chrt_array['tables'][0])
+			return true;
 		return false;
 	}
 

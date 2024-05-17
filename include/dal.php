@@ -82,6 +82,7 @@ class tDAL
 	var $tbldbrf_at_127_0_0_1__q_ctrl_alelemdevolutivo;
 	var $tbldbrf_at_127_0_0_1__q_ctrl_numasientos;
 	var $tbldbrf_at_127_0_0_1__q_ctrl_numdocumento;
+	var $tbldbrf_at_127_0_0_1__q_ctrl_saldo_consumo_consulta;
 	var $tbldbrf_at_127_0_0_1__q_global_enservicio;
 	var $tbldbrf_at_127_0_0_1__q_lista_elementos_tyr_gestionados_group_00;
 	var $tbldbrf_at_127_0_0_1__tparam_estadoasientos;
@@ -135,6 +136,7 @@ class tDAL
 		$this->lstTables[] = array("name" => "q_ctrl_alelemdevolutivo", "varname" => "dbrf_at_127_0_0_1__q_ctrl_alelemdevolutivo", "altvarname" => "q_ctrl_alelemdevolutivo", "connId" => "dbrf_at_127_0_0_1", "schema" => "", "connName" => "dbrfd");
 		$this->lstTables[] = array("name" => "q_ctrl_numasientos", "varname" => "dbrf_at_127_0_0_1__q_ctrl_numasientos", "altvarname" => "q_ctrl_numasientos", "connId" => "dbrf_at_127_0_0_1", "schema" => "", "connName" => "dbrfd");
 		$this->lstTables[] = array("name" => "q_ctrl_numdocumento", "varname" => "dbrf_at_127_0_0_1__q_ctrl_numdocumento", "altvarname" => "q_ctrl_numdocumento", "connId" => "dbrf_at_127_0_0_1", "schema" => "", "connName" => "dbrfd");
+		$this->lstTables[] = array("name" => "q_ctrl_saldo_consumo_consulta", "varname" => "dbrf_at_127_0_0_1__q_ctrl_saldo_consumo_consulta", "altvarname" => "q_ctrl_saldo_consumo_consulta", "connId" => "dbrf_at_127_0_0_1", "schema" => "", "connName" => "dbrfd");
 		$this->lstTables[] = array("name" => "q_global_enservicio", "varname" => "dbrf_at_127_0_0_1__q_global_enservicio", "altvarname" => "q_global_enservicio", "connId" => "dbrf_at_127_0_0_1", "schema" => "", "connName" => "dbrfd");
 		$this->lstTables[] = array("name" => "q_lista_elementos_tyr_gestionados_group_00", "varname" => "dbrf_at_127_0_0_1__q_lista_elementos_tyr_gestionados_group_00", "altvarname" => "q_lista_elementos_tyr_gestionados_group_00", "connId" => "dbrf_at_127_0_0_1", "schema" => "", "connName" => "dbrfd");
 		$this->lstTables[] = array("name" => "tparam_estadoasientos", "varname" => "dbrf_at_127_0_0_1__tparam_estadoasientos", "altvarname" => "tparam_estadoasientos", "connId" => "dbrf_at_127_0_0_1", "schema" => "", "connName" => "dbrfd");

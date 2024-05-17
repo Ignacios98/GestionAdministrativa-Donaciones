@@ -28,13 +28,13 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsgedocumentos_ingresos_consumo["Spanish"]["as_nroasiento_fk"] = "Asiento";
 	$fieldToolTipsgedocumentos_ingresos_consumo["Spanish"]["as_nroasiento_fk"] = "";
 	$placeHoldersgedocumentos_ingresos_consumo["Spanish"]["as_nroasiento_fk"] = "";
-	$fieldLabelsgedocumentos_ingresos_consumo["Spanish"]["do_detalle"] = "Descripción del ingreso | Resolución";
+	$fieldLabelsgedocumentos_ingresos_consumo["Spanish"]["do_detalle"] = "Descripción del ingreso";
 	$fieldToolTipsgedocumentos_ingresos_consumo["Spanish"]["do_detalle"] = "";
 	$placeHoldersgedocumentos_ingresos_consumo["Spanish"]["do_detalle"] = "";
 	$fieldLabelsgedocumentos_ingresos_consumo["Spanish"]["do_fechadoc"] = "Fecha del ingreso";
 	$fieldToolTipsgedocumentos_ingresos_consumo["Spanish"]["do_fechadoc"] = "";
 	$placeHoldersgedocumentos_ingresos_consumo["Spanish"]["do_fechadoc"] = "";
-	$fieldLabelsgedocumentos_ingresos_consumo["Spanish"]["do_file"] = "Anexo resolución | Acto administrativo";
+	$fieldLabelsgedocumentos_ingresos_consumo["Spanish"]["do_file"] = "Anexo";
 	$fieldToolTipsgedocumentos_ingresos_consumo["Spanish"]["do_file"] = "";
 	$placeHoldersgedocumentos_ingresos_consumo["Spanish"]["do_file"] = "";
 	$fieldLabelsgedocumentos_ingresos_consumo["Spanish"]["do_legaliza"] = "Do Legaliza";
@@ -82,13 +82,15 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsgedocumentos_ingresos_consumo["Spanish"]["do_depsup"] = "Despacho | Dirección";
 	$fieldToolTipsgedocumentos_ingresos_consumo["Spanish"]["do_depsup"] = "";
 	$placeHoldersgedocumentos_ingresos_consumo["Spanish"]["do_depsup"] = "";
-	$fieldLabelsgedocumentos_ingresos_consumo["Spanish"]["resolfecha"] = "Fecha resolución";
+	$fieldLabelsgedocumentos_ingresos_consumo["Spanish"]["resolfecha"] = "Fecha de resolución";
 	$fieldToolTipsgedocumentos_ingresos_consumo["Spanish"]["resolfecha"] = "";
 	$placeHoldersgedocumentos_ingresos_consumo["Spanish"]["resolfecha"] = "";
-	$fieldLabelsgedocumentos_ingresos_consumo["Spanish"]["resolnum"] = "Número resolución";
+	$fieldLabelsgedocumentos_ingresos_consumo["Spanish"]["resolnum"] = "Número de resolución";
 	$fieldToolTipsgedocumentos_ingresos_consumo["Spanish"]["resolnum"] = "";
 	$placeHoldersgedocumentos_ingresos_consumo["Spanish"]["resolnum"] = "";
 	$pageTitlesgedocumentos_ingresos_consumo["Spanish"]["add"] = "Nuevo documento";
+	$pageTitlesgedocumentos_ingresos_consumo["Spanish"]["view"] = "<h3><strong style=\"color: rgb(107, 36, 178);\">Ingresos de consumo {%doclasedoc_id}</strong></h3>";
+	$pageTitlesgedocumentos_ingresos_consumo["Spanish"]["masterprint"] = "Ingreso {%doclasedoc_id}";
 	if (count($fieldToolTipsgedocumentos_ingresos_consumo["Spanish"]))
 		$tdatagedocumentos_ingresos_consumo[".isUseToolTips"] = true;
 }
@@ -131,16 +133,16 @@ $pages = $tdatagedocumentos_ingresos_consumo[".defaultPages"];
 
 if( $pages[PAGE_EDIT] ) {
 	$tdatagedocumentos_ingresos_consumo[".edit"] = true;
-	$tdatagedocumentos_ingresos_consumo[".afterEditAction"] = 1;
+	$tdatagedocumentos_ingresos_consumo[".afterEditAction"] = 0;
 	$tdatagedocumentos_ingresos_consumo[".closePopupAfterEdit"] = 1;
-	$tdatagedocumentos_ingresos_consumo[".afterEditActionDetTable"] = "";
+	$tdatagedocumentos_ingresos_consumo[".afterEditActionDetTable"] = "almovconsdia_ingresos";
 }
 
 if( $pages[PAGE_ADD] ) {
 $tdatagedocumentos_ingresos_consumo[".add"] = true;
 $tdatagedocumentos_ingresos_consumo[".afterAddAction"] = 0;
 $tdatagedocumentos_ingresos_consumo[".closePopupAfterAdd"] = 1;
-$tdatagedocumentos_ingresos_consumo[".afterAddActionDetTable"] = "Detail tables not found!";
+$tdatagedocumentos_ingresos_consumo[".afterAddActionDetTable"] = "almovconsdia_ingresos";
 }
 
 if( $pages[PAGE_LIST] ) {
@@ -198,7 +200,7 @@ $tdatagedocumentos_ingresos_consumo[".addPageEvents"] = false;
 $tdatagedocumentos_ingresos_consumo[".isUseTimeForSearch"] = false;
 
 
-$tdatagedocumentos_ingresos_consumo[".badgeColor"] = "daa520";
+$tdatagedocumentos_ingresos_consumo[".badgeColor"] = "ffc107";
 
 
 $tdatagedocumentos_ingresos_consumo[".allSearchFields"] = array();
@@ -1145,8 +1147,7 @@ $tdatagedocumentos_ingresos_consumo[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -1166,8 +1167,7 @@ $tdatagedocumentos_ingresos_consumo[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+	
 	
 //	End validation
 
@@ -3307,7 +3307,7 @@ $tdatagedocumentos_ingresos_consumo[".hideMobileList"] = array();
 	
 	
 		$edata["DateEditType"] = 2;
-	$edata["InitialYearFactor"] = 0;
+	$edata["InitialYearFactor"] = 10;
 	$edata["LastYearFactor"] = 10;
 
 	

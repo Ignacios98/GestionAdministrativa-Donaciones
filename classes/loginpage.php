@@ -926,7 +926,7 @@ class LoginPage extends RunnerPage
 		$this->body['end'] .= "Runner.applyPagesData( ".my_json_encode( $pagesData )." );";
 		$this->body['end'] .= "window.settings = ".my_json_encode($this->jsSettings).";</script>";
 
-		$this->body["end"] .= "<script type=\"text/javascript\" src=\"".GetRootPathForResources("include/runnerJS/RunnerAll.js?41619")."\"></script>";
+		$this->body["end"] .= "<script type=\"text/javascript\" src=\"".GetRootPathForResources("include/runnerJS/RunnerAll.js?41974")."\"></script>";
 		$this->body["end"] .= '<script>'.$this->PrepareJS()."</script>";
 
 		$this->xt->assignbyref("body", $this->body);

@@ -16,7 +16,7 @@ $dalTablealmovconsdia["mcdalmacen"] = array("type"=>3,"varname"=>"mcdalmacen", "
 $dalTablealmovconsdia["mcdclasedoc"] = array("type"=>3,"varname"=>"mcdclasedoc", "name" => "mcdclasedoc", "autoInc" => "0");
 $dalTablealmovconsdia["mcdcodelem"] = array("type"=>3,"varname"=>"mcdcodelem", "name" => "mcdcodelem", "autoInc" => "0");
 $dalTablealmovconsdia["mcdcuenta"] = array("type"=>200,"varname"=>"mcdcuenta", "name" => "mcdcuenta", "autoInc" => "0");
-$dalTablealmovconsdia["mcdfechadoc"] = array("type"=>135,"varname"=>"mcdfechadoc", "name" => "mcdfechadoc", "autoInc" => "0");
+$dalTablealmovconsdia["mcdfechadoc"] = array("type"=>7,"varname"=>"mcdfechadoc", "name" => "mcdfechadoc", "autoInc" => "0");
 $dalTablealmovconsdia["mcdnomelem"] = array("type"=>200,"varname"=>"mcdnomelem", "name" => "mcdnomelem", "autoInc" => "0");
 $dalTablealmovconsdia["mcdnrodoc"] = array("type"=>3,"varname"=>"mcdnrodoc", "name" => "mcdnrodoc", "autoInc" => "0");
 $dalTablealmovconsdia["mcdtipoestruc"] = array("type"=>200,"varname"=>"mcdtipoestruc", "name" => "mcdtipoestruc", "autoInc" => "0");

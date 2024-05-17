@@ -10,7 +10,7 @@
 	
 ">
 		 
-		<h3 class="panel-title" data-itemtype="masterprint_header" data-itemid="masterprint_header" {$item_masterprint_header} data-pageid="{$pageid}" >{$pagetitlelabel gedocumentos_ingresos_consumo masterprint}</h3>
+		<h3 class="panel-title" data-itemtype="masterprint_header" data-itemid="masterprint_header" {$item_masterprint_header} data-pageid="{$pageid}" data-page="gedocumentos_ingresos_consumo_masterprint" >{$pagetitlelabel gedocumentos_ingresos_consumo masterprint}</h3>
 		</div>			</div>		
 {END top_block}
 			</div>
@@ -75,26 +75,26 @@
 	{$cell_grid_headcell_field}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$doclasedoc_id_class}	"
+		 r-ori-vert		 {$resolnum_class}	"
 
-			data-field="doclasedoc_id"
+			data-field="resolnum"
 	
 	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN doclasedoc_id_fieldheadercolumn}
+		{BEGIN resolnum_fieldheadercolumn}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="doclasedoc_id" data-fieldname="doclasedoc_id" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="resolnum" data-fieldname="resolnum" 
 
 	
 	
 	>
 	<span class="text-label">
-		<span>{$label gedocumentos_ingresos_consumo doclasedoc_id }</span>
+		<span>{$label gedocumentos_ingresos_consumo resolnum }</span>
 			</span>
 	</span>
-{END doclasedoc_id_fieldheadercolumn}
+{END resolnum_fieldheadercolumn}
 
 	
 	</th>
@@ -105,11 +105,71 @@
 	{$cell_grid_headcell_field1}
 	{$recordattrs}
 	class="
+		 r-ori-vert		 {$resolfecha_class}	"
+
+			data-field="resolfecha"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN resolfecha_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="resolfecha" data-fieldname="resolfecha" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label gedocumentos_ingresos_consumo resolfecha }</span>
+			</span>
+	</span>
+{END resolfecha_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+									{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$do_detalle_class}	"
+
+			data-field="do_detalle"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN do_detalle_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_detalle" data-fieldname="do_detalle" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label gedocumentos_ingresos_consumo do_detalle }</span>
+			</span>
+	</span>
+{END do_detalle_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+									{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
 		 r-ori-vert		 {$do_nrodoc_class}	"
 
 			data-field="do_nrodoc"
 	
-	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -128,24 +188,24 @@
 
 	
 	</th>
-	{END cellblock_grid_headcell_field1}
-									{BEGIN cellblock_grid_headcell_field2}
+	{END cellblock_grid_headcell_field3}
+									{BEGIN cellblock_grid_headcell_field4}
 	<th
 	
-	{$cell_grid_headcell_field2}
+	{$cell_grid_headcell_field4}
 	{$recordattrs}
 	class="
 		 r-ori-vert		 {$do_fechadoc_class}	"
 
 			data-field="do_fechadoc"
 	
-	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
 		{BEGIN do_fechadoc_fieldheadercolumn}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_fechadoc" data-fieldname="do_fechadoc" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_fechadoc" data-fieldname="do_fechadoc" 
 
 	
 	
@@ -158,66 +218,6 @@
 
 	
 	</th>
-	{END cellblock_grid_headcell_field2}
-									{BEGIN cellblock_grid_headcell_field3}
-	<th
-	
-	{$cell_grid_headcell_field3}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$docodregion_class}	"
-
-			data-field="docodregion"
-	
-	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN docodregion_fieldheadercolumn}
-<span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="docodregion" data-fieldname="docodregion" 
-
-	
-	
-	>
-	<span class="text-label">
-		<span>{$label gedocumentos_ingresos_consumo docodregion }</span>
-			</span>
-	</span>
-{END docodregion_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field3}
-									{BEGIN cellblock_grid_headcell_field4}
-	<th
-	
-	{$cell_grid_headcell_field4}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$do_detalle_class}	"
-
-			data-field="do_detalle"
-	
-	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN do_detalle_fieldheadercolumn}
-<span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_detalle" data-fieldname="do_detalle" 
-
-	
-	
-	>
-	<span class="text-label">
-		<span>{$label gedocumentos_ingresos_consumo do_detalle }</span>
-			</span>
-	</span>
-{END do_detalle_fieldheadercolumn}
-
-	
-	</th>
 	{END cellblock_grid_headcell_field4}
 									{BEGIN cellblock_grid_headcell_field5}
 	<th
@@ -225,47 +225,17 @@
 	{$cell_grid_headcell_field5}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$do_tipomov_class}	"
+		 r-ori-vert		 {$doclasedoc_class}	"
 
-			data-field="do_tipomov"
+			data-field="doclasedoc"
 	
 	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN do_tipomov_fieldheadercolumn}
-<span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_tipomov" data-fieldname="do_tipomov" 
-
-	
-	
-	>
-	<span class="text-label">
-		<span>{$label gedocumentos_ingresos_consumo do_tipomov }</span>
-			</span>
-	</span>
-{END do_tipomov_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field5}
-									{BEGIN cellblock_grid_headcell_field6}
-	<th
-	
-	{$cell_grid_headcell_field6}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$doclasedoc_class}	"
-
-			data-field="doclasedoc"
-	
-	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
 		{BEGIN doclasedoc_fieldheadercolumn}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="doclasedoc" data-fieldname="doclasedoc" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="doclasedoc" data-fieldname="doclasedoc" 
 
 	
 	
@@ -278,24 +248,24 @@
 
 	
 	</th>
-	{END cellblock_grid_headcell_field6}
-									{BEGIN cellblock_grid_headcell_field7}
+	{END cellblock_grid_headcell_field5}
+									{BEGIN cellblock_grid_headcell_field6}
 	<th
 	
-	{$cell_grid_headcell_field7}
+	{$cell_grid_headcell_field6}
 	{$recordattrs}
 	class="
 		 r-ori-vert		 {$docnomproveedor_class}	"
 
 			data-field="docnomproveedor"
 	
-	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
 		{BEGIN docnomproveedor_fieldheadercolumn}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="docnomproveedor" data-fieldname="docnomproveedor" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="docnomproveedor" data-fieldname="docnomproveedor" 
 
 	
 	
@@ -308,54 +278,24 @@
 
 	
 	</th>
-	{END cellblock_grid_headcell_field7}
-									{BEGIN cellblock_grid_headcell_field8}
+	{END cellblock_grid_headcell_field6}
+									{BEGIN cellblock_grid_headcell_field7}
 	<th
 	
-	{$cell_grid_headcell_field8}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$do_depsup_class}	"
-
-			data-field="do_depsup"
-	
-	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN do_depsup_fieldheadercolumn}
-<span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_depsup" data-fieldname="do_depsup" 
-
-	
-	
-	>
-	<span class="text-label">
-		<span>{$label gedocumentos_ingresos_consumo do_depsup }</span>
-			</span>
-	</span>
-{END do_depsup_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field8}
-									{BEGIN cellblock_grid_headcell_field9}
-	<th
-	
-	{$cell_grid_headcell_field9}
+	{$cell_grid_headcell_field7}
 	{$recordattrs}
 	class="
 		 r-ori-vert		 {$do_concepto_class}	"
 
 			data-field="do_concepto"
 	
-	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
 		{BEGIN do_concepto_fieldheadercolumn}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_concepto" data-fieldname="do_concepto" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_concepto" data-fieldname="do_concepto" 
 
 	
 	
@@ -368,97 +308,7 @@
 
 	
 	</th>
-	{END cellblock_grid_headcell_field9}
-									{BEGIN cellblock_grid_headcell_field10}
-	<th
-	
-	{$cell_grid_headcell_field10}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$do_dep_class}	"
-
-			data-field="do_dep"
-	
-	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN do_dep_fieldheadercolumn}
-<span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_dep" data-fieldname="do_dep" 
-
-	
-	
-	>
-	<span class="text-label">
-		<span>{$label gedocumentos_ingresos_consumo do_dep }</span>
-			</span>
-	</span>
-{END do_dep_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field10}
-									{BEGIN cellblock_grid_headcell_field11}
-	<th
-	
-	{$cell_grid_headcell_field11}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$resolfecha_class}	"
-
-			data-field="resolfecha"
-	
-	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN resolfecha_fieldheadercolumn}
-<span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="resolfecha" data-fieldname="resolfecha" 
-
-	
-	
-	>
-	<span class="text-label">
-		<span>{$label gedocumentos_ingresos_consumo resolfecha }</span>
-			</span>
-	</span>
-{END resolfecha_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field11}
-									{BEGIN cellblock_grid_headcell_field12}
-	<th
-	
-	{$cell_grid_headcell_field12}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$resolnum_class}	"
-
-			data-field="resolnum"
-	
-	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN resolnum_fieldheadercolumn}
-<span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="resolnum" data-fieldname="resolnum" 
-
-	
-	
-	>
-	<span class="text-label">
-		<span>{$label gedocumentos_ingresos_consumo resolnum }</span>
-			</span>
-	</span>
-{END resolnum_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field12}
+	{END cellblock_grid_headcell_field7}
 							</tr>
 															
 					{END grid_header}
@@ -501,263 +351,11 @@
 	{$cell_grid_cell_field}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$doclasedoc_id_class}	"
-
-			data-field="doclasedoc_id"
-	
-	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN doclasedoc_id_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="doclasedoc_id" data-fieldname="doclasedoc_id" data-default-width >
-{$doclasedoc_id_value}
-</span>
-{END doclasedoc_id_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field}
-									{BEGIN cellblock_grid_cell_field1}
-	<td
-	
-	{$cell_grid_cell_field1}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$do_nrodoc_class}	"
-
-			data-field="do_nrodoc"
-	
-	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN do_nrodoc_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_nrodoc" data-fieldname="do_nrodoc" data-default-width >
-{$do_nrodoc_value}
-</span>
-{END do_nrodoc_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field1}
-									{BEGIN cellblock_grid_cell_field2}
-	<td
-	
-	{$cell_grid_cell_field2}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$do_fechadoc_class}	"
-
-			data-field="do_fechadoc"
-	
-	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN do_fechadoc_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_fechadoc" data-fieldname="do_fechadoc" data-default-width >
-{$do_fechadoc_value}
-</span>
-{END do_fechadoc_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field2}
-									{BEGIN cellblock_grid_cell_field3}
-	<td
-	
-	{$cell_grid_cell_field3}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$docodregion_class}	"
-
-			data-field="docodregion"
-	
-	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN docodregion_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="docodregion" data-fieldname="docodregion" data-default-width >
-{$docodregion_value}
-</span>
-{END docodregion_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field3}
-									{BEGIN cellblock_grid_cell_field4}
-	<td
-	
-	{$cell_grid_cell_field4}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$do_detalle_class}	"
-
-			data-field="do_detalle"
-	
-	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN do_detalle_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_detalle" data-fieldname="do_detalle" data-default-width >
-{$do_detalle_value}
-</span>
-{END do_detalle_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field4}
-									{BEGIN cellblock_grid_cell_field5}
-	<td
-	
-	{$cell_grid_cell_field5}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$do_tipomov_class}	"
-
-			data-field="do_tipomov"
-	
-	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN do_tipomov_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_tipomov" data-fieldname="do_tipomov" data-default-width >
-{$do_tipomov_value}
-</span>
-{END do_tipomov_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field5}
-									{BEGIN cellblock_grid_cell_field6}
-	<td
-	
-	{$cell_grid_cell_field6}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$doclasedoc_class}	"
-
-			data-field="doclasedoc"
-	
-	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN doclasedoc_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="doclasedoc" data-fieldname="doclasedoc" data-default-width >
-{$doclasedoc_value}
-</span>
-{END doclasedoc_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field6}
-									{BEGIN cellblock_grid_cell_field7}
-	<td
-	
-	{$cell_grid_cell_field7}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$docnomproveedor_class}	"
-
-			data-field="docnomproveedor"
-	
-	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN docnomproveedor_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="docnomproveedor" data-fieldname="docnomproveedor" data-default-width >
-{$docnomproveedor_value}
-</span>
-{END docnomproveedor_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field7}
-									{BEGIN cellblock_grid_cell_field8}
-	<td
-	
-	{$cell_grid_cell_field8}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$do_depsup_class}	"
-
-			data-field="do_depsup"
-	
-	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN do_depsup_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_depsup" data-fieldname="do_depsup" data-default-width >
-{$do_depsup_value}
-</span>
-{END do_depsup_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field8}
-									{BEGIN cellblock_grid_cell_field9}
-	<td
-	
-	{$cell_grid_cell_field9}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$do_concepto_class}	"
-
-			data-field="do_concepto"
-	
-	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN do_concepto_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_concepto" data-fieldname="do_concepto" data-default-width >
-{$do_concepto_value}
-</span>
-{END do_concepto_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field9}
-									{BEGIN cellblock_grid_cell_field10}
-	<td
-	
-	{$cell_grid_cell_field10}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$do_dep_class}	"
-
-			data-field="do_dep"
-	
-	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN do_dep_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_dep" data-fieldname="do_dep" data-default-width >
-{$do_dep_value}
-</span>
-{END do_dep_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field10}
-									{BEGIN cellblock_grid_cell_field11}
-	<td
-	
-	{$cell_grid_cell_field11}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$resolfecha_class}	"
-
-			data-field="resolfecha"
-	
-	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN resolfecha_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="resolfecha" data-fieldname="resolfecha" data-default-width >
-{$resolfecha_value}
-</span>
-{END resolfecha_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field11}
-									{BEGIN cellblock_grid_cell_field12}
-	<td
-	
-	{$cell_grid_cell_field12}
-	{$recordattrs}
-	class="
 		 r-ori-vert		 {$resolnum_class}	"
 
 			data-field="resolnum"
 	
-	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -767,7 +365,154 @@
 </span>
 {END resolnum_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field12}
+	{END cellblock_grid_cell_field}
+									{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$resolfecha_class}	"
+
+			data-field="resolfecha"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN resolfecha_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="resolfecha" data-fieldname="resolfecha" data-default-width >
+{$resolfecha_value}
+</span>
+{END resolfecha_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+									{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$do_detalle_class}	"
+
+			data-field="do_detalle"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN do_detalle_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_detalle" data-fieldname="do_detalle" data-default-width >
+{$do_detalle_value}
+</span>
+{END do_detalle_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+									{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$do_nrodoc_class}	"
+
+			data-field="do_nrodoc"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN do_nrodoc_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_nrodoc" data-fieldname="do_nrodoc" data-default-width >
+{$do_nrodoc_value}
+</span>
+{END do_nrodoc_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+									{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$do_fechadoc_class}	"
+
+			data-field="do_fechadoc"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN do_fechadoc_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_fechadoc" data-fieldname="do_fechadoc" data-default-width >
+{$do_fechadoc_value}
+</span>
+{END do_fechadoc_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+									{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$doclasedoc_class}	"
+
+			data-field="doclasedoc"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN doclasedoc_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="doclasedoc" data-fieldname="doclasedoc" data-default-width >
+{$doclasedoc_value}
+</span>
+{END doclasedoc_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+									{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$docnomproveedor_class}	"
+
+			data-field="docnomproveedor"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN docnomproveedor_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="docnomproveedor" data-fieldname="docnomproveedor" data-default-width >
+{$docnomproveedor_value}
+</span>
+{END docnomproveedor_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+									{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$do_concepto_class}	"
+
+			data-field="do_concepto"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN do_concepto_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_concepto" data-fieldname="do_concepto" data-default-width >
+{$do_concepto_value}
+</span>
+{END do_concepto_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
 							</tr>
 										
 											{END grid_row}
@@ -800,7 +545,7 @@
 	{$cell_grid_footcell_field}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$doclasedoc_id_class}	"
+		 r-ori-vert		 {$resolnum_class}	"
 
 	
 	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="gedocumentos_ingresos_consumo_masterprint"	
@@ -815,7 +560,7 @@
 	{$cell_grid_footcell_field1}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$do_nrodoc_class}	"
+		 r-ori-vert		 {$resolfecha_class}	"
 
 	
 	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="gedocumentos_ingresos_consumo_masterprint"	
@@ -830,7 +575,7 @@
 	{$cell_grid_footcell_field2}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$do_fechadoc_class}	"
+		 r-ori-vert		 {$do_detalle_class}	"
 
 	
 	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="gedocumentos_ingresos_consumo_masterprint"	
@@ -845,7 +590,7 @@
 	{$cell_grid_footcell_field3}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$docodregion_class}	"
+		 r-ori-vert		 {$do_nrodoc_class}	"
 
 	
 	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="gedocumentos_ingresos_consumo_masterprint"	
@@ -860,7 +605,7 @@
 	{$cell_grid_footcell_field4}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$do_detalle_class}	"
+		 r-ori-vert		 {$do_fechadoc_class}	"
 
 	
 	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="gedocumentos_ingresos_consumo_masterprint"	
@@ -875,7 +620,7 @@
 	{$cell_grid_footcell_field5}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$do_tipomov_class}	"
+		 r-ori-vert		 {$doclasedoc_class}	"
 
 	
 	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="gedocumentos_ingresos_consumo_masterprint"	
@@ -890,7 +635,7 @@
 	{$cell_grid_footcell_field6}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$doclasedoc_class}	"
+		 r-ori-vert		 {$docnomproveedor_class}	"
 
 	
 	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="gedocumentos_ingresos_consumo_masterprint"	
@@ -905,7 +650,7 @@
 	{$cell_grid_footcell_field7}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$docnomproveedor_class}	"
+		 r-ori-vert		 {$do_concepto_class}	"
 
 	
 	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="gedocumentos_ingresos_consumo_masterprint"	
@@ -914,81 +659,6 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field7}
-									{BEGIN cellblock_grid_footcell_field8}
-	<td
-	
-	{$cell_grid_footcell_field8}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$do_depsup_class}	"
-
-	
-	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="gedocumentos_ingresos_consumo_masterprint"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field8}
-									{BEGIN cellblock_grid_footcell_field9}
-	<td
-	
-	{$cell_grid_footcell_field9}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$do_concepto_class}	"
-
-	
-	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="gedocumentos_ingresos_consumo_masterprint"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field9}
-									{BEGIN cellblock_grid_footcell_field10}
-	<td
-	
-	{$cell_grid_footcell_field10}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$do_dep_class}	"
-
-	
-	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="gedocumentos_ingresos_consumo_masterprint"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field10}
-									{BEGIN cellblock_grid_footcell_field11}
-	<td
-	
-	{$cell_grid_footcell_field11}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$resolfecha_class}	"
-
-	
-	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="gedocumentos_ingresos_consumo_masterprint"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field11}
-									{BEGIN cellblock_grid_footcell_field12}
-	<td
-	
-	{$cell_grid_footcell_field12}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$resolnum_class}	"
-
-	
-	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="gedocumentos_ingresos_consumo_masterprint"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field12}
 							</tr>
 					
 					</tfoot>

@@ -3712,6 +3712,8 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "contractor_master" ] = "contractor_master";
 	$projectEntities[ "contractor_type" ] = array( "url" => "contractor_type", "type" => 0 );
 	$projectEntitiesReverse[ "contractor_type" ] = "contractor_type";
+	$projectEntities[ "q_ctrl_saldo_consumo_consulta" ] = array( "url" => "q_ctrl_saldo_consumo_consulta", "type" => 0 );
+	$projectEntitiesReverse[ "q_ctrl_saldo_consumo_consulta" ] = "q_ctrl_saldo_consumo_consulta";
 }
 
 function findTable( $table ) {

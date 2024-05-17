@@ -163,14 +163,15 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"<h3><span style=\"color: rgb(107, 36, 178);\">Ingresos consumo</span></h3>","hidden":"{$item_hide_text}","isHtml":true},
+			{"text":"<h3><strong style=\"color: rgb(107, 36, 178);\">Ingreso de doxcumentos</strong></h3>","hidden":"{$item_hide_text}","bold":true,"font":"Roboto","isHtml":true},
 				
 		  ],
   "border": [ false, false, false, false ],
               "alignment": 'left',
      
       
-      },
+         bold: true,
+   },
 
 											],
 						[
@@ -814,10 +815,10 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"","hidden":"{$item_hide_grid_details_link}","fontSize":18,"bold":true,"font":"Roboto"},
+			{"text":"","hidden":"{$item_hide_grid_details_link}","fontSize":16,"bold":true,"font":"Roboto"},
 				
 				
-			{"text":"","hidden":"{$item_hide_grid_details_link1}","fontSize":16,"font":"Roboto"},
+			{"text":"","hidden":"{$item_hide_grid_details_link1}","fontSize":16,"bold":true,"font":"Roboto"},
 				
 		  ],
   "border": [ true, true, true, true ],

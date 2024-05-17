@@ -1422,14 +1422,16 @@
 		
 		
 	{BEGIN almovconsdia_egresos_dtable_link}
-	<span data-itemtype="grid_details_link" data-itemid="grid_details_link2" {$item_grid_details_link2} data-pageid="{$pageid}" data-record-id="{$recId}">
+	<span data-itemtype="grid_details_link" data-itemid="grid_details_link2" {$item_grid_details_link2} data-pageid="{$pageid}" data-page="gedocumentos_egresos_consumo_list" data-record-id="{$recId}">
 	<a  {$almovconsdia_egresos_link_attrs} data-short-details="almovconsdia_egresos"
-		 
+		class="{$almovconsdia_egresos_dlink_class}" 
 					>
-						Egreso elementos de consumo		
-									<span {$almovconsdia_egresos_childnumber_attr} dir="ltr">
-					{BEGIN almovconsdia_egresos_childcount}({$almovconsdia_egresos_childnumber}){END almovconsdia_egresos_childcount}
+						Salida de elementos		
+									{BEGIN almovconsdia_egresos_childcount}
+				<span class="details-badge badge almovconsdia_egresos_badge" {$almovconsdia_egresos_childnumber_attr}>
+					{$almovconsdia_egresos_childnumber}				
 				</span>
+				{END almovconsdia_egresos_childcount}
 						</a>
 	</span>
 	{END almovconsdia_egresos_dtable_link}

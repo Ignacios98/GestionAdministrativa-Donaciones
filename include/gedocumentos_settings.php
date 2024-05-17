@@ -85,12 +85,12 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsgedocumentos["Spanish"]["do_email"] = "Do Email";
 	$fieldToolTipsgedocumentos["Spanish"]["do_email"] = "";
 	$placeHoldersgedocumentos["Spanish"]["do_email"] = "";
-	$fieldLabelsgedocumentos["Spanish"]["resolnum"] = "Resolnum";
-	$fieldToolTipsgedocumentos["Spanish"]["resolnum"] = "";
-	$placeHoldersgedocumentos["Spanish"]["resolnum"] = "";
 	$fieldLabelsgedocumentos["Spanish"]["resolfecha"] = "Resolfecha";
 	$fieldToolTipsgedocumentos["Spanish"]["resolfecha"] = "";
 	$placeHoldersgedocumentos["Spanish"]["resolfecha"] = "";
+	$fieldLabelsgedocumentos["Spanish"]["resolnum"] = "Resolnum";
+	$fieldToolTipsgedocumentos["Spanish"]["resolnum"] = "";
+	$placeHoldersgedocumentos["Spanish"]["resolnum"] = "";
 	if (count($fieldToolTipsgedocumentos["Spanish"]))
 		$tdatagedocumentos[".isUseToolTips"] = true;
 }

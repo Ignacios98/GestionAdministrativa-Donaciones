@@ -100,6 +100,12 @@ pdfDocument = {
 										{BEGIN col_grid_11}
 					"%",
 					{END col_grid_11}
+										{BEGIN col_grid_12}
+					"%",
+					{END col_grid_12}
+										{BEGIN col_grid_13}
+					"%",
+					{END col_grid_13}
 															],
 											heights: [ // first height for header part
 					"%",
@@ -280,7 +286,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel almovconsdia_egresos almovconsdiae_id }","hidden":"{$item_hide_simple_grid_field5}","bold":true},
+			{"text":"{$jslabel almovconsdia_egresos almovconsdiae_id }","hidden":"{$item_hide_simple_grid_field14}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -309,7 +315,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel almovconsdia_egresos almovconsdia_id_fk }","hidden":"{$item_hide_simple_grid_field6}","bold":true},
+			{"text":"{$jslabel almovconsdia_egresos almovconsdia_id_fk }","hidden":"{$item_hide_simple_grid_field15}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -338,7 +344,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel almovconsdia_egresos almovconsdiae_cantidad }","hidden":"{$item_hide_simple_grid_field14}","bold":true},
+			{"text":"{$jslabel almovconsdia_egresos almovconsdiae_cantidad }","hidden":"{$item_hide_simple_grid_field16}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -367,7 +373,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel almovconsdia_egresos sys_user }","hidden":"{$item_hide_simple_grid_field15}","bold":true},
+			{"text":"{$jslabel almovconsdia_egresos sys_user }","hidden":"{$item_hide_simple_grid_field17}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -396,7 +402,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel almovconsdia_egresos sys_document_func }","hidden":"{$item_hide_simple_grid_field16}","bold":true},
+			{"text":"{$jslabel almovconsdia_egresos sys_document_func }","hidden":"{$item_hide_simple_grid_field18}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -425,7 +431,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel almovconsdia_egresos sys_doclasedoc_id_fk }","hidden":"{$item_hide_simple_grid_field17}","bold":true},
+			{"text":"{$jslabel almovconsdia_egresos sys_doclasedoc_id_fk }","hidden":"{$item_hide_simple_grid_field19}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -454,7 +460,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel almovconsdia_egresos mcdalmacen }","hidden":"{$item_hide_simple_grid_field18}","bold":true},
+			{"text":"{$jslabel almovconsdia_egresos mcdalmacen }","hidden":"{$item_hide_simple_grid_field20}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -483,7 +489,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel almovconsdia_egresos mcdcuenta }","hidden":"{$item_hide_simple_grid_field19}","bold":true},
+			{"text":"{$jslabel almovconsdia_egresos mcdcuenta }","hidden":"{$item_hide_simple_grid_field21}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -512,7 +518,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel almovconsdia_egresos mcdcodelem }","hidden":"{$item_hide_simple_grid_field20}","bold":true},
+			{"text":"{$jslabel almovconsdia_egresos mcdcodelem }","hidden":"{$item_hide_simple_grid_field22}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -541,7 +547,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel almovconsdia_egresos mcdnomelem }","hidden":"{$item_hide_simple_grid_field21}","bold":true},
+			{"text":"{$jslabel almovconsdia_egresos mcdnomelem }","hidden":"{$item_hide_simple_grid_field23}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -570,7 +576,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel almovconsdia_egresos consumo_id_fk }","hidden":"{$item_hide_simple_grid_field22}","bold":true},
+			{"text":"{$jslabel almovconsdia_egresos consumo_id_fk }","hidden":"{$item_hide_simple_grid_field24}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -599,7 +605,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel almovconsdia_egresos ctrl_saldo }","hidden":"{$item_hide_simple_grid_field23}","bold":true},
+			{"text":"{$jslabel almovconsdia_egresos ctrl_saldo }","hidden":"{$item_hide_simple_grid_field25}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -609,6 +615,64 @@ pdfDocument = {
       },
 
 {END cellblock_grid_headcell_field11}
+																							{BEGIN cellblock_grid_headcell_field12}
+{
+	cellId: 'headcell_field12',
+	col:0,
+	row:0,
+			fieldName: 'mcd_valunitant',
+				style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel almovconsdia_egresos mcd_valunitant }","hidden":"{$item_hide_simple_grid_field26}","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$mcd_valunitant_align}',
+     
+      
+      },
+
+{END cellblock_grid_headcell_field12}
+																							{BEGIN cellblock_grid_headcell_field13}
+{
+	cellId: 'headcell_field13',
+	col:0,
+	row:0,
+			fieldName: 'mcd_valmovto',
+				style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel almovconsdia_egresos mcd_valmovto }","hidden":"{$item_hide_simple_grid_field27}","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$mcd_valmovto_align}',
+     
+      
+      },
+
+{END cellblock_grid_headcell_field13}
 											],
 				{END row_grid_0}
 		
@@ -966,6 +1030,64 @@ pdfDocument = {
       },
 
 {END cellblock_grid_cell_field11}
+																							{BEGIN cellblock_grid_cell_field12}
+{
+	cellId: 'cell_field12',
+	col:0,
+	row:0,
+			fieldName: 'mcd_valunitant',
+				style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$mcd_valunitant_pdfvalue},"hidden":"{$item_hide_simple_grid_field5}"},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$mcd_valunitant_align}',
+     
+      
+      },
+
+{END cellblock_grid_cell_field12}
+																							{BEGIN cellblock_grid_cell_field13}
+{
+	cellId: 'cell_field13',
+	col:0,
+	row:0,
+			fieldName: 'mcd_valmovto',
+				style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$mcd_valmovto_pdfvalue},"hidden":"{$item_hide_simple_grid_field6}"},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$mcd_valmovto_align}',
+     
+      
+      },
+
+{END cellblock_grid_cell_field13}
 											],
 				{END row_grid_1}
 		
@@ -1287,6 +1409,58 @@ pdfDocument = {
       },
 
 {END cellblock_grid_footcell_field11}
+																							{BEGIN cellblock_grid_footcell_field12}
+{
+	cellId: 'footcell_field12',
+	col:0,
+	row:0,
+				style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_footcell_field12}
+																							{BEGIN cellblock_grid_footcell_field13}
+{
+	cellId: 'footcell_field13',
+	col:0,
+	row:0,
+				style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_footcell_field13}
 											],
 				{END row_grid_2}
 		

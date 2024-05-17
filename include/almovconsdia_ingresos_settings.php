@@ -2622,7 +2622,7 @@ $tdataalmovconsdia_ingresos[".hideMobileList"] = array();
 	$fdata["GoodName"] = "mcdfechadoc";
 	$fdata["ownerTable"] = "almovconsdia";
 	$fdata["Label"] = GetFieldLabel("almovconsdia_ingresos","mcdfechadoc");
-	$fdata["FieldType"] = 135;
+	$fdata["FieldType"] = 7;
 
 
 	

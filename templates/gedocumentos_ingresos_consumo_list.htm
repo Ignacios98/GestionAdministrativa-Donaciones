@@ -690,13 +690,13 @@
 				<div class="row">
 			 
 				<div 
-	data-cellId="top_c" data-pageid="{$pageid}"	{$cell_top_c}
+	data-cellId="top_c" data-pageid="{$pageid}" data-page="gedocumentos_ingresos_consumo_list"	{$cell_top_c}
 	class=" r-ori-vert			col-md-12
 	
 ">
 		 
-		<span data-itemtype="text" data-itemid="text" {$item_text} data-pageid="{$pageid}" data-small > 
-	<h3><span style="color: rgb(107, 36, 178);">Ingresos consumo</span></h3></span>
+		<span data-itemtype="text" data-itemid="text" {$item_text} data-pageid="{$pageid}" data-page="gedocumentos_ingresos_consumo_list" data-small > 
+	<h3><strong style="color: rgb(107, 36, 178);">Ingreso de doxcumentos</strong></h3></span>
 		</div>					</div>
 			 
 				<div class="row">
@@ -730,7 +730,7 @@
 		 
 		{BEGIN add_link}
 <span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-page="gedocumentos_ingresos_consumo_list" data-small data-button-item>
-	<a type="button" title="" class="btn btn-primary  btn-lg 
+	<a type="button" title="" class="btn btn-success  btn-lg 
 	" {$addlink_attrs} href="gedocumentos_ingresos_consumo_add.php{$stateLink_full}" >
 					<span class="fa fa-files-o"></span>
 							Nuevo documento			</a>
@@ -1505,12 +1505,14 @@
 	{BEGIN almovconsdia_ingresos_dtable_link}
 	<span data-itemtype="grid_details_link" data-itemid="grid_details_link1" {$item_grid_details_link1} data-pageid="{$pageid}" data-page="gedocumentos_ingresos_consumo_list" data-record-id="{$recId}">
 	<a  {$almovconsdia_ingresos_link_attrs} data-short-details="almovconsdia_ingresos"
-		 
+		class="{$almovconsdia_ingresos_dlink_class}" 
 					>
 						Ingresar elementos		
-									<span {$almovconsdia_ingresos_childnumber_attr} dir="ltr">
-					{BEGIN almovconsdia_ingresos_childcount}({$almovconsdia_ingresos_childnumber}){END almovconsdia_ingresos_childcount}
+									{BEGIN almovconsdia_ingresos_childcount}
+				<span class="details-badge badge almovconsdia_ingresos_badge" {$almovconsdia_ingresos_childnumber_attr}>
+					{$almovconsdia_ingresos_childnumber}				
 				</span>
+				{END almovconsdia_ingresos_childcount}
 						</a>
 	</span>
 	{END almovconsdia_ingresos_dtable_link}

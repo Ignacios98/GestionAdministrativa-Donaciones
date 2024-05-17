@@ -5,6 +5,8 @@ $dalTablealmovconsdiae["almovconsdiae_cantidad"] = array("type"=>3,"varname"=>"a
 $dalTablealmovconsdiae["almovconsdiae_id"] = array("type"=>3,"varname"=>"almovconsdiae_id", "name" => "almovconsdiae_id", "autoInc" => "1");
 $dalTablealmovconsdiae["consumo_id_fk"] = array("type"=>3,"varname"=>"consumo_id_fk", "name" => "consumo_id_fk", "autoInc" => "0");
 $dalTablealmovconsdiae["ctrl_saldo"] = array("type"=>3,"varname"=>"ctrl_saldo", "name" => "ctrl_saldo", "autoInc" => "0");
+$dalTablealmovconsdiae["mcd_valmovto"] = array("type"=>5,"varname"=>"mcd_valmovto", "name" => "mcd_valmovto", "autoInc" => "0");
+$dalTablealmovconsdiae["mcd_valunitant"] = array("type"=>5,"varname"=>"mcd_valunitant", "name" => "mcd_valunitant", "autoInc" => "0");
 $dalTablealmovconsdiae["mcdalmacen"] = array("type"=>3,"varname"=>"mcdalmacen", "name" => "mcdalmacen", "autoInc" => "0");
 $dalTablealmovconsdiae["mcdcodelem"] = array("type"=>3,"varname"=>"mcdcodelem", "name" => "mcdcodelem", "autoInc" => "0");
 $dalTablealmovconsdiae["mcdcuenta"] = array("type"=>200,"varname"=>"mcdcuenta", "name" => "mcdcuenta", "autoInc" => "0");

@@ -8344,8 +8344,8 @@ table.indenttables > * > .rightsindent5 > td.rightscell.rightscell.rightscell.ri
   color: #777777;
 }
 .r-vbar-page .r-left .panel .panel-heading {
-  border-bottom-color: #ffffff;
-  background-color: rgba(192, 192, 192, 0.6);
+  border-bottom-color: #fffaec;
+  background-color: rgba(255, 193, 7, 0.6);
 }
 .r-vbar-page .r-left .panel .panel-footer {
   border: none;
@@ -8356,7 +8356,7 @@ table.indenttables > * > .rightsindent5 > td.rightscell.rightscell.rightscell.ri
   font-size: 22px;
 }
 .r-vbar-page .r-left [data-logo-cell][data-logo-cell] {
-  background-color: #f8f9fa;
+  background-color: #f7f7f7;
   color: rgba(0, 0, 0, 0.5);
   height: 67px;
   border: none;
@@ -8659,8 +8659,8 @@ table.indenttables > * > .rightsindent5 > td.rightscell.rightscell.rightscell.ri
     color: #777777;
   }
   .r-leftbar-top-page > .r-under .r-left .panel .panel-heading {
-    border-bottom-color: #ffffff;
-    background-color: rgba(192, 192, 192, 0.6);
+    border-bottom-color: #fffaec;
+    background-color: rgba(255, 193, 7, 0.6);
   }
   .r-leftbar-top-page > .r-under .r-left .panel .panel-footer {
     border: none;
@@ -8671,7 +8671,7 @@ table.indenttables > * > .rightsindent5 > td.rightscell.rightscell.rightscell.ri
     font-size: 22px;
   }
   .r-leftbar-top-page > .r-under .r-left [data-logo-cell][data-logo-cell] {
-    background-color: #f8f9fa;
+    background-color: #f7f7f7;
     color: rgba(0, 0, 0, 0.5);
     height: 67px;
     border: none;
@@ -10594,11 +10594,7 @@ td.bs-details-opened.bs-details-opened.bs-details-opened {
   color: rgba(0, 0, 0, 0.5);
 }
 .navbar.navbar-default {
-  background-image: -webkit-linear-gradient(#ffffff, #f8f9fa 60%, #eceff1);
-  background-image: -o-linear-gradient(#ffffff, #f8f9fa 60%, #eceff1);
-  background-image: linear-gradient(#ffffff, #f8f9fa 60%, #eceff1);
-  background-repeat: no-repeat;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeceff1', GradientType=0);
+  background-image: none;
 }
 .navbar .open > a:hover {
   color: #141414;
@@ -10615,6 +10611,59 @@ td.bs-details-opened.bs-details-opened.bs-details-opened {
 }
 .navbar a:hover {
   color: #000;
+}
+.navbar .btn.btn.btn {
+  color: inherit;
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.navbar .btn.btn.btn:hover,
+.navbar .btn.btn.btn:focus {
+  color: #000;
+}
+.navbar .btn.btn.btn .caret {
+  border-top-color: rgba(0, 0, 0, 0.5);
+}
+.navbar .input-group {
+  background: #eceff1;
+  border-radius: 3px;
+  border: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+.navbar .input-group:focus-within {
+  background: #e9ecef;
+}
+.navbar .input-group:focus-within .btn.btn {
+  color: #000000;
+}
+.navbar .input-group .form-control.form-control,
+.navbar .input-group .btn.btn {
+  color: rgba(0, 0, 0, 0.5);
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 4px 8px;
+  height: auto;
+}
+.navbar .input-group .form-control.form-control::placeholder,
+.navbar .input-group .btn.btn::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.navbar .input-group .form-control.form-control:focus,
+.navbar .input-group .btn.btn:focus {
+  color: #000000;
+  border: none;
+  outline: none;
+}
+.navbar .input-group .form-control.form-control:focus::placeholder,
+.navbar .input-group .btn.btn:focus::placeholder {
+  color: #000000;
+}
+.navbar .input-group .btn {
+  font-weight: bold;
 }
 @media print, (min-width: 768px) {
   .r-topbar-page h2 {
@@ -12460,7 +12509,7 @@ However there might have been the case where dropdown showed up where it shouldn
   color: #777777;
 }
 .r-vbar-page .r-left [data-itemtype="filter_panel"] .panel .panel-heading {
-  background-color: rgba(192, 192, 192, 0.6);
+  background-color: rgba(255, 193, 7, 0.6);
   color: #1f2d3d;
   font-size: 15px;
 }
@@ -12837,7 +12886,7 @@ However there might have been the case where dropdown showed up where it shouldn
   background: rgba(0, 0, 0, 0.1);
 }
 .r-left .r-menu li.active.active.active > [data-menu-link] {
-  background: #C0C0C0;
+  background: #ffc107;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px 0px, rgba(0, 0, 0, 0.24) 0px 1px 2px 0px;
   color: #1f2d3d;
 }
@@ -13094,46 +13143,46 @@ However there might have been the case where dropdown showed up where it shouldn
   border-top-style: solid;
 }
 @media print, (min-width: 768px) {
-  .r-grid > .panel {
+  .r-grid > .panel:not(.form-section) {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.13), 0 1px 3px rgba(0, 0, 0, 0.2);
     display: table;
     width: 100%;
     border-width: 1px;
     border-style: solid;
   }
-  .r-grid > .panel > .panel-heading {
+  .r-grid > .panel:not(.form-section) > .panel-heading {
     background-color: #fff;
     color: inherit;
     border-bottom-width: 1px;
     border-bottom-style: solid;
   }
-  .r-grid > .panel > .panel-heading:before {
+  .r-grid > .panel:not(.form-section) > .panel-heading:before {
     content: #fff;
   }
-  .r-grid > .panel > .panel-footer {
+  .r-grid > .panel:not(.form-section) > .panel-footer {
     background-color: #fff;
     border-top-width: 1px;
     border-top-style: solid;
   }
 }
 @media screen and (max-width: 767px) {
-  .r-grid:not([data-responsive]) > .panel {
+  .r-grid:not([data-responsive]) > .panel.panel:not(.form-section) {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.13), 0 1px 3px rgba(0, 0, 0, 0.2);
     display: table;
     width: 100%;
     border-width: 1px;
     border-style: solid;
   }
-  .r-grid:not([data-responsive]) > .panel > .panel-heading {
+  .r-grid:not([data-responsive]) > .panel.panel:not(.form-section) > .panel-heading {
     background-color: #fff;
     color: inherit;
     border-bottom-width: 1px;
     border-bottom-style: solid;
   }
-  .r-grid:not([data-responsive]) > .panel > .panel-heading:before {
+  .r-grid:not([data-responsive]) > .panel.panel:not(.form-section) > .panel-heading:before {
     content: #fff;
   }
-  .r-grid:not([data-responsive]) > .panel > .panel-footer {
+  .r-grid:not([data-responsive]) > .panel.panel:not(.form-section) > .panel-footer {
     background-color: #fff;
     border-top-width: 1px;
     border-top-style: solid;

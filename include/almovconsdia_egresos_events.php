@@ -268,7 +268,7 @@ function AfterAdd(&$values, &$keys, $inline, $pageObject)
 
 		$_SESSION["added"] = true;
 
-DB::SetConnection("dbrf");
+DB::SetConnection("dbrfd");
 DB::Exec("CALL ActualizarSaldoConsumo");
 DB::SetConnection("");
 

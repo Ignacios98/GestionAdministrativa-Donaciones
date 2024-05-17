@@ -28,7 +28,7 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsalmovconsdia_egresos["Spanish"]["almovconsdiae_id"] = "No. nterno";
 	$fieldToolTipsalmovconsdia_egresos["Spanish"]["almovconsdiae_id"] = "";
 	$placeHoldersalmovconsdia_egresos["Spanish"]["almovconsdiae_id"] = "";
-	$fieldLabelsalmovconsdia_egresos["Spanish"]["almovconsdia_id_fk"] = "Id. Transac.";
+	$fieldLabelsalmovconsdia_egresos["Spanish"]["almovconsdia_id_fk"] = "Buscar elemento";
 	$fieldToolTipsalmovconsdia_egresos["Spanish"]["almovconsdia_id_fk"] = "";
 	$placeHoldersalmovconsdia_egresos["Spanish"]["almovconsdia_id_fk"] = "";
 	$fieldLabelsalmovconsdia_egresos["Spanish"]["almovconsdiae_cantidad"] = "Cantidad asignada";
@@ -70,6 +70,13 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsalmovconsdia_egresos["Spanish"]["ctrl_saldo"] = "Saldo disponible";
 	$fieldToolTipsalmovconsdia_egresos["Spanish"]["ctrl_saldo"] = "";
 	$placeHoldersalmovconsdia_egresos["Spanish"]["ctrl_saldo"] = "";
+	$fieldLabelsalmovconsdia_egresos["Spanish"]["mcd_valunitant"] = "Valor unitario";
+	$fieldToolTipsalmovconsdia_egresos["Spanish"]["mcd_valunitant"] = "";
+	$placeHoldersalmovconsdia_egresos["Spanish"]["mcd_valunitant"] = "";
+	$fieldLabelsalmovconsdia_egresos["Spanish"]["mcd_valmovto"] = "Valor Total";
+	$fieldToolTipsalmovconsdia_egresos["Spanish"]["mcd_valmovto"] = "";
+	$placeHoldersalmovconsdia_egresos["Spanish"]["mcd_valmovto"] = "";
+	$pageTitlesalmovconsdia_egresos["Spanish"]["add"] = "Salida de elementos";
 	if (count($fieldToolTipsalmovconsdia_egresos["Spanish"]))
 		$tdataalmovconsdia_egresos[".isUseToolTips"] = true;
 }
@@ -192,6 +199,8 @@ $tdataalmovconsdia_egresos[".googleLikeFields"][] = "almovconsdiae_cantidad";
 $tdataalmovconsdia_egresos[".googleLikeFields"][] = "almovconsdiae_id";
 $tdataalmovconsdia_egresos[".googleLikeFields"][] = "consumo_id_fk";
 $tdataalmovconsdia_egresos[".googleLikeFields"][] = "ctrl_saldo";
+$tdataalmovconsdia_egresos[".googleLikeFields"][] = "mcd_valmovto";
+$tdataalmovconsdia_egresos[".googleLikeFields"][] = "mcd_valunitant";
 $tdataalmovconsdia_egresos[".googleLikeFields"][] = "mcdalmacen";
 $tdataalmovconsdia_egresos[".googleLikeFields"][] = "mcdcodelem";
 $tdataalmovconsdia_egresos[".googleLikeFields"][] = "mcdcuenta";
@@ -217,6 +226,7 @@ $tdataalmovconsdia_egresos[".geocodingEnabled"] = false;
 
 
 
+$tdataalmovconsdia_egresos[".isDisplayLoading"] = true;
 
 
 
@@ -235,7 +245,7 @@ $tdataalmovconsdia_egresos[".strOrderBy"] = $tstrOrderBy;
 $tdataalmovconsdia_egresos[".orderindexes"] = array();
 
 
-$tdataalmovconsdia_egresos[".sqlHead"] = "SELECT almovconsdia_id_fk,  	almovconsdiae_cantidad,  	almovconsdiae_id,  	consumo_id_fk,  	ctrl_saldo,  	mcdalmacen,  	mcdcodelem,  	mcdcuenta,  	mcdnomelem,  	sys_doclasedoc_id_fk,  	sys_document_func,  	sys_fecha,  	sys_status,  	sys_time,  	sys_user";
+$tdataalmovconsdia_egresos[".sqlHead"] = "SELECT almovconsdia_id_fk,  	almovconsdiae_cantidad,  	almovconsdiae_id,  	consumo_id_fk,  	ctrl_saldo,  	mcd_valmovto,  	mcd_valunitant,  	mcdalmacen,  	mcdcodelem,  	mcdcuenta,  	mcdnomelem,  	sys_doclasedoc_id_fk,  	sys_document_func,  	sys_fecha,  	sys_status,  	sys_time,  	sys_user";
 $tdataalmovconsdia_egresos[".sqlFrom"] = "FROM almovconsdiae";
 $tdataalmovconsdia_egresos[".sqlWhereExpr"] = "";
 $tdataalmovconsdia_egresos[".sqlTail"] = "";
@@ -353,22 +363,22 @@ $tdataalmovconsdia_egresos[".hideMobileList"] = array();
 
 // Begin Lookup settings
 				$edata["LookupType"] = 2;
-	$edata["LookupTable"] = "almovconsdia_consulta";
-		$edata["listPageId"] = "list";
-		$edata["autoCompleteFieldsOnEdit"] = 1;
+	$edata["LookupTable"] = "q_ctrl_saldo_consumo_consulta";
+			$edata["autoCompleteFieldsOnEdit"] = 1;
 	$edata["autoCompleteFields"] = array();
-		$edata["autoCompleteFields"][] = array('masterF'=>"ctrl_saldo", 'lookupF'=>"mcd_salddisponible");
-	$edata["autoCompleteFields"][] = array('masterF'=>"consumo_id_fk", 'lookupF'=>"consumo_id_fk");
+		$edata["autoCompleteFields"][] = array('masterF'=>"consumo_id_fk", 'lookupF'=>"consumo_id_fk");
+	$edata["autoCompleteFields"][] = array('masterF'=>"ctrl_saldo", 'lookupF'=>"saldo_disponible");
+	$edata["autoCompleteFields"][] = array('masterF'=>"mcd_valunitant", 'lookupF'=>"mcd_valunitant");
 	$edata["autoCompleteFields"][] = array('masterF'=>"mcdalmacen", 'lookupF'=>"mcdalmacen");
-	$edata["autoCompleteFields"][] = array('masterF'=>"mcdcuenta", 'lookupF'=>"mcdcuenta");
 	$edata["autoCompleteFields"][] = array('masterF'=>"mcdcodelem", 'lookupF'=>"mcdcodelem");
+	$edata["autoCompleteFields"][] = array('masterF'=>"mcdcuenta", 'lookupF'=>"mcdcuenta");
 	$edata["autoCompleteFields"][] = array('masterF'=>"mcdnomelem", 'lookupF'=>"mcdnomelem");
 	$edata["LCType"] = 2;
 
 	
 		
 	$edata["LinkField"] = "almovconsdia_id";
-	$edata["LinkFieldType"] = 0;
+	$edata["LinkFieldType"] = 3;
 	$edata["DisplayField"] = "almovconsdia_id";
 
 	
@@ -1015,28 +1025,28 @@ $tdataalmovconsdia_egresos[".hideMobileList"] = array();
 
 	$tdataalmovconsdia_egresos["ctrl_saldo"] = $fdata;
 		$tdataalmovconsdia_egresos[".searchableFields"][] = "ctrl_saldo";
-//	mcdalmacen
+//	mcd_valmovto
 //	Custom field settings
 	$fdata = array();
 	$fdata["Index"] = 6;
-	$fdata["strName"] = "mcdalmacen";
-	$fdata["GoodName"] = "mcdalmacen";
+	$fdata["strName"] = "mcd_valmovto";
+	$fdata["GoodName"] = "mcd_valmovto";
 	$fdata["ownerTable"] = "almovconsdiae";
-	$fdata["Label"] = GetFieldLabel("almovconsdia_egresos","mcdalmacen");
-	$fdata["FieldType"] = 3;
+	$fdata["Label"] = GetFieldLabel("almovconsdia_egresos","mcd_valmovto");
+	$fdata["FieldType"] = 5;
 
 
 	
 	
 			
 
-		$fdata["strField"] = "mcdalmacen";
+		$fdata["strField"] = "mcd_valmovto";
 
-		$fdata["sourceSingle"] = "mcdalmacen";
+		$fdata["sourceSingle"] = "mcd_valmovto";
 
 	
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "mcdalmacen";
+	$fdata["FullName"] = "mcd_valmovto";
 
 	
 	
@@ -1045,7 +1055,146 @@ $tdataalmovconsdia_egresos[".hideMobileList"] = array();
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "");
+	$vdata = array("ViewFormat" => "Currency");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataalmovconsdia_egresos["mcd_valmovto"] = $fdata;
+		$tdataalmovconsdia_egresos[".searchableFields"][] = "mcd_valmovto";
+//	mcd_valunitant
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 7;
+	$fdata["strName"] = "mcd_valunitant";
+	$fdata["GoodName"] = "mcd_valunitant";
+	$fdata["ownerTable"] = "almovconsdiae";
+	$fdata["Label"] = GetFieldLabel("almovconsdia_egresos","mcd_valunitant");
+	$fdata["FieldType"] = 5;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "mcd_valunitant";
+
+		$fdata["sourceSingle"] = "mcd_valunitant";
+
+	
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "mcd_valunitant";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Currency");
 
 	
 	
@@ -1149,12 +1298,178 @@ $tdataalmovconsdia_egresos[".hideMobileList"] = array();
 //end of Filters settings
 
 
+	$tdataalmovconsdia_egresos["mcd_valunitant"] = $fdata;
+		$tdataalmovconsdia_egresos[".searchableFields"][] = "mcd_valunitant";
+//	mcdalmacen
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 8;
+	$fdata["strName"] = "mcdalmacen";
+	$fdata["GoodName"] = "mcdalmacen";
+	$fdata["ownerTable"] = "almovconsdiae";
+	$fdata["Label"] = GetFieldLabel("almovconsdia_egresos","mcdalmacen");
+	$fdata["FieldType"] = 3;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "mcdalmacen";
+
+		$fdata["sourceSingle"] = "mcdalmacen";
+
+	
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "mcdalmacen";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "inv_almacen";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "ascodalmacen";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "ascodalmacen_nombre";
+
+	
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+	
+			$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+	
+//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
 	$tdataalmovconsdia_egresos["mcdalmacen"] = $fdata;
 		$tdataalmovconsdia_egresos[".searchableFields"][] = "mcdalmacen";
 //	mcdcodelem
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 7;
+	$fdata["Index"] = 9;
 	$fdata["strName"] = "mcdcodelem";
 	$fdata["GoodName"] = "mcdcodelem";
 	$fdata["ownerTable"] = "almovconsdiae";
@@ -1290,7 +1605,7 @@ $tdataalmovconsdia_egresos[".hideMobileList"] = array();
 //	mcdcuenta
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 8;
+	$fdata["Index"] = 10;
 	$fdata["strName"] = "mcdcuenta";
 	$fdata["GoodName"] = "mcdcuenta";
 	$fdata["ownerTable"] = "almovconsdiae";
@@ -1426,7 +1741,7 @@ $tdataalmovconsdia_egresos[".hideMobileList"] = array();
 //	mcdnomelem
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 9;
+	$fdata["Index"] = 11;
 	$fdata["strName"] = "mcdnomelem";
 	$fdata["GoodName"] = "mcdnomelem";
 	$fdata["ownerTable"] = "almovconsdiae";
@@ -1472,9 +1787,7 @@ $tdataalmovconsdia_egresos[".hideMobileList"] = array();
 		$vdata["NeedEncode"] = true;
 
 	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
+	
 	$fdata["ViewFormats"]["view"] = $vdata;
 //  End View Formats
 
@@ -1562,7 +1875,7 @@ $tdataalmovconsdia_egresos[".hideMobileList"] = array();
 //	sys_doclasedoc_id_fk
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 10;
+	$fdata["Index"] = 12;
 	$fdata["strName"] = "sys_doclasedoc_id_fk";
 	$fdata["GoodName"] = "sys_doclasedoc_id_fk";
 	$fdata["ownerTable"] = "almovconsdiae";
@@ -1701,7 +2014,7 @@ $tdataalmovconsdia_egresos[".hideMobileList"] = array();
 //	sys_document_func
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 11;
+	$fdata["Index"] = 13;
 	$fdata["strName"] = "sys_document_func";
 	$fdata["GoodName"] = "sys_document_func";
 	$fdata["ownerTable"] = "almovconsdiae";
@@ -1840,7 +2153,7 @@ $tdataalmovconsdia_egresos[".hideMobileList"] = array();
 //	sys_fecha
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 12;
+	$fdata["Index"] = 14;
 	$fdata["strName"] = "sys_fecha";
 	$fdata["GoodName"] = "sys_fecha";
 	$fdata["ownerTable"] = "almovconsdiae";
@@ -1979,7 +2292,7 @@ $tdataalmovconsdia_egresos[".hideMobileList"] = array();
 //	sys_status
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 13;
+	$fdata["Index"] = 15;
 	$fdata["strName"] = "sys_status";
 	$fdata["GoodName"] = "sys_status";
 	$fdata["ownerTable"] = "almovconsdiae";
@@ -2118,7 +2431,7 @@ $tdataalmovconsdia_egresos[".hideMobileList"] = array();
 //	sys_time
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 14;
+	$fdata["Index"] = 16;
 	$fdata["strName"] = "sys_time";
 	$fdata["GoodName"] = "sys_time";
 	$fdata["ownerTable"] = "almovconsdiae";
@@ -2267,7 +2580,7 @@ $tdataalmovconsdia_egresos[".hideMobileList"] = array();
 //	sys_user
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 15;
+	$fdata["Index"] = 17;
 	$fdata["strName"] = "sys_user";
 	$fdata["GoodName"] = "sys_user";
 	$fdata["ownerTable"] = "almovconsdiae";
@@ -2465,7 +2778,7 @@ function createSqlQuery_almovconsdia_egresos()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "almovconsdia_id_fk,  	almovconsdiae_cantidad,  	almovconsdiae_id,  	consumo_id_fk,  	ctrl_saldo,  	mcdalmacen,  	mcdcodelem,  	mcdcuenta,  	mcdnomelem,  	sys_doclasedoc_id_fk,  	sys_document_func,  	sys_fecha,  	sys_status,  	sys_time,  	sys_user";
+$proto0["m_strFieldList"] = "almovconsdia_id_fk,  	almovconsdiae_cantidad,  	almovconsdiae_id,  	consumo_id_fk,  	ctrl_saldo,  	mcd_valmovto,  	mcd_valunitant,  	mcdalmacen,  	mcdcodelem,  	mcdcuenta,  	mcdnomelem,  	sys_doclasedoc_id_fk,  	sys_document_func,  	sys_fecha,  	sys_status,  	sys_time,  	sys_user";
 $proto0["m_strFrom"] = "FROM almovconsdiae";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -2577,12 +2890,12 @@ $obj = new SQLFieldListItem($proto14);
 $proto0["m_fieldlist"][]=$obj;
 						$proto16=array();
 			$obj = new SQLField(array(
-	"m_strName" => "mcdalmacen",
+	"m_strName" => "mcd_valmovto",
 	"m_strTable" => "almovconsdiae",
 	"m_srcTableName" => "almovconsdia_egresos"
 ));
 
-$proto16["m_sql"] = "mcdalmacen";
+$proto16["m_sql"] = "mcd_valmovto";
 $proto16["m_srcTableName"] = "almovconsdia_egresos";
 $proto16["m_expr"]=$obj;
 $proto16["m_alias"] = "";
@@ -2591,12 +2904,12 @@ $obj = new SQLFieldListItem($proto16);
 $proto0["m_fieldlist"][]=$obj;
 						$proto18=array();
 			$obj = new SQLField(array(
-	"m_strName" => "mcdcodelem",
+	"m_strName" => "mcd_valunitant",
 	"m_strTable" => "almovconsdiae",
 	"m_srcTableName" => "almovconsdia_egresos"
 ));
 
-$proto18["m_sql"] = "mcdcodelem";
+$proto18["m_sql"] = "mcd_valunitant";
 $proto18["m_srcTableName"] = "almovconsdia_egresos";
 $proto18["m_expr"]=$obj;
 $proto18["m_alias"] = "";
@@ -2605,12 +2918,12 @@ $obj = new SQLFieldListItem($proto18);
 $proto0["m_fieldlist"][]=$obj;
 						$proto20=array();
 			$obj = new SQLField(array(
-	"m_strName" => "mcdcuenta",
+	"m_strName" => "mcdalmacen",
 	"m_strTable" => "almovconsdiae",
 	"m_srcTableName" => "almovconsdia_egresos"
 ));
 
-$proto20["m_sql"] = "mcdcuenta";
+$proto20["m_sql"] = "mcdalmacen";
 $proto20["m_srcTableName"] = "almovconsdia_egresos";
 $proto20["m_expr"]=$obj;
 $proto20["m_alias"] = "";
@@ -2619,12 +2932,12 @@ $obj = new SQLFieldListItem($proto20);
 $proto0["m_fieldlist"][]=$obj;
 						$proto22=array();
 			$obj = new SQLField(array(
-	"m_strName" => "mcdnomelem",
+	"m_strName" => "mcdcodelem",
 	"m_strTable" => "almovconsdiae",
 	"m_srcTableName" => "almovconsdia_egresos"
 ));
 
-$proto22["m_sql"] = "mcdnomelem";
+$proto22["m_sql"] = "mcdcodelem";
 $proto22["m_srcTableName"] = "almovconsdia_egresos";
 $proto22["m_expr"]=$obj;
 $proto22["m_alias"] = "";
@@ -2633,12 +2946,12 @@ $obj = new SQLFieldListItem($proto22);
 $proto0["m_fieldlist"][]=$obj;
 						$proto24=array();
 			$obj = new SQLField(array(
-	"m_strName" => "sys_doclasedoc_id_fk",
+	"m_strName" => "mcdcuenta",
 	"m_strTable" => "almovconsdiae",
 	"m_srcTableName" => "almovconsdia_egresos"
 ));
 
-$proto24["m_sql"] = "sys_doclasedoc_id_fk";
+$proto24["m_sql"] = "mcdcuenta";
 $proto24["m_srcTableName"] = "almovconsdia_egresos";
 $proto24["m_expr"]=$obj;
 $proto24["m_alias"] = "";
@@ -2647,12 +2960,12 @@ $obj = new SQLFieldListItem($proto24);
 $proto0["m_fieldlist"][]=$obj;
 						$proto26=array();
 			$obj = new SQLField(array(
-	"m_strName" => "sys_document_func",
+	"m_strName" => "mcdnomelem",
 	"m_strTable" => "almovconsdiae",
 	"m_srcTableName" => "almovconsdia_egresos"
 ));
 
-$proto26["m_sql"] = "sys_document_func";
+$proto26["m_sql"] = "mcdnomelem";
 $proto26["m_srcTableName"] = "almovconsdia_egresos";
 $proto26["m_expr"]=$obj;
 $proto26["m_alias"] = "";
@@ -2661,12 +2974,12 @@ $obj = new SQLFieldListItem($proto26);
 $proto0["m_fieldlist"][]=$obj;
 						$proto28=array();
 			$obj = new SQLField(array(
-	"m_strName" => "sys_fecha",
+	"m_strName" => "sys_doclasedoc_id_fk",
 	"m_strTable" => "almovconsdiae",
 	"m_srcTableName" => "almovconsdia_egresos"
 ));
 
-$proto28["m_sql"] = "sys_fecha";
+$proto28["m_sql"] = "sys_doclasedoc_id_fk";
 $proto28["m_srcTableName"] = "almovconsdia_egresos";
 $proto28["m_expr"]=$obj;
 $proto28["m_alias"] = "";
@@ -2675,12 +2988,12 @@ $obj = new SQLFieldListItem($proto28);
 $proto0["m_fieldlist"][]=$obj;
 						$proto30=array();
 			$obj = new SQLField(array(
-	"m_strName" => "sys_status",
+	"m_strName" => "sys_document_func",
 	"m_strTable" => "almovconsdiae",
 	"m_srcTableName" => "almovconsdia_egresos"
 ));
 
-$proto30["m_sql"] = "sys_status";
+$proto30["m_sql"] = "sys_document_func";
 $proto30["m_srcTableName"] = "almovconsdia_egresos";
 $proto30["m_expr"]=$obj;
 $proto30["m_alias"] = "";
@@ -2689,12 +3002,12 @@ $obj = new SQLFieldListItem($proto30);
 $proto0["m_fieldlist"][]=$obj;
 						$proto32=array();
 			$obj = new SQLField(array(
-	"m_strName" => "sys_time",
+	"m_strName" => "sys_fecha",
 	"m_strTable" => "almovconsdiae",
 	"m_srcTableName" => "almovconsdia_egresos"
 ));
 
-$proto32["m_sql"] = "sys_time";
+$proto32["m_sql"] = "sys_fecha";
 $proto32["m_srcTableName"] = "almovconsdia_egresos";
 $proto32["m_expr"]=$obj;
 $proto32["m_alias"] = "";
@@ -2703,63 +3016,93 @@ $obj = new SQLFieldListItem($proto32);
 $proto0["m_fieldlist"][]=$obj;
 						$proto34=array();
 			$obj = new SQLField(array(
-	"m_strName" => "sys_user",
+	"m_strName" => "sys_status",
 	"m_strTable" => "almovconsdiae",
 	"m_srcTableName" => "almovconsdia_egresos"
 ));
 
-$proto34["m_sql"] = "sys_user";
+$proto34["m_sql"] = "sys_status";
 $proto34["m_srcTableName"] = "almovconsdia_egresos";
 $proto34["m_expr"]=$obj;
 $proto34["m_alias"] = "";
 $obj = new SQLFieldListItem($proto34);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto36=array();
-$proto36["m_link"] = "SQLL_MAIN";
-			$proto37=array();
-$proto37["m_strName"] = "almovconsdiae";
-$proto37["m_srcTableName"] = "almovconsdia_egresos";
-$proto37["m_columns"] = array();
-$proto37["m_columns"][] = "almovconsdia_id_fk";
-$proto37["m_columns"][] = "almovconsdiae_cantidad";
-$proto37["m_columns"][] = "almovconsdiae_id";
-$proto37["m_columns"][] = "consumo_id_fk";
-$proto37["m_columns"][] = "ctrl_saldo";
-$proto37["m_columns"][] = "mcdalmacen";
-$proto37["m_columns"][] = "mcdcodelem";
-$proto37["m_columns"][] = "mcdcuenta";
-$proto37["m_columns"][] = "mcdnomelem";
-$proto37["m_columns"][] = "sys_doclasedoc_id_fk";
-$proto37["m_columns"][] = "sys_document_func";
-$proto37["m_columns"][] = "sys_fecha";
-$proto37["m_columns"][] = "sys_status";
-$proto37["m_columns"][] = "sys_time";
-$proto37["m_columns"][] = "sys_user";
-$obj = new SQLTable($proto37);
+						$proto36=array();
+			$obj = new SQLField(array(
+	"m_strName" => "sys_time",
+	"m_strTable" => "almovconsdiae",
+	"m_srcTableName" => "almovconsdia_egresos"
+));
 
-$proto36["m_table"] = $obj;
-$proto36["m_sql"] = "almovconsdiae";
-$proto36["m_alias"] = "";
+$proto36["m_sql"] = "sys_time";
 $proto36["m_srcTableName"] = "almovconsdia_egresos";
-$proto38=array();
-$proto38["m_sql"] = "";
-$proto38["m_uniontype"] = "SQLL_UNKNOWN";
+$proto36["m_expr"]=$obj;
+$proto36["m_alias"] = "";
+$obj = new SQLFieldListItem($proto36);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto38=array();
+			$obj = new SQLField(array(
+	"m_strName" => "sys_user",
+	"m_strTable" => "almovconsdiae",
+	"m_srcTableName" => "almovconsdia_egresos"
+));
+
+$proto38["m_sql"] = "sys_user";
+$proto38["m_srcTableName"] = "almovconsdia_egresos";
+$proto38["m_expr"]=$obj;
+$proto38["m_alias"] = "";
+$obj = new SQLFieldListItem($proto38);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto40=array();
+$proto40["m_link"] = "SQLL_MAIN";
+			$proto41=array();
+$proto41["m_strName"] = "almovconsdiae";
+$proto41["m_srcTableName"] = "almovconsdia_egresos";
+$proto41["m_columns"] = array();
+$proto41["m_columns"][] = "almovconsdia_id_fk";
+$proto41["m_columns"][] = "almovconsdiae_cantidad";
+$proto41["m_columns"][] = "almovconsdiae_id";
+$proto41["m_columns"][] = "consumo_id_fk";
+$proto41["m_columns"][] = "ctrl_saldo";
+$proto41["m_columns"][] = "mcd_valmovto";
+$proto41["m_columns"][] = "mcd_valunitant";
+$proto41["m_columns"][] = "mcdalmacen";
+$proto41["m_columns"][] = "mcdcodelem";
+$proto41["m_columns"][] = "mcdcuenta";
+$proto41["m_columns"][] = "mcdnomelem";
+$proto41["m_columns"][] = "sys_doclasedoc_id_fk";
+$proto41["m_columns"][] = "sys_document_func";
+$proto41["m_columns"][] = "sys_fecha";
+$proto41["m_columns"][] = "sys_status";
+$proto41["m_columns"][] = "sys_time";
+$proto41["m_columns"][] = "sys_user";
+$obj = new SQLTable($proto41);
+
+$proto40["m_table"] = $obj;
+$proto40["m_sql"] = "almovconsdiae";
+$proto40["m_alias"] = "";
+$proto40["m_srcTableName"] = "almovconsdia_egresos";
+$proto42=array();
+$proto42["m_sql"] = "";
+$proto42["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto38["m_column"]=$obj;
-$proto38["m_contained"] = array();
-$proto38["m_strCase"] = "";
-$proto38["m_havingmode"] = false;
-$proto38["m_inBrackets"] = false;
-$proto38["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto38);
+$proto42["m_column"]=$obj;
+$proto42["m_contained"] = array();
+$proto42["m_strCase"] = "";
+$proto42["m_havingmode"] = false;
+$proto42["m_inBrackets"] = false;
+$proto42["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto42);
 
-$proto36["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto36);
+$proto40["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto40);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -2775,7 +3118,7 @@ $queryData_almovconsdia_egresos = createSqlQuery_almovconsdia_egresos();
 	
 								;
 
-															
+																	
 
 $tdataalmovconsdia_egresos[".sqlquery"] = $queryData_almovconsdia_egresos;
 
