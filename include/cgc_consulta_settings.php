@@ -195,7 +195,7 @@ $tdatacgc_consulta[".strOrderBy"] = $tstrOrderBy;
 $tdatacgc_consulta[".orderindexes"] = array();
 
 
-$tdatacgc_consulta[".sqlHead"] = "SELECT cgc_di,  CodigoContable,  pos_9num as CodigoContableN,  CONCAT_WS(' ->', CodigoContable, Descripcion_9) AS Descripcion,  pos_9";
+$tdatacgc_consulta[".sqlHead"] = "SELECT cgc_di,  CodigoContable,  pos_9num AS CodigoContableN,  CONCAT_WS(' ->', CodigoContable, Descripcion_9) AS Descripcion,  pos_9";
 $tdatacgc_consulta[".sqlFrom"] = "FROM cgc_6";
 $tdatacgc_consulta[".sqlWhereExpr"] = "(pos_9 is not null)";
 $tdatacgc_consulta[".sqlTail"] = "";
@@ -984,7 +984,7 @@ function createSqlQuery_cgc_consulta()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "cgc_di,  CodigoContable,  pos_9num as CodigoContableN,  CONCAT_WS(' ->', CodigoContable, Descripcion_9) AS Descripcion,  pos_9";
+$proto0["m_strFieldList"] = "cgc_di,  CodigoContable,  pos_9num AS CodigoContableN,  CONCAT_WS(' ->', CodigoContable, Descripcion_9) AS Descripcion,  pos_9";
 $proto0["m_strFrom"] = "FROM cgc_6";
 $proto0["m_strWhere"] = "(pos_9 is not null)";
 $proto0["m_strOrderBy"] = "";

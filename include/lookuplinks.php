@@ -761,6 +761,20 @@ function InitLookupLinks()
 			$lookupTableLinks["geunidmedida"]["alelemconsumo_consulta.ecunidad"] = array();
 		}
 		$lookupTableLinks["geunidmedida"]["alelemconsumo_consulta.ecunidad"]["edit"] = array("table" => "alelemconsumo_consulta", "field" => "ecunidad", "page" => "edit");
+		if( !isset( $lookupTableLinks["cgc_consulta"] ) ) {
+			$lookupTableLinks["cgc_consulta"] = array();
+		}
+		if( !isset( $lookupTableLinks["cgc_consulta"]["alelemconsumo_consulta.nicsp_cuentacostonew"] )) {
+			$lookupTableLinks["cgc_consulta"]["alelemconsumo_consulta.nicsp_cuentacostonew"] = array();
+		}
+		$lookupTableLinks["cgc_consulta"]["alelemconsumo_consulta.nicsp_cuentacostonew"]["edit"] = array("table" => "alelemconsumo_consulta", "field" => "nicsp_cuentacostonew", "page" => "edit");
+		if( !isset( $lookupTableLinks["cgc_consulta"] ) ) {
+			$lookupTableLinks["cgc_consulta"] = array();
+		}
+		if( !isset( $lookupTableLinks["cgc_consulta"]["alelemconsumo_consulta.nicsp_cuentacostoservicio"] )) {
+			$lookupTableLinks["cgc_consulta"]["alelemconsumo_consulta.nicsp_cuentacostoservicio"] = array();
+		}
+		$lookupTableLinks["cgc_consulta"]["alelemconsumo_consulta.nicsp_cuentacostoservicio"]["edit"] = array("table" => "alelemconsumo_consulta", "field" => "nicsp_cuentacostoservicio", "page" => "edit");
 		if( !isset( $lookupTableLinks["alasientos"] ) ) {
 			$lookupTableLinks["alasientos"] = array();
 		}

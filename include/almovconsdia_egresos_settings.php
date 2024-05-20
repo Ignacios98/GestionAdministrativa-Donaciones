@@ -2158,7 +2158,7 @@ $tdataalmovconsdia_egresos[".hideMobileList"] = array();
 	$fdata["GoodName"] = "sys_fecha";
 	$fdata["ownerTable"] = "almovconsdiae";
 	$fdata["Label"] = GetFieldLabel("almovconsdia_egresos","sys_fecha");
-	$fdata["FieldType"] = 7;
+	$fdata["FieldType"] = 135;
 
 
 	

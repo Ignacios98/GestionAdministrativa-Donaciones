@@ -40,6 +40,24 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsalelemconsumo_consulta["Spanish"]["ecunidad"] = "Unidad medida";
 	$fieldToolTipsalelemconsumo_consulta["Spanish"]["ecunidad"] = "";
 	$placeHoldersalelemconsumo_consulta["Spanish"]["ecunidad"] = "";
+	$fieldLabelsalelemconsumo_consulta["Spanish"]["nicsp_cuentacostonew"] = "Buscar";
+	$fieldToolTipsalelemconsumo_consulta["Spanish"]["nicsp_cuentacostonew"] = "";
+	$placeHoldersalelemconsumo_consulta["Spanish"]["nicsp_cuentacostonew"] = "";
+	$fieldLabelsalelemconsumo_consulta["Spanish"]["nicsp_cuentacostonewc"] = "Código";
+	$fieldToolTipsalelemconsumo_consulta["Spanish"]["nicsp_cuentacostonewc"] = "";
+	$placeHoldersalelemconsumo_consulta["Spanish"]["nicsp_cuentacostonewc"] = "";
+	$fieldLabelsalelemconsumo_consulta["Spanish"]["nicsp_cuentacostonewn"] = "Cuenta ingreso";
+	$fieldToolTipsalelemconsumo_consulta["Spanish"]["nicsp_cuentacostonewn"] = "";
+	$placeHoldersalelemconsumo_consulta["Spanish"]["nicsp_cuentacostonewn"] = "";
+	$fieldLabelsalelemconsumo_consulta["Spanish"]["nicsp_cuentacostoservicio"] = "Buscar";
+	$fieldToolTipsalelemconsumo_consulta["Spanish"]["nicsp_cuentacostoservicio"] = "";
+	$placeHoldersalelemconsumo_consulta["Spanish"]["nicsp_cuentacostoservicio"] = "";
+	$fieldLabelsalelemconsumo_consulta["Spanish"]["nicsp_cuentacostoservicioc"] = "Código";
+	$fieldToolTipsalelemconsumo_consulta["Spanish"]["nicsp_cuentacostoservicioc"] = "";
+	$placeHoldersalelemconsumo_consulta["Spanish"]["nicsp_cuentacostoservicioc"] = "";
+	$fieldLabelsalelemconsumo_consulta["Spanish"]["nicsp_cuentacostoservicion"] = "Cuenta egreso";
+	$fieldToolTipsalelemconsumo_consulta["Spanish"]["nicsp_cuentacostoservicion"] = "";
+	$placeHoldersalelemconsumo_consulta["Spanish"]["nicsp_cuentacostoservicion"] = "";
 	if (count($fieldToolTipsalelemconsumo_consulta["Spanish"]))
 		$tdataalelemconsumo_consulta[".isUseToolTips"] = true;
 }
@@ -162,6 +180,12 @@ $tdataalelemconsumo_consulta[".googleLikeFields"][] = "eccuenta";
 $tdataalelemconsumo_consulta[".googleLikeFields"][] = "ec_codelem";
 $tdataalelemconsumo_consulta[".googleLikeFields"][] = "ec_nomelemento";
 $tdataalelemconsumo_consulta[".googleLikeFields"][] = "ecunidad";
+$tdataalelemconsumo_consulta[".googleLikeFields"][] = "nicsp_cuentacostonew";
+$tdataalelemconsumo_consulta[".googleLikeFields"][] = "nicsp_cuentacostonewc";
+$tdataalelemconsumo_consulta[".googleLikeFields"][] = "nicsp_cuentacostonewn";
+$tdataalelemconsumo_consulta[".googleLikeFields"][] = "nicsp_cuentacostoservicio";
+$tdataalelemconsumo_consulta[".googleLikeFields"][] = "nicsp_cuentacostoservicioc";
+$tdataalelemconsumo_consulta[".googleLikeFields"][] = "nicsp_cuentacostoservicion";
 
 
 
@@ -195,7 +219,7 @@ $tdataalelemconsumo_consulta[".strOrderBy"] = $tstrOrderBy;
 $tdataalelemconsumo_consulta[".orderindexes"] = array();
 
 
-$tdataalelemconsumo_consulta[".sqlHead"] = "SELECT alelemenconsumo_id,  eccuenta,  ec_codelem,  ec_nomelemento,  ecunidad";
+$tdataalelemconsumo_consulta[".sqlHead"] = "SELECT alelemenconsumo_id,  eccuenta,  ec_codelem,  ec_nomelemento,  ecunidad,  nicsp_cuentacostonew,  nicsp_cuentacostonewc,  nicsp_cuentacostonewn,  nicsp_cuentacostoservicio,  nicsp_cuentacostoservicioc,  nicsp_cuentacostoservicion";
 $tdataalelemconsumo_consulta[".sqlFrom"] = "FROM alelemconsumo";
 $tdataalelemconsumo_consulta[".sqlWhereExpr"] = "";
 $tdataalelemconsumo_consulta[".sqlTail"] = "";
@@ -455,7 +479,8 @@ $tdataalelemconsumo_consulta[".hideMobileList"] = array();
 
 
 
-	
+		$edata["IsRequired"] = true;
+
 	
 	
 	
@@ -478,7 +503,8 @@ $tdataalelemconsumo_consulta[".hideMobileList"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
 				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
 	
 //	End validation
 
@@ -733,7 +759,8 @@ $tdataalelemconsumo_consulta[".hideMobileList"] = array();
 
 
 
-	
+		$edata["IsRequired"] = true;
+
 	
 	
 	
@@ -756,7 +783,8 @@ $tdataalelemconsumo_consulta[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-	
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
 	
 //	End validation
 
@@ -890,7 +918,8 @@ $tdataalelemconsumo_consulta[".hideMobileList"] = array();
 
 	
 	
-	
+		$edata["AllowToAdd"] = true;
+		
 	
 
 	
@@ -968,6 +997,886 @@ $tdataalelemconsumo_consulta[".hideMobileList"] = array();
 
 	$tdataalelemconsumo_consulta["ecunidad"] = $fdata;
 		$tdataalelemconsumo_consulta[".searchableFields"][] = "ecunidad";
+//	nicsp_cuentacostonew
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 6;
+	$fdata["strName"] = "nicsp_cuentacostonew";
+	$fdata["GoodName"] = "nicsp_cuentacostonew";
+	$fdata["ownerTable"] = "alelemconsumo";
+	$fdata["Label"] = GetFieldLabel("alelemconsumo_consulta","nicsp_cuentacostonew");
+	$fdata["FieldType"] = 3;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "nicsp_cuentacostonew";
+
+		$fdata["sourceSingle"] = "nicsp_cuentacostonew";
+
+	
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "nicsp_cuentacostonew";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "cgc_consulta";
+		$edata["listPageId"] = "list";
+		$edata["autoCompleteFieldsOnEdit"] = 1;
+	$edata["autoCompleteFields"] = array();
+		$edata["autoCompleteFields"][] = array('masterF'=>"nicsp_cuentacostonewc", 'lookupF'=>"pos_9");
+	$edata["autoCompleteFields"][] = array('masterF'=>"nicsp_cuentacostonewn", 'lookupF'=>"Descripcion");
+	$edata["LCType"] = 2;
+
+	
+		
+	$edata["LinkField"] = "CodigoContableN";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "CodigoContableN";
+
+	
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+	
+// End Lookup Settings
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+	
+			$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+	
+//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataalelemconsumo_consulta["nicsp_cuentacostonew"] = $fdata;
+		$tdataalelemconsumo_consulta[".searchableFields"][] = "nicsp_cuentacostonew";
+//	nicsp_cuentacostonewc
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 7;
+	$fdata["strName"] = "nicsp_cuentacostonewc";
+	$fdata["GoodName"] = "nicsp_cuentacostonewc";
+	$fdata["ownerTable"] = "alelemconsumo";
+	$fdata["Label"] = GetFieldLabel("alelemconsumo_consulta","nicsp_cuentacostonewc");
+	$fdata["FieldType"] = 200;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "nicsp_cuentacostonewc";
+
+		$fdata["sourceSingle"] = "nicsp_cuentacostonewc";
+
+	
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "nicsp_cuentacostonewc";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataalelemconsumo_consulta["nicsp_cuentacostonewc"] = $fdata;
+		$tdataalelemconsumo_consulta[".searchableFields"][] = "nicsp_cuentacostonewc";
+//	nicsp_cuentacostonewn
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 8;
+	$fdata["strName"] = "nicsp_cuentacostonewn";
+	$fdata["GoodName"] = "nicsp_cuentacostonewn";
+	$fdata["ownerTable"] = "alelemconsumo";
+	$fdata["Label"] = GetFieldLabel("alelemconsumo_consulta","nicsp_cuentacostonewn");
+	$fdata["FieldType"] = 200;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "nicsp_cuentacostonewn";
+
+		$fdata["sourceSingle"] = "nicsp_cuentacostonewn";
+
+	
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "nicsp_cuentacostonewn";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataalelemconsumo_consulta["nicsp_cuentacostonewn"] = $fdata;
+		$tdataalelemconsumo_consulta[".searchableFields"][] = "nicsp_cuentacostonewn";
+//	nicsp_cuentacostoservicio
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 9;
+	$fdata["strName"] = "nicsp_cuentacostoservicio";
+	$fdata["GoodName"] = "nicsp_cuentacostoservicio";
+	$fdata["ownerTable"] = "alelemconsumo";
+	$fdata["Label"] = GetFieldLabel("alelemconsumo_consulta","nicsp_cuentacostoservicio");
+	$fdata["FieldType"] = 3;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "nicsp_cuentacostoservicio";
+
+		$fdata["sourceSingle"] = "nicsp_cuentacostoservicio";
+
+	
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "nicsp_cuentacostoservicio";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "cgc_consulta";
+		$edata["listPageId"] = "list";
+		$edata["autoCompleteFieldsOnEdit"] = 1;
+	$edata["autoCompleteFields"] = array();
+		$edata["autoCompleteFields"][] = array('masterF'=>"nicsp_cuentacostoservicioc", 'lookupF'=>"pos_9");
+	$edata["autoCompleteFields"][] = array('masterF'=>"nicsp_cuentacostoservicion", 'lookupF'=>"Descripcion");
+	$edata["LCType"] = 2;
+
+	
+		
+	$edata["LinkField"] = "CodigoContableN";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "CodigoContableN";
+
+	
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+	
+// End Lookup Settings
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+	
+			$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+	
+//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataalelemconsumo_consulta["nicsp_cuentacostoservicio"] = $fdata;
+		$tdataalelemconsumo_consulta[".searchableFields"][] = "nicsp_cuentacostoservicio";
+//	nicsp_cuentacostoservicioc
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 10;
+	$fdata["strName"] = "nicsp_cuentacostoservicioc";
+	$fdata["GoodName"] = "nicsp_cuentacostoservicioc";
+	$fdata["ownerTable"] = "alelemconsumo";
+	$fdata["Label"] = GetFieldLabel("alelemconsumo_consulta","nicsp_cuentacostoservicioc");
+	$fdata["FieldType"] = 200;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "nicsp_cuentacostoservicioc";
+
+		$fdata["sourceSingle"] = "nicsp_cuentacostoservicioc";
+
+	
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "nicsp_cuentacostoservicioc";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataalelemconsumo_consulta["nicsp_cuentacostoservicioc"] = $fdata;
+		$tdataalelemconsumo_consulta[".searchableFields"][] = "nicsp_cuentacostoservicioc";
+//	nicsp_cuentacostoservicion
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 11;
+	$fdata["strName"] = "nicsp_cuentacostoservicion";
+	$fdata["GoodName"] = "nicsp_cuentacostoservicion";
+	$fdata["ownerTable"] = "alelemconsumo";
+	$fdata["Label"] = GetFieldLabel("alelemconsumo_consulta","nicsp_cuentacostoservicion");
+	$fdata["FieldType"] = 200;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "nicsp_cuentacostoservicion";
+
+		$fdata["sourceSingle"] = "nicsp_cuentacostoservicion";
+
+	
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "nicsp_cuentacostoservicion";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataalelemconsumo_consulta["nicsp_cuentacostoservicion"] = $fdata;
+		$tdataalelemconsumo_consulta[".searchableFields"][] = "nicsp_cuentacostoservicion";
 
 
 $tables_data["alelemconsumo_consulta"]=&$tdataalelemconsumo_consulta;
@@ -1012,7 +1921,7 @@ function createSqlQuery_alelemconsumo_consulta()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "alelemenconsumo_id,  eccuenta,  ec_codelem,  ec_nomelemento,  ecunidad";
+$proto0["m_strFieldList"] = "alelemenconsumo_id,  eccuenta,  ec_codelem,  ec_nomelemento,  ecunidad,  nicsp_cuentacostonew,  nicsp_cuentacostonewc,  nicsp_cuentacostonewn,  nicsp_cuentacostoservicio,  nicsp_cuentacostoservicioc,  nicsp_cuentacostoservicion";
 $proto0["m_strFrom"] = "FROM alelemconsumo";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -1122,44 +2031,134 @@ $proto14["m_alias"] = "";
 $obj = new SQLFieldListItem($proto14);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto16=array();
-$proto16["m_link"] = "SQLL_MAIN";
-			$proto17=array();
-$proto17["m_strName"] = "alelemconsumo";
-$proto17["m_srcTableName"] = "alelemconsumo_consulta";
-$proto17["m_columns"] = array();
-$proto17["m_columns"][] = "alelemenconsumo_id";
-$proto17["m_columns"][] = "ec_codelem";
-$proto17["m_columns"][] = "ec_codelemrel";
-$proto17["m_columns"][] = "ec_localizacion";
-$proto17["m_columns"][] = "ec_nomelemento";
-$proto17["m_columns"][] = "eccuenta";
-$proto17["m_columns"][] = "ectipoestruc";
-$proto17["m_columns"][] = "ecunidad";
-$obj = new SQLTable($proto17);
+						$proto16=array();
+			$obj = new SQLField(array(
+	"m_strName" => "nicsp_cuentacostonew",
+	"m_strTable" => "alelemconsumo",
+	"m_srcTableName" => "alelemconsumo_consulta"
+));
 
-$proto16["m_table"] = $obj;
-$proto16["m_sql"] = "alelemconsumo";
-$proto16["m_alias"] = "";
+$proto16["m_sql"] = "nicsp_cuentacostonew";
 $proto16["m_srcTableName"] = "alelemconsumo_consulta";
-$proto18=array();
-$proto18["m_sql"] = "";
-$proto18["m_uniontype"] = "SQLL_UNKNOWN";
+$proto16["m_expr"]=$obj;
+$proto16["m_alias"] = "";
+$obj = new SQLFieldListItem($proto16);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto18=array();
+			$obj = new SQLField(array(
+	"m_strName" => "nicsp_cuentacostonewc",
+	"m_strTable" => "alelemconsumo",
+	"m_srcTableName" => "alelemconsumo_consulta"
+));
+
+$proto18["m_sql"] = "nicsp_cuentacostonewc";
+$proto18["m_srcTableName"] = "alelemconsumo_consulta";
+$proto18["m_expr"]=$obj;
+$proto18["m_alias"] = "";
+$obj = new SQLFieldListItem($proto18);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto20=array();
+			$obj = new SQLField(array(
+	"m_strName" => "nicsp_cuentacostonewn",
+	"m_strTable" => "alelemconsumo",
+	"m_srcTableName" => "alelemconsumo_consulta"
+));
+
+$proto20["m_sql"] = "nicsp_cuentacostonewn";
+$proto20["m_srcTableName"] = "alelemconsumo_consulta";
+$proto20["m_expr"]=$obj;
+$proto20["m_alias"] = "";
+$obj = new SQLFieldListItem($proto20);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto22=array();
+			$obj = new SQLField(array(
+	"m_strName" => "nicsp_cuentacostoservicio",
+	"m_strTable" => "alelemconsumo",
+	"m_srcTableName" => "alelemconsumo_consulta"
+));
+
+$proto22["m_sql"] = "nicsp_cuentacostoservicio";
+$proto22["m_srcTableName"] = "alelemconsumo_consulta";
+$proto22["m_expr"]=$obj;
+$proto22["m_alias"] = "";
+$obj = new SQLFieldListItem($proto22);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto24=array();
+			$obj = new SQLField(array(
+	"m_strName" => "nicsp_cuentacostoservicioc",
+	"m_strTable" => "alelemconsumo",
+	"m_srcTableName" => "alelemconsumo_consulta"
+));
+
+$proto24["m_sql"] = "nicsp_cuentacostoservicioc";
+$proto24["m_srcTableName"] = "alelemconsumo_consulta";
+$proto24["m_expr"]=$obj;
+$proto24["m_alias"] = "";
+$obj = new SQLFieldListItem($proto24);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto26=array();
+			$obj = new SQLField(array(
+	"m_strName" => "nicsp_cuentacostoservicion",
+	"m_strTable" => "alelemconsumo",
+	"m_srcTableName" => "alelemconsumo_consulta"
+));
+
+$proto26["m_sql"] = "nicsp_cuentacostoservicion";
+$proto26["m_srcTableName"] = "alelemconsumo_consulta";
+$proto26["m_expr"]=$obj;
+$proto26["m_alias"] = "";
+$obj = new SQLFieldListItem($proto26);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto28=array();
+$proto28["m_link"] = "SQLL_MAIN";
+			$proto29=array();
+$proto29["m_strName"] = "alelemconsumo";
+$proto29["m_srcTableName"] = "alelemconsumo_consulta";
+$proto29["m_columns"] = array();
+$proto29["m_columns"][] = "alelemenconsumo_id";
+$proto29["m_columns"][] = "ec_codelem";
+$proto29["m_columns"][] = "ec_codelemrel";
+$proto29["m_columns"][] = "ec_localizacion";
+$proto29["m_columns"][] = "ec_nomelemento";
+$proto29["m_columns"][] = "eccuenta";
+$proto29["m_columns"][] = "ectipoestruc";
+$proto29["m_columns"][] = "ecunidad";
+$proto29["m_columns"][] = "nicsp_cuentacostonew";
+$proto29["m_columns"][] = "nicsp_cuentacostonewc";
+$proto29["m_columns"][] = "nicsp_cuentacostonewn";
+$proto29["m_columns"][] = "nicsp_cuentacostoservicio";
+$proto29["m_columns"][] = "nicsp_cuentacostoservicioc";
+$proto29["m_columns"][] = "nicsp_cuentacostoservicion";
+$obj = new SQLTable($proto29);
+
+$proto28["m_table"] = $obj;
+$proto28["m_sql"] = "alelemconsumo";
+$proto28["m_alias"] = "";
+$proto28["m_srcTableName"] = "alelemconsumo_consulta";
+$proto30=array();
+$proto30["m_sql"] = "";
+$proto30["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto18["m_column"]=$obj;
-$proto18["m_contained"] = array();
-$proto18["m_strCase"] = "";
-$proto18["m_havingmode"] = false;
-$proto18["m_inBrackets"] = false;
-$proto18["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto18);
+$proto30["m_column"]=$obj;
+$proto30["m_contained"] = array();
+$proto30["m_strCase"] = "";
+$proto30["m_havingmode"] = false;
+$proto30["m_inBrackets"] = false;
+$proto30["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto30);
 
-$proto16["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto16);
+$proto28["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto28);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -1175,7 +2174,7 @@ $queryData_alelemconsumo_consulta = createSqlQuery_alelemconsumo_consulta();
 	
 								;
 
-					
+											
 
 $tdataalelemconsumo_consulta[".sqlquery"] = $queryData_alelemconsumo_consulta;
 

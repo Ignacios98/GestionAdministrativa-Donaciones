@@ -258,6 +258,84 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_ecunidad}</span>
 						</div>
 		{END searchCtrlBlock_ecunidad}
+																{BEGIN searchCtrlBlock_nicsp_cuentacostoservicion}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nicsp_cuentacostoservicion}" {$filterRow_attrs_nicsp_cuentacostoservicion}>
+			<label>{$label alelemconsumo_consulta nicsp_cuentacostoservicion }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nicsp_cuentacostoservicion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nicsp_cuentacostoservicion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nicsp_cuentacostoservicion}</span>
+						</div>
+		{END searchCtrlBlock_nicsp_cuentacostoservicion}
+																{BEGIN searchCtrlBlock_nicsp_cuentacostoservicioc}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nicsp_cuentacostoservicioc}" {$filterRow_attrs_nicsp_cuentacostoservicioc}>
+			<label>{$label alelemconsumo_consulta nicsp_cuentacostoservicioc }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nicsp_cuentacostoservicioc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nicsp_cuentacostoservicioc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nicsp_cuentacostoservicioc}</span>
+						</div>
+		{END searchCtrlBlock_nicsp_cuentacostoservicioc}
+																{BEGIN searchCtrlBlock_nicsp_cuentacostoservicio}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nicsp_cuentacostoservicio}" {$filterRow_attrs_nicsp_cuentacostoservicio}>
+			<label>{$label alelemconsumo_consulta nicsp_cuentacostoservicio }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nicsp_cuentacostoservicio}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nicsp_cuentacostoservicio}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nicsp_cuentacostoservicio}</span>
+						</div>
+		{END searchCtrlBlock_nicsp_cuentacostoservicio}
+																{BEGIN searchCtrlBlock_nicsp_cuentacostonewn}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nicsp_cuentacostonewn}" {$filterRow_attrs_nicsp_cuentacostonewn}>
+			<label>{$label alelemconsumo_consulta nicsp_cuentacostonewn }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nicsp_cuentacostonewn}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nicsp_cuentacostonewn}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nicsp_cuentacostonewn}</span>
+						</div>
+		{END searchCtrlBlock_nicsp_cuentacostonewn}
+																{BEGIN searchCtrlBlock_nicsp_cuentacostonewc}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nicsp_cuentacostonewc}" {$filterRow_attrs_nicsp_cuentacostonewc}>
+			<label>{$label alelemconsumo_consulta nicsp_cuentacostonewc }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nicsp_cuentacostonewc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nicsp_cuentacostonewc}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nicsp_cuentacostonewc}</span>
+						</div>
+		{END searchCtrlBlock_nicsp_cuentacostonewc}
+																{BEGIN searchCtrlBlock_nicsp_cuentacostonew}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nicsp_cuentacostonew}" {$filterRow_attrs_nicsp_cuentacostonew}>
+			<label>{$label alelemconsumo_consulta nicsp_cuentacostonew }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nicsp_cuentacostonew}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nicsp_cuentacostonew}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nicsp_cuentacostonew}</span>
+						</div>
+		{END searchCtrlBlock_nicsp_cuentacostonew}
 																{BEGIN searchCtrlBlock_alelemenconsumo_id}
 
 
@@ -710,6 +788,12 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="ecunidad"]:before {
 		content: "{$label alelemconsumo_consulta ecunidad}";
 	}
+					[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="nicsp_cuentacostonewn"]:before {
+		content: "{$label alelemconsumo_consulta nicsp_cuentacostonewn}";
+	}
+					[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="nicsp_cuentacostoservicion"]:before {
+		content: "{$label alelemconsumo_consulta nicsp_cuentacostoservicion}";
+	}
 	}
 </style>
 <table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table table-hover table-bordered r-horizontal-grid  r-flexgrid rnr-b-grid rnr-gridtable"
@@ -898,6 +982,74 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field3}
+									{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$nicsp_cuentacostonewn_class}	"
+
+			data-field="nicsp_cuentacostonewn"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nicsp_cuentacostonewn_fieldheadercolumn}
+	{BEGIN nicsp_cuentacostonewn_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nicsp_cuentacostonewn" data-fieldname="nicsp_cuentacostonewn" 
+
+			{$nicsp_cuentacostonewn_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label alelemconsumo_consulta nicsp_cuentacostonewn }</span>
+					{$arrow_icon_nicsp_cuentacostonewn}
+			</span>
+	</span>
+	{END nicsp_cuentacostonewn_fieldheader}
+{END nicsp_cuentacostonewn_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+									{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$nicsp_cuentacostoservicion_class}	"
+
+			data-field="nicsp_cuentacostoservicion"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nicsp_cuentacostoservicion_fieldheadercolumn}
+	{BEGIN nicsp_cuentacostoservicion_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nicsp_cuentacostoservicion" data-fieldname="nicsp_cuentacostoservicion" 
+
+			{$nicsp_cuentacostoservicion_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label alelemconsumo_consulta nicsp_cuentacostoservicion }</span>
+					{$arrow_icon_nicsp_cuentacostoservicion}
+			</span>
+	</span>
+	{END nicsp_cuentacostoservicion_fieldheader}
+{END nicsp_cuentacostoservicion_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
 							</tr>
 															
 					{END grid_header}
@@ -1084,6 +1236,48 @@
 {END ecunidad_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field3}
+									{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$nicsp_cuentacostonewn_class}	"
+
+			data-field="nicsp_cuentacostonewn"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nicsp_cuentacostonewn_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nicsp_cuentacostonewn" data-fieldname="nicsp_cuentacostonewn" data-default-width >
+{$nicsp_cuentacostonewn_value}
+</span>
+{END nicsp_cuentacostonewn_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+									{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$nicsp_cuentacostoservicion_class}	"
+
+			data-field="nicsp_cuentacostoservicion"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nicsp_cuentacostoservicion_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nicsp_cuentacostoservicion" data-fieldname="nicsp_cuentacostoservicion" data-default-width >
+{$nicsp_cuentacostoservicion_value}
+</span>
+{END nicsp_cuentacostoservicion_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
 							</tr>
 										
 											{END grid_row}
@@ -1185,6 +1379,36 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field3}
+									{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$nicsp_cuentacostonewn_class}	"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="alelemconsumo_consulta_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+									{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$nicsp_cuentacostoservicion_class}	"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="alelemconsumo_consulta_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
 							</tr>
 					
 					</tfoot>

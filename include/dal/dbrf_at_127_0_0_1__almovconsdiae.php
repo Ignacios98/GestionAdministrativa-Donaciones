@@ -13,7 +13,7 @@ $dalTablealmovconsdiae["mcdcuenta"] = array("type"=>200,"varname"=>"mcdcuenta", 
 $dalTablealmovconsdiae["mcdnomelem"] = array("type"=>200,"varname"=>"mcdnomelem", "name" => "mcdnomelem", "autoInc" => "0");
 $dalTablealmovconsdiae["sys_doclasedoc_id_fk"] = array("type"=>3,"varname"=>"sys_doclasedoc_id_fk", "name" => "sys_doclasedoc_id_fk", "autoInc" => "0");
 $dalTablealmovconsdiae["sys_document_func"] = array("type"=>200,"varname"=>"sys_document_func", "name" => "sys_document_func", "autoInc" => "0");
-$dalTablealmovconsdiae["sys_fecha"] = array("type"=>7,"varname"=>"sys_fecha", "name" => "sys_fecha", "autoInc" => "0");
+$dalTablealmovconsdiae["sys_fecha"] = array("type"=>135,"varname"=>"sys_fecha", "name" => "sys_fecha", "autoInc" => "0");
 $dalTablealmovconsdiae["sys_status"] = array("type"=>16,"varname"=>"sys_status", "name" => "sys_status", "autoInc" => "0");
 $dalTablealmovconsdiae["sys_time"] = array("type"=>134,"varname"=>"sys_time", "name" => "sys_time", "autoInc" => "0");
 $dalTablealmovconsdiae["sys_user"] = array("type"=>200,"varname"=>"sys_user", "name" => "sys_user", "autoInc" => "0");

@@ -1213,6 +1213,12 @@ $proto17["m_columns"][] = "ec_nomelemento";
 $proto17["m_columns"][] = "eccuenta";
 $proto17["m_columns"][] = "ectipoestruc";
 $proto17["m_columns"][] = "ecunidad";
+$proto17["m_columns"][] = "nicsp_cuentacostonew";
+$proto17["m_columns"][] = "nicsp_cuentacostonewc";
+$proto17["m_columns"][] = "nicsp_cuentacostonewn";
+$proto17["m_columns"][] = "nicsp_cuentacostoservicio";
+$proto17["m_columns"][] = "nicsp_cuentacostoservicioc";
+$proto17["m_columns"][] = "nicsp_cuentacostoservicion";
 $obj = new SQLTable($proto17);
 
 $proto16["m_table"] = $obj;

@@ -6,11 +6,11 @@ $tdatageunidmedida[".OwnerID"] = "";
 $tdatageunidmedida[".OriginalTable"] = "geunidmedida";
 
 
-$tdatageunidmedida[".pagesByType"] = my_json_decode( "{}" );
+$tdatageunidmedida[".pagesByType"] = my_json_decode( "{\"add\":[\"add\"]}" );
 $tdatageunidmedida[".originalPagesByType"] = $tdatageunidmedida[".pagesByType"];
-$tdatageunidmedida[".pages"] = types2pages( my_json_decode( "{}" ) );
+$tdatageunidmedida[".pages"] = types2pages( my_json_decode( "{\"add\":[\"add\"]}" ) );
 $tdatageunidmedida[".originalPages"] = $tdatageunidmedida[".pages"];
-$tdatageunidmedida[".defaultPages"] = my_json_decode( "{}" );
+$tdatageunidmedida[".defaultPages"] = my_json_decode( "{\"add\":\"add\"}" );
 $tdatageunidmedida[".originalDefaultPages"] = $tdatageunidmedida[".defaultPages"];
 
 //	field labels
@@ -28,10 +28,10 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsgeunidmedida["Spanish"]["Id"] = "Id";
 	$fieldToolTipsgeunidmedida["Spanish"]["Id"] = "";
 	$placeHoldersgeunidmedida["Spanish"]["Id"] = "";
-	$fieldLabelsgeunidmedida["Spanish"]["um_codunimed"] = "Um Codunimed";
+	$fieldLabelsgeunidmedida["Spanish"]["um_codunimed"] = "Código";
 	$fieldToolTipsgeunidmedida["Spanish"]["um_codunimed"] = "";
 	$placeHoldersgeunidmedida["Spanish"]["um_codunimed"] = "";
-	$fieldLabelsgeunidmedida["Spanish"]["um_nomunimed"] = "Um Nomunimed";
+	$fieldLabelsgeunidmedida["Spanish"]["um_nomunimed"] = "Nombre UM";
 	$fieldToolTipsgeunidmedida["Spanish"]["um_nomunimed"] = "";
 	$placeHoldersgeunidmedida["Spanish"]["um_nomunimed"] = "";
 	if (count($fieldToolTipsgeunidmedida["Spanish"]))

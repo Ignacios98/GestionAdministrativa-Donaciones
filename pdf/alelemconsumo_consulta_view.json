@@ -155,6 +155,26 @@ pdfDocument = {
 			"%",
 						{END row_grid_1}
 			 
+								{BEGIN row_grid_2}
+						
+			"%",
+						{END row_grid_2}
+			 
+								{BEGIN row_grid_3}
+						
+			"%",
+						{END row_grid_3}
+			 
+								{BEGIN row_grid_4}
+						
+			"%",
+						{END row_grid_4}
+			 
+								{BEGIN row_grid_5}
+						
+			"%",
+						{END row_grid_5}
+			 
 				],
 	
 		body: [
@@ -246,18 +266,18 @@ pdfDocument = {
 				{END row_grid_0}
 						{BEGIN row_grid_1}
 				[
-																{BEGIN cellblock_grid_c3}
+																{BEGIN cellblock_grid_c10}
 {
-	cellId: 'c3',
+	cellId: 'c10',
 	col:0,
 	row:0,
 			
 		
 	//	dynamic colspan/rowspan
 
-					{BEGIN colspan_grid_c3}
-			colSpan: {$colspan_grid_c3},
-			{END colspan_grid_c3}
+					{BEGIN colspan_grid_c10}
+			colSpan: {$colspan_grid_c10},
+			{END colspan_grid_c10}
 		
 		
 	
@@ -275,16 +295,16 @@ pdfDocument = {
       
       },
 
-{END cellblock_grid_c3}
+{END cellblock_grid_c10}
 																		{ 
-				cellId: 'c3',
+				cellId: 'c10',
 				row:  0,
 				col:  1,
 				text: '',
 				compensateColspan: true
 			},
 														{ 
-				cellId: 'c3',
+				cellId: 'c10',
 				row:  0,
 				col:  2,
 				text: '',
@@ -292,6 +312,274 @@ pdfDocument = {
 			},
 							],
 				{END row_grid_1}
+						{BEGIN row_grid_2}
+				[
+																{BEGIN cellblock_grid_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c}
+			colSpan: {$colspan_grid_c},
+			{END colspan_grid_c}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"<p>Cuenta contable | Nuevos</p>","hidden":"{$item_hide_text}","fontSize":18,"bold":true,"font":"Roboto","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+      fillColor: '#f7f7f7',        "alignment": 'left',
+     
+      
+         bold: true,
+   },
+
+{END cellblock_grid_c}
+																		{ 
+				cellId: 'c',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_2}
+						{BEGIN row_grid_3}
+				[
+																{BEGIN cellblock_grid_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field1}","stack":[{"text":"{$jslabel alelemconsumo_consulta nicsp_cuentacostonew }","bold":true},{"text":{$nicsp_cuentacostonew_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c7}
+																							{BEGIN cellblock_grid_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field2}","stack":[{"text":"{$jslabel alelemconsumo_consulta nicsp_cuentacostonewc }","bold":true},{"text":{$nicsp_cuentacostonewc_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c8}
+																							{BEGIN cellblock_grid_c9}
+{
+	cellId: 'c9',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field5}","stack":[{"text":"{$jslabel alelemconsumo_consulta nicsp_cuentacostonewn }","bold":true},{"text":{$nicsp_cuentacostonewn_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c9}
+											],
+				{END row_grid_3}
+						{BEGIN row_grid_4}
+				[
+																{BEGIN cellblock_grid_c16}
+{
+	cellId: 'c16',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c16}
+			colSpan: {$colspan_grid_c16},
+			{END colspan_grid_c16}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"<p>Cuenta contable | En servicio</p>","hidden":"{$item_hide_text1}","fontSize":18,"bold":true,"font":"Roboto","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+      fillColor: '#f7f7f7',        "alignment": 'left',
+     
+      
+         bold: true,
+   },
+
+{END cellblock_grid_c16}
+																		{ 
+				cellId: 'c16',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c16',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_4}
+						{BEGIN row_grid_5}
+				[
+																{BEGIN cellblock_grid_c11}
+{
+	cellId: 'c11',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field7}","stack":[{"text":"{$jslabel alelemconsumo_consulta nicsp_cuentacostoservicio }","bold":true},{"text":{$nicsp_cuentacostoservicio_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c11}
+																							{BEGIN cellblock_grid_c12}
+{
+	cellId: 'c12',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field8}","stack":[{"text":"{$jslabel alelemconsumo_consulta nicsp_cuentacostoservicioc }","bold":true},{"text":{$nicsp_cuentacostoservicioc_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c12}
+																							{BEGIN cellblock_grid_c13}
+{
+	cellId: 'c13',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field9}","stack":[{"text":"{$jslabel alelemconsumo_consulta nicsp_cuentacostoservicion }","bold":true},{"text":{$nicsp_cuentacostoservicion_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c13}
+											],
+				{END row_grid_5}
 		
 		]
 	}

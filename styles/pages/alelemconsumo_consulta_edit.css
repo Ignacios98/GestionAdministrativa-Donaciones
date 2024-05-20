@@ -1,3 +1,21 @@
+[data-cellid="grid_c"][data-page="alelemconsumo_consulta_edit"][data-cellid="grid_c"][data-page="alelemconsumo_consulta_edit"][data-cellid="grid_c"][data-page="alelemconsumo_consulta_edit"] {
+  background-color: #f7f7f7;
+  font-weight: bold;
+}
+[data-cellid="grid_c16"][data-page="alelemconsumo_consulta_edit"][data-cellid="grid_c16"][data-page="alelemconsumo_consulta_edit"][data-cellid="grid_c16"][data-page="alelemconsumo_consulta_edit"] {
+  background-color: #f7f7f7;
+  font-weight: bold;
+}
+[data-page="alelemconsumo_consulta_edit"][data-itemid="text"] {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Roboto";
+}
+[data-page="alelemconsumo_consulta_edit"][data-itemid="text1"] {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Roboto";
+}
 [data-page="alelemconsumo_consulta_edit"][data-itemid="page_image_ash8f23hr"] {
   width: 400px;
 }
