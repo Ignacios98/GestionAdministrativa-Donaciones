@@ -1554,7 +1554,7 @@ $tdatagedocumentos_egresos_consumo[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Lookup wizard");
+	$edata = array("EditFormat" => "Readonly");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -1564,37 +1564,10 @@ $tdatagedocumentos_egresos_consumo[".hideMobileList"] = array();
 	
 	
 
-// Begin Lookup settings
-				$edata["LookupType"] = 2;
-	$edata["LookupTable"] = "global_type_doc";
-			$edata["autoCompleteFieldsOnEdit"] = 0;
-	$edata["autoCompleteFields"] = array();
-		$edata["LCType"] = 0;
-
-	
-		
-	$edata["LinkField"] = "contractor_type_id";
-	$edata["LinkFieldType"] = 3;
-	$edata["DisplayField"] = "contractor_type";
-
-	
-
-	
-	$edata["LookupOrderBy"] = "";
-
-	
-	
-	
-	
-
-	
-	
-		$edata["SelectSize"] = 1;
-
-// End Lookup Settings
 
 
-	
+		$edata["IsRequired"] = true;
+
 	
 	
 	
@@ -1614,7 +1587,7 @@ $tdatagedocumentos_egresos_consumo[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-	
+							
 	
 //	End validation
 
@@ -1906,7 +1879,7 @@ $tdatagedocumentos_egresos_consumo[".hideMobileList"] = array();
 		$edata["listPageId"] = "list";
 		$edata["autoCompleteFieldsOnEdit"] = 1;
 	$edata["autoCompleteFields"] = array();
-		$edata["autoCompleteFields"][] = array('masterF'=>"doclasedoc", 'lookupF'=>"contractor_type");
+		$edata["autoCompleteFields"][] = array('masterF'=>"do_tipodoc", 'lookupF'=>"contractor_type");
 	$edata["autoCompleteFields"][] = array('masterF'=>"docnomproveedor", 'lookupF'=>"contractor_nombresfull");
 	$edata["autoCompleteFields"][] = array('masterF'=>"do_email", 'lookupF'=>"contractor_email");
 	$edata["LCType"] = 2;

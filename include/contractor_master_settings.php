@@ -238,8 +238,8 @@ $tdatacontractor_master[".arrGroupsPerPage"] = $arrGPP;
 $tdatacontractor_master[".highlightSearchResults"] = true;
 
 $tableKeyscontractor_master = array();
-$tableKeyscontractor_master[] = "contractor_id";
 $tableKeyscontractor_master[] = "contractor_doc_id";
+$tableKeyscontractor_master[] = "contractor_id";
 $tdatacontractor_master[".Keys"] = $tableKeyscontractor_master;
 
 

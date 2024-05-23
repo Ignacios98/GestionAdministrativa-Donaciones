@@ -589,7 +589,7 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"hidden":"{$item_hide_integrated_edit_field6}","stack":[{"text":"{$jslabel gedocumentos_egresos_consumo do_tipodoc }","bold":true},{"text":{$do_tipodoc_pdfvalue}}],"margin":[0,0,0,15]},
+			{"hidden":"{$item_hide_integrated_edit_field8}","stack":[{"text":"{$jslabel gedocumentos_egresos_consumo doccnit }","bold":true},{"text":{$doccnit_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
   "border": [ false, false, false, false ],
@@ -616,7 +616,7 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"hidden":"{$item_hide_integrated_edit_field8}","stack":[{"text":"{$jslabel gedocumentos_egresos_consumo doccnit }","bold":true},{"text":{$doccnit_pdfvalue}}],"margin":[0,0,0,15]},
+			{"hidden":"{$item_hide_integrated_edit_field6}","stack":[{"text":"{$jslabel gedocumentos_egresos_consumo do_tipodoc }","bold":true},{"text":{$do_tipodoc_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
   "border": [ false, false, false, false ],

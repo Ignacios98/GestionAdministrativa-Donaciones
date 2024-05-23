@@ -901,13 +901,6 @@ function InitLookupLinks()
 			$lookupTableLinks["q_ctrl_numdocumento"]["gedocumentos_egresos_consumo.docodregion"] = array();
 		}
 		$lookupTableLinks["q_ctrl_numdocumento"]["gedocumentos_egresos_consumo.docodregion"]["edit"] = array("table" => "gedocumentos_egresos_consumo", "field" => "docodregion", "page" => "edit");
-		if( !isset( $lookupTableLinks["global_type_doc"] ) ) {
-			$lookupTableLinks["global_type_doc"] = array();
-		}
-		if( !isset( $lookupTableLinks["global_type_doc"]["gedocumentos_egresos_consumo.do_tipodoc"] )) {
-			$lookupTableLinks["global_type_doc"]["gedocumentos_egresos_consumo.do_tipodoc"] = array();
-		}
-		$lookupTableLinks["global_type_doc"]["gedocumentos_egresos_consumo.do_tipodoc"]["edit"] = array("table" => "gedocumentos_egresos_consumo", "field" => "do_tipodoc", "page" => "edit");
 		if( !isset( $lookupTableLinks["tparam_tipo_movimiento"] ) ) {
 			$lookupTableLinks["tparam_tipo_movimiento"] = array();
 		}

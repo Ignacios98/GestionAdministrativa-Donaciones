@@ -21,8 +21,8 @@ $xt = new Xtempl();
 
 // $keys could not be set properly if editid params were no passed
 $keys = array();
-$keys["contractor_id"] = postvalue("editid1");
-$keys["contractor_doc_id"] = postvalue("editid2");
+$keys["contractor_doc_id"] = postvalue("editid1");
+$keys["contractor_id"] = postvalue("editid2");
 
 //array of params for classes
 $params = array();
