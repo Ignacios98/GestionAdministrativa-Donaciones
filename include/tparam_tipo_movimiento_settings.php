@@ -131,7 +131,7 @@ $tdatatparam_tipo_movimiento[".isUseAjaxSuggest"] = true;
 
 
 
-												
+															
 
 $tdatatparam_tipo_movimiento[".ajaxCodeSnippetAdded"] = false;
 

@@ -183,7 +183,7 @@ $tdataalmovconsdia_ingresos[".isUseAjaxSuggest"] = true;
 
 
 
-																								
+																														
 
 $tdataalmovconsdia_ingresos[".ajaxCodeSnippetAdded"] = false;
 
@@ -2804,7 +2804,9 @@ $tdataalmovconsdia_ingresos[".hideMobileList"] = array();
 		$vdata["NeedEncode"] = true;
 
 	
-	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 70;
+
 	$fdata["ViewFormats"]["view"] = $vdata;
 //  End View Formats
 

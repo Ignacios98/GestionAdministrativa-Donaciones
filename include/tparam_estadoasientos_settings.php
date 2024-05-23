@@ -128,7 +128,7 @@ $tdatatparam_estadoasientos[".isUseAjaxSuggest"] = true;
 
 
 
-												
+															
 
 $tdatatparam_estadoasientos[".ajaxCodeSnippetAdded"] = false;
 

@@ -173,7 +173,7 @@ $tdataaldevindiv_reintegros[".isUseAjaxSuggest"] = true;
 
 
 
-												
+															
 
 $tdataaldevindiv_reintegros[".ajaxCodeSnippetAdded"] = false;
 

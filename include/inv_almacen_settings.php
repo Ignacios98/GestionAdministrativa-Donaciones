@@ -134,7 +134,7 @@ $tdatainv_almacen[".isUseAjaxSuggest"] = true;
 
 
 
-												
+															
 
 $tdatainv_almacen[".ajaxCodeSnippetAdded"] = false;
 

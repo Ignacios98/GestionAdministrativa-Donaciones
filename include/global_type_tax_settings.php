@@ -131,7 +131,7 @@ $tdataglobal_type_tax[".isUseAjaxSuggest"] = true;
 
 
 
-												
+															
 
 $tdataglobal_type_tax[".ajaxCodeSnippetAdded"] = false;
 

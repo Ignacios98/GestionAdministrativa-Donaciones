@@ -140,7 +140,7 @@ $tdatacontractor_master[".isUseAjaxSuggest"] = true;
 
 
 
-												
+															
 
 $tdatacontractor_master[".ajaxCodeSnippetAdded"] = false;
 

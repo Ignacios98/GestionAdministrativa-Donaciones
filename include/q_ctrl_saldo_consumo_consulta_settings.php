@@ -161,7 +161,7 @@ $tdataq_ctrl_saldo_consumo_consulta[".isUseAjaxSuggest"] = true;
 
 
 
-												
+															
 
 $tdataq_ctrl_saldo_consumo_consulta[".ajaxCodeSnippetAdded"] = false;
 
@@ -1257,9 +1257,10 @@ $tdataq_ctrl_saldo_consumo_consulta[".hideMobileList"] = array();
 
 
 //Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
+	$fdata["filterTotals"] = 1;
+		$fdata["filterMultiSelect"] = 1;
+		$fdata["filterTotalFields"] = "almovconsdia_id";
+		$fdata["filterFormat"] = "Values list";
 		$fdata["showCollapsed"] = false;
 
 		$fdata["sortValueType"] = 0;

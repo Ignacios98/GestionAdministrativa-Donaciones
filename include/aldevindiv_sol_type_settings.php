@@ -134,7 +134,7 @@ $tdataaldevindiv_sol_type[".isUseAjaxSuggest"] = true;
 
 
 
-												
+															
 
 $tdataaldevindiv_sol_type[".ajaxCodeSnippetAdded"] = false;
 

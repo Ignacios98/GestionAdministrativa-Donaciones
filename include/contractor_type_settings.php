@@ -128,7 +128,7 @@ $tdatacontractor_type[".isUseAjaxSuggest"] = true;
 
 
 
-												
+															
 
 $tdatacontractor_type[".ajaxCodeSnippetAdded"] = false;
 

@@ -137,7 +137,7 @@ $tdatageclasedocto[".isUseAjaxSuggest"] = true;
 
 
 
-												
+															
 
 $tdatageclasedocto[".ajaxCodeSnippetAdded"] = false;
 

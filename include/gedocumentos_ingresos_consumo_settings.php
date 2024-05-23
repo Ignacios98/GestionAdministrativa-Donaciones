@@ -188,7 +188,7 @@ $tdatagedocumentos_ingresos_consumo[".isUseAjaxSuggest"] = true;
 
 
 
-																								
+																														
 
 $tdatagedocumentos_ingresos_consumo[".ajaxCodeSnippetAdded"] = false;
 

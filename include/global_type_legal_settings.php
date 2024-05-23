@@ -131,7 +131,7 @@ $tdataglobal_type_legal[".isUseAjaxSuggest"] = true;
 
 
 
-												
+															
 
 $tdataglobal_type_legal[".ajaxCodeSnippetAdded"] = false;
 

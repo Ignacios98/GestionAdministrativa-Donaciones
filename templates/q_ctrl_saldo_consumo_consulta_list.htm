@@ -511,6 +511,22 @@
 		Búsqueda avanzada		
 		</a>
 	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		Mostrar panel de búsqueda		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		Ocultar panel de búsqueda		
+		</a>
+	</li>
+{END searchPanelTopButtons}
 					</ul>
 	</span>
 </span>
@@ -588,7 +604,69 @@
 	
 ">
 		{BEGIN firstAboveGridCell}
-				{END firstAboveGridCell}	
+		 
+		<div data-itemtype="filter_panel" data-itemid="filter_panel" {$item_filter_panel} data-pageid="{$pageid}">
+	<div class="filterPanelContainer {$filterPanelStateClass}" 
+					data-horizontal
+			>
+	<!-- Begin Filter panel content -->
+
+
+
+
+
+
+{BEGIN filter_control_mcdalmacen}
+
+	<div class="dropdown filter-field filter-mcdalmacen-container" {BEGIN filter_selected_mcdalmacen} data-selected {END filter_selected_mcdalmacen}>
+		<div class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+							<input class="filter-selectAll-mcdalmacen" type="checkbox" name="selectAll" {$selectAll_attrs_mcdalmacen} />
+						{BEGIN clearLink_mcdalmacen}
+			<a href="#" class="filter-clear filter-clear-mcdalmacen" title="borrar">
+				<span class="glyphicon glyphicon-remove"></span>
+			</a>
+			{END clearLink_mcdalmacen}
+			<span class="r-filter-field">{$label q_ctrl_saldo_consumo_consulta mcdalmacen }				{BEGIN filter_selected_mcdalmacen}:{END filter_selected_mcdalmacen}
+			</span>
+			{BEGIN filter_selected_mcdalmacen}
+			<span class="r-filter-value">{$filtervalue_mcdalmacen}</span>
+			{END filter_selected_mcdalmacen}
+			
+			<span class="caret"></span>
+		</div>
+		<ul class="dropdown-menu">
+					{BEGIN filterCtrlBlock_mcdalmacen}
+		<li class=" filter-values filter-values-mcdalmacen  {$visibilityClass_mcdalmacen}">
+			{$mcdalmacen_filter}
+						
+					</li>
+		{END filterCtrlBlock_mcdalmacen}
+
+			{BEGIN filter_button_showmore_mcdalmacen}
+		<li class=" filter-show-more {$collapsedClass_mcdalmacen} {$showMoreBtnClass_mcdalmacen}">
+			<a class="filter-show-more-link filterShowMore_mcdalmacen" href="#">{$show_n_more_mcdalmacen}</a>
+		</li>
+		{END filter_button_showmore_mcdalmacen}
+	
+
+
+	
+
+			{BEGIN filter_button_multiselect_mcdalmacen}
+		<li class="filter-multiselect  filter-field-btn {$collapsedClass_mcdalmacen}">
+			<a href="#" class="filter-mcdalmacen-btn-multiselect filter-apply-mcdalmacen" {$filterbutton_attrs_mcdalmacen}>Multiselección</a>
+		</li>
+		{END filter_button_multiselect_mcdalmacen}
+			</ul>
+	</div>
+
+{END filter_control_mcdalmacen}
+
+
+
+	<!-- End Filter panel content -->
+	</div>
+</div>			{END firstAboveGridCell}	
 	</div>			 
 				<div 
 	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
