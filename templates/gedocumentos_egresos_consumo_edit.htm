@@ -950,7 +950,6 @@
 	{$cell_grid_c13}
 	class=" r-ori-vert"
 	
-			data-single
 			
 	ocolspan="3"		data-cellId="grid_c13" data-pageid="{$pageid}"
 		data-v-cell="6"
@@ -979,6 +978,50 @@
 
 
 {END do_file_fieldblock}
+											
+{BEGIN do_dep_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_do_dep}  r-vertical-field" 
+	data-signal-error-for="do_dep{$id}" {$required_attr_do_dep}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="do_dep" data-fieldname="do_dep" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_do_dep}">
+		{BEGIN do_dep_label}{$label gedocumentos_egresos_consumo do_dep }{END do_dep_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$do_dep_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="do_dep" {$tooltipAttr gedocumentos_egresos_consumo do_dep } >
+		<div class="text-muted" >
+		{$tooltip gedocumentos_egresos_consumo do_dep }		</div>
+	</div>
+</div>
+
+
+{END do_dep_fieldblock}
+											
+{BEGIN do_depsup_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_do_depsup}  r-vertical-field" 
+	data-signal-error-for="do_depsup{$id}" {$required_attr_do_depsup}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="do_depsup" data-fieldname="do_depsup" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_do_depsup}">
+		{BEGIN do_depsup_label}{$label gedocumentos_egresos_consumo do_depsup }{END do_depsup_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$do_depsup_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="do_depsup" {$tooltipAttr gedocumentos_egresos_consumo do_depsup } >
+		<div class="text-muted" >
+		{$tooltip gedocumentos_egresos_consumo do_depsup }		</div>
+	</div>
+</div>
+
+
+{END do_depsup_fieldblock}
 	
 								</td>
 			{END cellblock_grid_c13}
