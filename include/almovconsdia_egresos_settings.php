@@ -364,7 +364,8 @@ $tdataalmovconsdia_egresos[".hideMobileList"] = array();
 // Begin Lookup settings
 				$edata["LookupType"] = 2;
 	$edata["LookupTable"] = "q_ctrl_saldo_consumo_consulta";
-			$edata["autoCompleteFieldsOnEdit"] = 1;
+		$edata["listPageId"] = "list";
+		$edata["autoCompleteFieldsOnEdit"] = 1;
 	$edata["autoCompleteFields"] = array();
 		$edata["autoCompleteFields"][] = array('masterF'=>"consumo_id_fk", 'lookupF'=>"consumo_id_fk");
 	$edata["autoCompleteFields"][] = array('masterF'=>"ctrl_saldo", 'lookupF'=>"saldo_disponible");

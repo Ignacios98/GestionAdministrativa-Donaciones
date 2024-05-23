@@ -209,9 +209,11 @@ $tdataq_ctrl_saldo_consumo_consulta[".geocodingEnabled"] = false;
 
 
 
+$tdataq_ctrl_saldo_consumo_consulta[".isDisplayLoading"] = true;
 
 
 
+$tdataq_ctrl_saldo_consumo_consulta[".noRecordsFirstPage"] = true;
 
 
 
