@@ -844,7 +844,9 @@ $tdatagedocumentos_egresos_consumo[".hideMobileList"] = array();
 		$vdata["NeedEncode"] = true;
 
 	
-	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 70;
+
 	$fdata["ViewFormats"]["view"] = $vdata;
 //  End View Formats
 
