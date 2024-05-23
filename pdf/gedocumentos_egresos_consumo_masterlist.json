@@ -100,6 +100,9 @@ pdfDocument = {
 										{BEGIN col_grid_11}
 					"%",
 					{END col_grid_11}
+										{BEGIN col_grid_12}
+					"%",
+					{END col_grid_12}
 															],
 											heights: [ // first height for header part
 					"%",
@@ -273,7 +276,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_egresos_consumo doclasedoc_id }","hidden":"{$item_hide_simple_grid_field6}","bold":true},
+			{"text":"{$jslabel gedocumentos_egresos_consumo doclasedoc_id }","hidden":"{$item_hide_simple_grid_field8}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -302,7 +305,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_egresos_consumo do_nrodoc }","hidden":"{$item_hide_simple_grid_field8}","bold":true},
+			{"text":"{$jslabel gedocumentos_egresos_consumo do_nrodoc }","hidden":"{$item_hide_simple_grid_field10}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -331,7 +334,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_egresos_consumo do_fechadoc }","hidden":"{$item_hide_simple_grid_field10}","bold":true},
+			{"text":"{$jslabel gedocumentos_egresos_consumo do_fechadoc }","hidden":"{$item_hide_simple_grid_field13}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -360,7 +363,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_egresos_consumo docodregion }","hidden":"{$item_hide_simple_grid_field13}","bold":true},
+			{"text":"{$jslabel gedocumentos_egresos_consumo docodregion }","hidden":"{$item_hide_simple_grid_field14}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -389,7 +392,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_egresos_consumo do_detalle }","hidden":"{$item_hide_simple_grid_field14}","bold":true},
+			{"text":"{$jslabel gedocumentos_egresos_consumo do_detalle }","hidden":"{$item_hide_simple_grid_field15}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -418,7 +421,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_egresos_consumo do_tipomov }","hidden":"{$item_hide_simple_grid_field15}","bold":true},
+			{"text":"{$jslabel gedocumentos_egresos_consumo do_tipomov }","hidden":"{$item_hide_simple_grid_field17}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -447,7 +450,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_egresos_consumo doclasedoc }","hidden":"{$item_hide_simple_grid_field17}","bold":true},
+			{"text":"{$jslabel gedocumentos_egresos_consumo doclasedoc }","hidden":"{$item_hide_simple_grid_field18}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -476,7 +479,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_egresos_consumo docnomproveedor }","hidden":"{$item_hide_simple_grid_field18}","bold":true},
+			{"text":"{$jslabel gedocumentos_egresos_consumo docnomproveedor }","hidden":"{$item_hide_simple_grid_field19}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -505,7 +508,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_egresos_consumo do_concepto }","hidden":"{$item_hide_simple_grid_field19}","bold":true},
+			{"text":"{$jslabel gedocumentos_egresos_consumo do_concepto }","hidden":"{$item_hide_simple_grid_field20}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -534,7 +537,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_egresos_consumo resolfecha }","hidden":"{$item_hide_simple_grid_field20}","bold":true},
+			{"text":"{$jslabel gedocumentos_egresos_consumo resolfecha }","hidden":"{$item_hide_simple_grid_field21}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -563,7 +566,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel gedocumentos_egresos_consumo resolnum }","hidden":"{$item_hide_simple_grid_field21}","bold":true},
+			{"text":"{$jslabel gedocumentos_egresos_consumo resolnum }","hidden":"{$item_hide_simple_grid_field22}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -573,6 +576,35 @@ pdfDocument = {
       },
 
 {END cellblock_grid_headcell_field10}
+																							{BEGIN cellblock_grid_headcell_field11}
+{
+	cellId: 'headcell_field11',
+	col:0,
+	row:0,
+			fieldName: 'do_email',
+				style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel gedocumentos_egresos_consumo do_email }","hidden":"{$item_hide_simple_grid_field23}","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$do_email_align}',
+     
+      
+      },
+
+{END cellblock_grid_headcell_field11}
 											],
 				{END row_grid_0}
 		
@@ -929,6 +961,35 @@ pdfDocument = {
       },
 
 {END cellblock_grid_cell_field10}
+																							{BEGIN cellblock_grid_cell_field11}
+{
+	cellId: 'cell_field11',
+	col:0,
+	row:0,
+			fieldName: 'do_email',
+				style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$do_email_pdfvalue},"hidden":"{$item_hide_simple_grid_field6}"},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$do_email_align}',
+     
+      
+      },
+
+{END cellblock_grid_cell_field11}
 											],
 				{END row_grid_1}
 		
@@ -1250,6 +1311,32 @@ pdfDocument = {
       },
 
 {END cellblock_grid_footcell_field10}
+																							{BEGIN cellblock_grid_footcell_field11}
+{
+	cellId: 'footcell_field11',
+	col:0,
+	row:0,
+				style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_footcell_field11}
 											],
 				{END row_grid_2}
 		

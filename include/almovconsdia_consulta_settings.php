@@ -2223,6 +2223,7 @@ $proto31["m_columns"][] = "gefechaactua";
 $proto31["m_columns"][] = "geusuario";
 $proto31["m_columns"][] = "mcd_cantasignada";
 $proto31["m_columns"][] = "mcd_cantmovto";
+$proto31["m_columns"][] = "mcd_obs";
 $proto31["m_columns"][] = "mcd_saldant";
 $proto31["m_columns"][] = "mcd_salddisponible";
 $proto31["m_columns"][] = "mcd_tax";

@@ -360,7 +360,10 @@
 <div data-itemtype="master_info" data-itemid="master_info" {$item_master_info} data-pageid="{$pageid}">
 	{$showmasterfile}
 </div>
-{END mastertable_block}											<table 
+{END mastertable_block}	
+				 
+	 
+												<table 
 	data-body-align="left"
 	data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" 
 	class="r-edit-form" cellpadding="0" cellspacing="0" 
@@ -370,50 +373,7 @@
 		data-v-width="8"
 	>
 	<tbody>
-										<tr {$row_grid_0} >
-										
-
-{BEGIN cellblock_grid_c8}
-<td
-	{$cell_grid_c8}
-	class=" r-ori-vert"
-	
-				data-fullwidth
-		
-	ocolspan="4"		data-cellId="grid_c8" data-pageid="{$pageid}"
-		data-v-cell="8"
-		
->
-	<div edit-form-cell class="clearfix">
-				
-{BEGIN mcd_valmovto_fieldblock}
-
-
-<div class="r-integrated-field form-group clearfix {$fielddispclass_mcd_valmovto}  r-vertical-field" 
-	data-signal-error-for="mcd_valmovto{$id}" {$required_attr_mcd_valmovto}
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="mcd_valmovto" data-fieldname="mcd_valmovto" >
-
-	<label class="r-edit-label control-label" for="{$labelfor_mcd_valmovto}">
-		{BEGIN mcd_valmovto_label}{$label almovconsdia_ingresos mcd_valmovto }{END mcd_valmovto_label}
-		<span class="icon-required"></span>
-	</label>
-	<div class="r-edit-field">
-		{$mcd_valmovto_editcontrol}	</div>
-	<div class="r-edit-tooltip" data-helpfor="mcd_valmovto" {$tooltipAttr almovconsdia_ingresos mcd_valmovto } >
-		<div class="text-muted" >
-		{$tooltip almovconsdia_ingresos mcd_valmovto }		</div>
-	</div>
-</div>
-
-
-{END mcd_valmovto_fieldblock}
-	
-								</td>
-			{END cellblock_grid_c8}
-								</tr>
-	 
-	 
-														<tr {$row_grid_1} >
+										<tr {$row_grid_1} >
 										
 
 {BEGIN cellblock_grid_c}
@@ -863,8 +823,7 @@
 								</td>
 			{END cellblock_grid_c6}
 			 
-		
-							
+																
 
 {BEGIN cellblock_grid_c10}
 <td
@@ -878,11 +837,33 @@
 		
 >
 	<div edit-form-cell class="clearfix">
-									</td>
+				
+{BEGIN mcd_valmovto_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mcd_valmovto}  r-vertical-field" 
+	data-signal-error-for="mcd_valmovto{$id}" {$required_attr_mcd_valmovto}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="mcd_valmovto" data-fieldname="mcd_valmovto" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_mcd_valmovto}">
+		{BEGIN mcd_valmovto_label}{$label almovconsdia_ingresos mcd_valmovto }{END mcd_valmovto_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$mcd_valmovto_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="mcd_valmovto" {$tooltipAttr almovconsdia_ingresos mcd_valmovto } >
+		<div class="text-muted" >
+		{$tooltip almovconsdia_ingresos mcd_valmovto }		</div>
+	</div>
+</div>
+
+
+{END mcd_valmovto_fieldblock}
+	
+								</td>
 			{END cellblock_grid_c10}
 			 
-		
-							
+																
 
 {BEGIN cellblock_grid_c12}
 <td
@@ -891,31 +872,36 @@
 	
 			data-single
 			
-			data-cellId="grid_c12" data-pageid="{$pageid}"
-		data-v-cell="2"
+	ocolspan="2"		data-cellId="grid_c12" data-pageid="{$pageid}"
+		data-v-cell="4"
 		
 >
 	<div edit-form-cell class="clearfix">
-									</td>
-			{END cellblock_grid_c12}
-			 
-		
-							
+				
+{BEGIN mcd_obs_fieldblock}
 
-{BEGIN cellblock_grid_c18}
-<td
-	{$cell_grid_c18}
-	class=" r-ori-vert"
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mcd_obs}  r-vertical-field" 
+	data-signal-error-for="mcd_obs{$id}" {$required_attr_mcd_obs}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="mcd_obs" data-fieldname="mcd_obs" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_mcd_obs}">
+		{BEGIN mcd_obs_label}{$label almovconsdia_ingresos mcd_obs }{END mcd_obs_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$mcd_obs_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="mcd_obs" {$tooltipAttr almovconsdia_ingresos mcd_obs } >
+		<div class="text-muted" >
+		{$tooltip almovconsdia_ingresos mcd_obs }		</div>
+	</div>
+</div>
+
+
+{END mcd_obs_fieldblock}
 	
-			data-single
-			
-			data-cellId="grid_c18" data-pageid="{$pageid}"
-		data-v-cell="2"
-		
->
-	<div edit-form-cell class="clearfix">
-									</td>
-			{END cellblock_grid_c18}
+								</td>
+			{END cellblock_grid_c12}
 								</tr>
 			</tbody></table>
 {END grid_block}

@@ -539,32 +539,31 @@
 >
 	<div edit-form-cell class="clearfix">
 				
-{BEGIN mcd_valunitant_fieldblock}
+{BEGIN mcd_valmovto_fieldblock}
 
 
-<div class="r-integrated-field form-group clearfix {$fielddispclass_mcd_valunitant}  r-vertical-field" data-fieldname="mcd_valunitant" data-signal-error-for="mcd_valunitant{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="mcd_valunitant" data-fieldname="mcd_valunitant" data-compact >
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mcd_valmovto}  r-vertical-field" data-fieldname="mcd_valmovto" data-signal-error-for="mcd_valmovto{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="mcd_valmovto" data-fieldname="mcd_valmovto" data-compact >
 
 		<div class="col-md-12">
 	
-	<label class="" for="{$labelfor_mcd_valunitant}">
+	<label class="" for="{$labelfor_mcd_valmovto}">
 		
-		{BEGIN mcd_valunitant_label}{$label almovconsdia_ingresos mcd_valunitant }{END mcd_valunitant_label}
+		{BEGIN mcd_valmovto_label}{$label almovconsdia_ingresos mcd_valmovto }{END mcd_valmovto_label}
 	</label>
 	<div class="" >
-		{$mcd_valunitant_value}	</div>
+		{$mcd_valmovto_value}	</div>
 
 		</div>
 		
 </div>
 
 
-{END mcd_valunitant_fieldblock}
+{END mcd_valmovto_fieldblock}
 	
 								</td>
 			{END cellblock_grid_c10}
 			 
-		
-							
+																
 
 {BEGIN cellblock_grid_c12}
 <td
@@ -573,31 +572,35 @@
 	
 			data-single
 			
-			data-cellId="grid_c12" data-pageid="{$pageid}"
-		data-v-cell="2"
+	ocolspan="2"		data-cellId="grid_c12" data-pageid="{$pageid}"
+		data-v-cell="4"
 		
 >
 	<div edit-form-cell class="clearfix">
-									</td>
-			{END cellblock_grid_c12}
-			 
-		
-							
+				
+{BEGIN mcd_obs_fieldblock}
 
-{BEGIN cellblock_grid_c18}
-<td
-	{$cell_grid_c18}
-	class=" r-ori-vert"
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mcd_obs}  r-vertical-field" data-fieldname="mcd_obs" data-signal-error-for="mcd_obs{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="mcd_obs" data-fieldname="mcd_obs" data-compact >
+
+		<div class="col-md-12">
 	
-			data-single
-			
-			data-cellId="grid_c18" data-pageid="{$pageid}"
-		data-v-cell="2"
+	<label class="" for="{$labelfor_mcd_obs}">
 		
->
-	<div edit-form-cell class="clearfix">
-									</td>
-			{END cellblock_grid_c18}
+		{BEGIN mcd_obs_label}{$label almovconsdia_ingresos mcd_obs }{END mcd_obs_label}
+	</label>
+	<div class="" >
+		{$mcd_obs_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END mcd_obs_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c12}
 								</tr>
 			</tbody></table>
 {END grid_block}

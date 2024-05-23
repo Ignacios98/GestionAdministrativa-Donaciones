@@ -337,7 +337,7 @@
 	data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" 
 	class="r-edit-form" cellpadding="0" cellspacing="0" 
 	{$grid_hiddenattr} 
-		data-form-width="1"
+		data-form-width="2"
 		
 		data-v-width="4"
 	>
@@ -345,127 +345,218 @@
 										<tr {$row_grid_0} >
 										
 
-{BEGIN cellblock_grid_c3}
+{BEGIN cellblock_grid_c4}
 <td
-	{$cell_grid_c3}
+	{$cell_grid_c4}
 	class=" r-ori-vert"
 	
-				data-fullwidth
-		
-			data-cellId="grid_c3" data-pageid="{$pageid}"
-		data-v-cell="4"
+			data-single
+			
+			data-cellId="grid_c4" data-pageid="{$pageid}"
+		data-v-cell="2"
 		
 >
 	<div edit-form-cell class="clearfix">
 				
-{BEGIN contractor_id_fieldblock}
-
-
-<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_id}  r-vertical-field" data-fieldname="contractor_id" data-signal-error-for="contractor_id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="contractor_id" data-fieldname="contractor_id" data-compact >
-
-	
-	<label class="col-md-offset-3 col-md-6" for="{$labelfor_contractor_id}">
-		
-		{BEGIN contractor_id_label}{$label contractor_master contractor_id }{END contractor_id_label}
-	</label>
-	<div class="col-md-offset-3 col-md-6" >
-		{$contractor_id_value}	</div>
-
-		
-</div>
-
-
-{END contractor_id_fieldblock}
-											
 {BEGIN contractor_type_fieldblock}
 
 
-<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_type}  r-vertical-field" data-fieldname="contractor_type" data-signal-error-for="contractor_type{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="contractor_type" data-fieldname="contractor_type" data-compact >
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_type}  r-vertical-field" data-fieldname="contractor_type" data-signal-error-for="contractor_type{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="contractor_type" data-fieldname="contractor_type" data-compact >
 
+		<div class="col-md-12">
 	
-	<label class="col-md-offset-3 col-md-6" for="{$labelfor_contractor_type}">
+	<label class="" for="{$labelfor_contractor_type}">
 		
 		{BEGIN contractor_type_label}{$label contractor_master contractor_type }{END contractor_type_label}
 	</label>
-	<div class="col-md-offset-3 col-md-6" >
+	<div class="" >
 		{$contractor_type_value}	</div>
 
+		</div>
 		
 </div>
 
 
 {END contractor_type_fieldblock}
-											
+	
+								</td>
+			{END cellblock_grid_c4}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c5}
+<td
+	{$cell_grid_c5}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c5" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c5}
+								</tr>
+	 
+	 
+														<tr {$row_grid_1} >
+										
+
+{BEGIN cellblock_grid_c6}
+<td
+	{$cell_grid_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c6" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
 {BEGIN contractor_doc_id_fieldblock}
 
 
-<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_doc_id}  r-vertical-field" data-fieldname="contractor_doc_id" data-signal-error-for="contractor_doc_id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="contractor_doc_id" data-fieldname="contractor_doc_id" data-compact >
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_doc_id}  r-vertical-field" data-fieldname="contractor_doc_id" data-signal-error-for="contractor_doc_id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="contractor_doc_id" data-fieldname="contractor_doc_id" data-compact >
 
+		<div class="col-md-12">
 	
-	<label class="col-md-offset-3 col-md-6" for="{$labelfor_contractor_doc_id}">
+	<label class="" for="{$labelfor_contractor_doc_id}">
 		
 		{BEGIN contractor_doc_id_label}{$label contractor_master contractor_doc_id }{END contractor_doc_id_label}
 	</label>
-	<div class="col-md-offset-3 col-md-6" >
+	<div class="" >
 		{$contractor_doc_id_value}	</div>
 
+		</div>
 		
 </div>
 
 
 {END contractor_doc_id_fieldblock}
-											
+	
+								</td>
+			{END cellblock_grid_c6}
+			 
+																
+
+{BEGIN cellblock_grid_c7}
+<td
+	{$cell_grid_c7}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c7" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
 {BEGIN contractor_doc_dv_fieldblock}
 
 
-<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_doc_dv}  r-vertical-field" data-fieldname="contractor_doc_dv" data-signal-error-for="contractor_doc_dv{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="contractor_doc_dv" data-fieldname="contractor_doc_dv" data-compact >
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_doc_dv}  r-vertical-field" data-fieldname="contractor_doc_dv" data-signal-error-for="contractor_doc_dv{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="contractor_doc_dv" data-fieldname="contractor_doc_dv" data-compact >
 
+		<div class="col-md-12">
 	
-	<label class="col-md-offset-3 col-md-6" for="{$labelfor_contractor_doc_dv}">
+	<label class="" for="{$labelfor_contractor_doc_dv}">
 		
 		{BEGIN contractor_doc_dv_label}{$label contractor_master contractor_doc_dv }{END contractor_doc_dv_label}
 	</label>
-	<div class="col-md-offset-3 col-md-6" >
+	<div class="" >
 		{$contractor_doc_dv_value}	</div>
 
+		</div>
 		
 </div>
 
 
 {END contractor_doc_dv_fieldblock}
-											
+	
+								</td>
+			{END cellblock_grid_c7}
+								</tr>
+	 
+	 
+														<tr {$row_grid_2} >
+										
+
+{BEGIN cellblock_grid_c8}
+<td
+	{$cell_grid_c8}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+	ocolspan="2"		data-cellId="grid_c8" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
 {BEGIN contractor_nombresfull_fieldblock}
 
 
-<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_nombresfull}  r-vertical-field" data-fieldname="contractor_nombresfull" data-signal-error-for="contractor_nombresfull{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="contractor_nombresfull" data-fieldname="contractor_nombresfull" data-compact >
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_nombresfull}  r-vertical-field" data-fieldname="contractor_nombresfull" data-signal-error-for="contractor_nombresfull{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="contractor_nombresfull" data-fieldname="contractor_nombresfull" data-compact >
 
+		<div class="col-md-12">
 	
-	<label class="col-md-offset-3 col-md-6" for="{$labelfor_contractor_nombresfull}">
+	<label class="" for="{$labelfor_contractor_nombresfull}">
 		
 		{BEGIN contractor_nombresfull_label}{$label contractor_master contractor_nombresfull }{END contractor_nombresfull_label}
 	</label>
-	<div class="col-md-offset-3 col-md-6" >
+	<div class="" >
 		{$contractor_nombresfull_value}	</div>
 
+		</div>
 		
 </div>
 
 
 {END contractor_nombresfull_fieldblock}
-											
+	
+								</td>
+			{END cellblock_grid_c8}
+								</tr>
+	 
+	 
+														<tr {$row_grid_3} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
 {BEGIN contractor_email_fieldblock}
 
 
-<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_email}  r-vertical-field" data-fieldname="contractor_email" data-signal-error-for="contractor_email{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="contractor_email" data-fieldname="contractor_email" data-compact >
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_email}  r-vertical-field" data-fieldname="contractor_email" data-signal-error-for="contractor_email{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="contractor_email" data-fieldname="contractor_email" data-compact >
 
+		<div class="col-md-12">
 	
-	<label class="col-md-offset-3 col-md-6" for="{$labelfor_contractor_email}">
+	<label class="" for="{$labelfor_contractor_email}">
 		
 		{BEGIN contractor_email_label}{$label contractor_master contractor_email }{END contractor_email_label}
 	</label>
-	<div class="col-md-offset-3 col-md-6" >
+	<div class="" >
 		{$contractor_email_value}	</div>
 
+		</div>
 		
 </div>
 
@@ -474,6 +565,24 @@
 	
 								</td>
 			{END cellblock_grid_c3}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c}
+<td
+	{$cell_grid_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c}
 								</tr>
 			</tbody></table>
 {END grid_block}

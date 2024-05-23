@@ -258,6 +258,19 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_as_nroasiento_fk}</span>
 						</div>
 		{END searchCtrlBlock_as_nroasiento_fk}
+																{BEGIN searchCtrlBlock_do_email}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_do_email}" {$filterRow_attrs_do_email}>
+			<label>{$label gedocumentos_egresos_consumo do_email }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_do_email}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_do_email}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_do_email}</span>
+						</div>
+		{END searchCtrlBlock_do_email}
 																{BEGIN searchCtrlBlock_resolnum}
 
 
@@ -877,6 +890,9 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="resolnum"]:before {
 		content: "{$label gedocumentos_egresos_consumo resolnum}";
 	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="do_email"]:before {
+		content: "{$label gedocumentos_egresos_consumo do_email}";
+	}
 	}
 </style>
 <table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table table-hover table-bordered r-horizontal-grid  r-flexgrid rnr-b-grid rnr-gridtable"
@@ -1284,6 +1300,40 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field11}
+									{BEGIN cellblock_grid_headcell_field9}
+	<th
+	
+	{$cell_grid_headcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$do_email_class}	"
+
+			data-field="do_email"
+	
+	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN do_email_fieldheadercolumn}
+	{BEGIN do_email_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label2" {$item_grid_field_label2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_email" data-fieldname="do_email" 
+
+			{$do_email_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label gedocumentos_egresos_consumo do_email }</span>
+					{$arrow_icon_do_email}
+			</span>
+	</span>
+	{END do_email_fieldheader}
+{END do_email_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field9}
 							</tr>
 															
 					{END grid_header}
@@ -1650,6 +1700,27 @@
 {END resolnum_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field11}
+									{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$do_email_class}	"
+
+			data-field="do_email"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN do_email_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field2" {$item_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_email" data-fieldname="do_email" data-default-width >
+{$do_email_value}
+</span>
+{END do_email_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
 							</tr>
 										
 											{END grid_row}
@@ -1856,6 +1927,21 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field11}
+									{BEGIN cellblock_grid_footcell_field9}
+	<td
+	
+	{$cell_grid_footcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$do_email_class}	"
+
+	
+	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="gedocumentos_egresos_consumo_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field9}
 							</tr>
 					
 					</tfoot>

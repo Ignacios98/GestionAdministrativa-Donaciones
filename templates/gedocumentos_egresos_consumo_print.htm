@@ -382,6 +382,36 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field10}
+									{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$do_email_class}	"
+
+			data-field="do_email"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN do_email_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label2" {$item_grid_field_label2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_email" data-fieldname="do_email" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label gedocumentos_egresos_consumo do_email }</span>
+			</span>
+	</span>
+{END do_email_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
 							</tr>
 															
 					{END grid_header}
@@ -582,6 +612,27 @@
 {END resolnum_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field10}
+									{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$do_email_class}	"
+
+			data-field="do_email"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN do_email_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field2" {$item_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="do_email" data-fieldname="do_email" data-default-width >
+{$do_email_value}
+</span>
+{END do_email_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
 							</tr>
 										
 											</tbody>
@@ -728,6 +779,21 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field10}
+									{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$do_email_class}	"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="gedocumentos_egresos_consumo_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
 							</tr>
 					
 					</tfoot>

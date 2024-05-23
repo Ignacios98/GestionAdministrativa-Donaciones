@@ -258,6 +258,19 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_almovconsdia_id}</span>
 						</div>
 		{END searchCtrlBlock_almovconsdia_id}
+																{BEGIN searchCtrlBlock_mcd_obs}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_mcd_obs}" {$filterRow_attrs_mcd_obs}>
+			<label>{$label almovconsdia_ingresos mcd_obs }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_mcd_obs}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_mcd_obs}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_mcd_obs}</span>
+						</div>
+		{END searchCtrlBlock_mcd_obs}
 																{BEGIN searchCtrlBlock_mcdnomelem}
 
 
@@ -799,6 +812,9 @@
 				[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="mcd_cantmovto"]:before {
 		content: "{$label almovconsdia_ingresos mcd_cantmovto}";
 	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="mcd_obs"]:before {
+		content: "{$label almovconsdia_ingresos mcd_obs}";
+	}
 						[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="mcd_valmovto"]:before {
 		content: "{$label almovconsdia_ingresos mcd_valmovto}";
 	}
@@ -1104,6 +1120,40 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field6}
+									{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$mcd_obs_class}	"
+
+			data-field="mcd_obs"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN mcd_obs_fieldheadercolumn}
+	{BEGIN mcd_obs_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label" {$item_grid_field_label} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mcd_obs" data-fieldname="mcd_obs" 
+
+			{$mcd_obs_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label almovconsdia_ingresos mcd_obs }</span>
+					{$arrow_icon_mcd_obs}
+			</span>
+	</span>
+	{END mcd_obs_fieldheader}
+{END mcd_obs_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
 							</tr>
 															
 					{END grid_header}
@@ -1333,6 +1383,27 @@
 {END geusuario_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field6}
+									{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$mcd_obs_class}	"
+
+			data-field="mcd_obs"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN mcd_obs_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field" {$item_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mcd_obs" data-fieldname="mcd_obs" data-default-width >
+{$mcd_obs_value}
+</span>
+{END mcd_obs_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
 							</tr>
 										
 											{END grid_row}
@@ -1514,6 +1585,21 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field6}
+									{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$mcd_obs_class}	"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="almovconsdia_ingresos_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
 							</tr>
 					
 					</tfoot>

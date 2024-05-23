@@ -7,6 +7,7 @@ $dalTablealmovconsdia["gefechaactua"] = array("type"=>135,"varname"=>"gefechaact
 $dalTablealmovconsdia["geusuario"] = array("type"=>200,"varname"=>"geusuario", "name" => "geusuario", "autoInc" => "0");
 $dalTablealmovconsdia["mcd_cantasignada"] = array("type"=>3,"varname"=>"mcd_cantasignada", "name" => "mcd_cantasignada", "autoInc" => "0");
 $dalTablealmovconsdia["mcd_cantmovto"] = array("type"=>3,"varname"=>"mcd_cantmovto", "name" => "mcd_cantmovto", "autoInc" => "0");
+$dalTablealmovconsdia["mcd_obs"] = array("type"=>200,"varname"=>"mcd_obs", "name" => "mcd_obs", "autoInc" => "0");
 $dalTablealmovconsdia["mcd_saldant"] = array("type"=>3,"varname"=>"mcd_saldant", "name" => "mcd_saldant", "autoInc" => "0");
 $dalTablealmovconsdia["mcd_salddisponible"] = array("type"=>3,"varname"=>"mcd_salddisponible", "name" => "mcd_salddisponible", "autoInc" => "0");
 $dalTablealmovconsdia["mcd_tax"] = array("type"=>5,"varname"=>"mcd_tax", "name" => "mcd_tax", "autoInc" => "0");

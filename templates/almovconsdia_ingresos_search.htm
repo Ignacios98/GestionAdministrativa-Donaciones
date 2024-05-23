@@ -533,6 +533,28 @@
 </div>
 
 {END mcd_salddisponible_fieldblock}
+											
+{BEGIN mcd_obs_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mcd_obs}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="mcd_obs{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field20" {$item_integrated_search_field20} data-pageid="{$pageid}" data-field="mcd_obs" data-fieldname="mcd_obs" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_mcd_obs}">
+		{$label almovconsdia_ingresos mcd_obs }	</label>
+	<div class="r-search-option">
+		{$searchtype_mcd_obs}
+	</div>
+	<div class="r-search-field">
+		{$mcd_obs_editcontrol}	</div>
+	<div class="r-search-field">
+		{$mcd_obs_editcontrol1}
+	</div>
+	
+</div>
+
+{END mcd_obs_fieldblock}
 	
 								</td>
 			{END cellblock_grid_c3}

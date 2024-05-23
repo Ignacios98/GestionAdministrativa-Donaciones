@@ -555,6 +555,28 @@
 </div>
 
 {END resolnum_fieldblock}
+											
+{BEGIN do_email_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_do_email}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="do_email{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field21" {$item_integrated_search_field21} data-pageid="{$pageid}" data-field="do_email" data-fieldname="do_email" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_do_email}">
+		{$label gedocumentos_egresos_consumo do_email }	</label>
+	<div class="r-search-option">
+		{$searchtype_do_email}
+	</div>
+	<div class="r-search-field">
+		{$do_email_editcontrol}	</div>
+	<div class="r-search-field">
+		{$do_email_editcontrol1}
+	</div>
+	
+</div>
+
+{END do_email_fieldblock}
 	
 								</td>
 			{END cellblock_grid_c3}

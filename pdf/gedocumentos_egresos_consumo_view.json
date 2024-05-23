@@ -180,6 +180,11 @@ pdfDocument = {
 			"%",
 						{END row_grid_6}
 			 
+								{BEGIN row_grid_7}
+						
+			"%",
+						{END row_grid_7}
+			 
 				],
 	
 		body: [
@@ -652,6 +657,91 @@ pdfDocument = {
 				{END row_grid_5}
 						{BEGIN row_grid_6}
 				[
+																{BEGIN cellblock_grid_c14}
+{
+	cellId: 'c14',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field17}","stack":[{"text":"{$jslabel gedocumentos_egresos_consumo do_email }","bold":true},{"text":{$do_email_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c14}
+																							{BEGIN cellblock_grid_c15}
+{
+	cellId: 'c15',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field13}","stack":[{"text":"{$jslabel gedocumentos_egresos_consumo do_depsup }","bold":true},{"text":{$do_depsup_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c15}
+																							{BEGIN cellblock_grid_c16}
+{
+	cellId: 'c16',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field12}","stack":[{"text":"{$jslabel gedocumentos_egresos_consumo do_dep }","bold":true},{"text":{$do_dep_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c16}
+											],
+				{END row_grid_6}
+						{BEGIN row_grid_7}
+				[
 																{BEGIN cellblock_grid_c13}
 {
 	cellId: 'c13',
@@ -697,7 +787,7 @@ pdfDocument = {
 				compensateColspan: true
 			},
 							],
-				{END row_grid_6}
+				{END row_grid_7}
 		
 		]
 	}
